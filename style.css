@@ -357,8 +357,8 @@
   footer{ background:var(--navy); color:rgba(250,247,242,.8); padding:90px 0 30px; }
   .foot-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr 1.2fr; gap:40px; padding-bottom:60px; border-bottom:1px solid rgba(250,247,242,.14); }
   @media (max-width:900px){ .foot-grid{ grid-template-columns:1fr 1fr; gap:36px 24px; } }
-  .foot-brand .logo{ color:var(--warm-white); margin-bottom:14px; display:flex; align-items:center; gap:8px; }
-  .foot-tagline{ font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--champagne); margin-bottom:16px; }
+  .foot-brand .logo{ color:var(--warm-white); margin-bottom:20px; display:flex; align-items:center; gap:8px; }
+  .foot-logo-full .logo-img{ height:76px; }
   .foot-brand p{ font-size:13.5px; max-width:230px; color:rgba(250,247,242,.55); }
   .foot-col h5{ font-size:11px; letter-spacing:.14em; text-transform:uppercase; margin-bottom:20px; color:rgba(250,247,242,.5); font-weight:500;}
   .foot-col a{ display:block; font-size:14px; padding:7px 0; color:rgba(250,247,242,.8); }

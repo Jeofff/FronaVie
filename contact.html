@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact · FronaVie</title>
+<meta name="description" content="Get in touch with FronaVie, or book a skincare consultation with the team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="header">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <svg width="20" height="20" viewBox="0 0 40 40" class="sig-flower"><g fill="currentColor" opacity="0.92"><ellipse cx="20" cy="9" rx="4.6" ry="9"/><ellipse cx="20" cy="9" rx="4.6" ry="9" transform="rotate(72 20 20)"/><ellipse cx="20" cy="9" rx="4.6" ry="9" transform="rotate(144 20 20)"/><ellipse cx="20" cy="9" rx="4.6" ry="9" transform="rotate(216 20 20)"/><ellipse cx="20" cy="9" rx="4.6" ry="9" transform="rotate(288 20 20)"/><circle cx="20" cy="20" r="2.6" fill="var(--warm-white)"/></g></svg>
+      FronaVie
+    </a>
+    <nav class="nav-center">
+      <a href="our-story.html">Our Story</a>
+      <a href="our-skincare.html">Our Skincare</a>
+      <a href="ingredients.html">Ingredients</a>
+      <a href="journal.html">Journal</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="icon-btn" aria-label="Search"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg></button>
+      <button class="icon-btn" aria-label="Account"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20c1.6-3.6 4.4-5.4 7.5-5.4s5.9 1.8 7.5 5.4"/></svg></button>
+      <button class="icon-btn" aria-label="Cart"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg></button>
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="17" x2="21" y2="17"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="our-story.html">Our Story</a>
+  <a href="our-skincare.html">Our Skincare</a>
+  <a href="ingredients.html">Ingredients</a>
+  <a href="journal.html">Journal</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+
+  <section class="page-hero" style="padding-bottom:30px;">
+    <div class="wrap">
+      <div class="crumb reveal in"><a href="index.html">Home</a> / Contact</div>
+      <div class="eyebrow reveal in">Contact</div>
+      <h1 class="reveal in">Write to us, or book a little time with the team.</h1>
+      <p class="lede reveal in">Questions about a product, an order, or your skin. Or book a short consultation if you'd rather talk it through.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:10px;">
+    <div class="wrap contact-grid">
+
+      <div class="reveal">
+        <h3 style="font-size:22px; margin-bottom:26px;">Send a message</h3>
+        <div id="contactFormWrap">
+          <form id="contactForm">
+            <div class="field"><label>Name</label><input type="text" required></div>
+            <div class="field"><label>Email</label><input type="email" required></div>
+            <div class="field"><label>Subject</label>
+              <select>
+                <option>General question</option>
+                <option>Order support</option>
+                <option>Skincare advice</option>
+                <option>Press &amp; partnerships</option>
+              </select>
+            </div>
+            <div class="field"><label>Message</label><textarea required></textarea></div>
+            <button type="submit" class="btn solid">Send message</button>
+          </form>
+        </div>
+        <div class="form-confirm" id="contactConfirm">
+          <div class="eyebrow">Received</div>
+          <h2 style="font-size:28px; margin:16px 0 10px;">Thank you.</h2>
+          <p style="color:var(--navy-soft);">We read every message ourselves. Expect a reply within one to two business days.</p>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <h3 style="font-size:22px; margin-bottom:26px;">Book a consultation</h3>
+        <div id="bookingFormWrap">
+          <p style="color:var(--navy-soft); font-size:14.5px; margin-bottom:24px;">A short, unhurried conversation about your skin, over video or in person in Manila.</p>
+          <form id="bookingForm">
+            <div class="field"><label>Service</label>
+              <select>
+                <option>Skincare consultation, 20 minutes</option>
+                <option>Founder consultation, 30 minutes</option>
+                <option>In-person fitting, Manila</option>
+              </select>
+            </div>
+            <div class="field"><label>Preferred date</label><input type="date" required></div>
+            <div class="field"><label>Preferred time</label>
+              <select>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+              </select>
+            </div>
+            <div class="field"><label>Name</label><input type="text" required></div>
+            <div class="field"><label>Email</label><input type="email" required></div>
+            <div class="field"><label>Main skin concern (optional)</label><input type="text" placeholder="e.g. dullness, dryness"></div>
+            <button type="submit" class="btn solid">Request appointment</button>
+          </form>
+        </div>
+        <div class="form-confirm" id="bookingConfirm">
+          <div class="eyebrow">Requested</div>
+          <h2 style="font-size:28px; margin:16px 0 10px;">Your appointment request is in.</h2>
+          <p style="color:var(--navy-soft);">We'll confirm your exact time by email. Nothing is booked as final until you hear from us.</p>
+        </div>
+
+        <div style="margin-top:50px;">
+          <div class="contact-info-item"><span class="l">Email</span><span class="v">hello@fronavie.com</span></div>
+          <div class="contact-info-item"><span class="l">Studio</span><span class="v">Manila, Philippines (by appointment)</span></div>
+          <div class="contact-info-item"><span class="l">Hours</span><span class="v">Monday to Friday, 9am to 6pm</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo">FronaVie</div>
+        <p>A Filipino skincare house, quietly built by Maribeth Roa. Rooted in heritage, made for how women actually live.</p>
+      </div>
+      <div class="foot-col"><h5>Shop</h5>
+        <a href="our-skincare.html">Cleanse</a><a href="our-skincare.html">Revive</a><a href="our-skincare.html">Awaken</a><a href="our-skincare.html">All Products</a>
+      </div>
+      <div class="foot-col"><h5>Brand</h5>
+        <a href="our-story.html">Our Story</a><a href="ingredients.html">Ingredients</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="foot-col"><h5>Support</h5>
+        <a href="contact.html">FAQ</a><a href="contact.html">Shipping</a><a href="contact.html">Returns</a><a href="contact.html">Privacy</a><a href="contact.html">Terms</a>
+      </div>
+      <div class="foot-col"><h5>Account</h5>
+        <a href="contact.html">Sign In</a><a href="contact.html">Orders</a><a href="contact.html">Appointments</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 FronaVie. Made in the Philippines.</div>
+      <div class="foot-social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="TikTok">TikTok</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="proto-banner">
+  <span>This is a <b>design prototype</b> for review, no database, no live checkout yet, placeholder photos to be swapped once the direction is approved.</span>
+  <button onclick="this.parentElement.style.display='none'">Dismiss</button>
+</div>
+
+<script src="main.js"></script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('contactFormWrap').style.display = 'none';
+    document.getElementById('contactConfirm').classList.add('show');
+  });
+  document.getElementById('bookingForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('bookingFormWrap').style.display = 'none';
+    document.getElementById('bookingConfirm').classList.add('show');
+  });
+</script>
+</body>
+</html>

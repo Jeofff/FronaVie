@@ -149,6 +149,24 @@
   .btn.on-dark-quiet:hover{ background:transparent; opacity:.75; }
   @media (max-width:700px){ .hero-cinematic{ height:78vh; } }
 
+  /* ---------- our story cinematic opener ---------- */
+  .story-hero{ position:relative; height:86vh; min-height:520px; margin-top:34px; overflow:hidden; }
+  .story-hero-media{ position:absolute; inset:0; }
+  .story-hero-media img{
+    width:100%; height:100%; object-fit:cover;
+    filter:grayscale(45%) sepia(14%) saturate(75%) brightness(.62) contrast(1.05);
+  }
+  .story-hero-copy{
+    position:absolute; left:0; right:0; bottom:0; z-index:2; color:var(--warm-white);
+    padding:0 48px 70px; max-width:680px;
+  }
+  @media (max-width:700px){ .story-hero-copy{ padding:0 24px 40px; } }
+  .story-hero-copy .crumb{ margin-bottom:26px; font-size:11px; }
+  .story-hero-copy blockquote{
+    font-family:var(--serif); font-style:italic; font-size:clamp(24px,3.6vw,38px); line-height:1.35; margin:0 0 20px; color:var(--warm-white);
+  }
+  .story-hero-copy .who{ font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:rgba(250,247,242,.7); }
+
   /* ---------- section rhythm ---------- */
   section{ padding:130px 0; position:relative; }
   @media (max-width:900px){ section{ padding:76px 0; } }
@@ -439,22 +457,32 @@
   .product-card.featured p{ font-size:14.5px; max-width:440px; }
 
   /* ---------- ingredients library ---------- */
-  .ingredient-groups{ display:flex; flex-direction:column; gap:0; }
-  .ing-group{ padding:56px 0; border-top:1px solid var(--line); }
-  .ing-group:last-child{ border-bottom:1px solid var(--line); }
-  .ing-group .group-eyebrow{ margin-bottom:30px; }
-  .ing-list{ display:grid; grid-template-columns:repeat(2,1fr); gap:40px; }
-  @media (max-width:900px){ .ing-list{ grid-template-columns:1fr; } }
-  .ing-item{ display:grid; grid-template-columns:110px 1fr; gap:22px; }
-  .ing-item .ing-photo{ aspect-ratio:1/1; }
-  .ing-item h4{ font-size:19px; margin-bottom:8px; }
-  .ing-item p{ font-size:13.5px; color:var(--navy-soft); line-height:1.6; }
-  .ing-item .ing-tag{ font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--navy-soft); opacity:.7; margin-top:8px; display:block; }
+  /* ---------- ingredients: featured editorial pairs ---------- */
+  .ing-feature{ display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; padding:70px 0; }
+  @media (max-width:900px){ .ing-feature{ grid-template-columns:1fr; gap:30px; padding:40px 0; } }
+  .ing-feature.reverse .ing-feature-photo{ order:2; }
+  @media (max-width:900px){ .ing-feature.reverse .ing-feature-photo{ order:0; } }
+  .ing-feature-photo{ aspect-ratio:9/10; }
+  .ing-feature .eyebrow{ margin-bottom:16px; }
+  .ing-feature h2{ font-size:clamp(28px,3.4vw,42px); margin-bottom:20px; }
+  .ing-feature p{ color:var(--navy-soft); font-size:16px; max-width:420px; }
+
+  /* ---------- ingredients: quiet pending list ---------- */
+  .ing-pending-list{ display:flex; flex-direction:column; }
+  .ing-pending-row{ display:flex; justify-content:space-between; align-items:baseline; padding:16px 0; border-top:1px solid var(--line); gap:20px; }
+  .ing-pending-list .ing-pending-row:last-child{ border-bottom:1px solid var(--line); }
+  .ing-pending-row .name{ font-family:var(--serif); font-size:18px; }
+  .ing-pending-row .tag{ font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--navy-soft); opacity:.7; white-space:nowrap; }
 
   /* ---------- journal listing ---------- */
   .journal-list-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:44px 32px; }
   @media (max-width:980px){ .journal-list-grid{ grid-template-columns:1fr 1fr; } }
   @media (max-width:600px){ .journal-list-grid{ grid-template-columns:1fr; } }
+  .journal-list-grid.staggered{ grid-auto-flow:dense; }
+  .article-card.featured{ grid-column:span 2; }
+  @media (max-width:600px){ .article-card.featured{ grid-column:span 1; } }
+  .article-card.featured .a-photo{ aspect-ratio:16/9; }
+  .article-card.featured h3{ font-size:26px; }
   .article-card .a-photo{ aspect-ratio:4/3; margin-bottom:18px; }
   .article-card .eyebrow{ margin-bottom:10px; font-size:10.5px; }
   .article-card h3{ font-size:20px; line-height:1.3; margin-bottom:8px; }
@@ -464,6 +492,7 @@
   /* ---------- contact / consultation ---------- */
   .contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:70px; }
   @media (max-width:900px){ .contact-grid{ grid-template-columns:1fr; gap:44px; } }
+  .contact-photo{ aspect-ratio:4/5; }
   .field{ margin-bottom:26px; }
   .field label{ display:block; font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--navy-soft); margin-bottom:10px; }
   .field input, .field select, .field textarea{

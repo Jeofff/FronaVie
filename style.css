@@ -136,7 +136,7 @@
     }
   }
 
-  /* hamburger \u2194 close morph — precise state feedback, not decoration */
+  /* hamburger \u2194 close morph: precise state feedback, not decoration */
   .menu-toggle .menu-line{ transition:transform .3s ease, opacity .3s ease; transform-origin:50% 50%; }
   .menu-toggle.active .menu-line-1{ transform:translateY(5px) rotate(45deg); }
   .menu-toggle.active .menu-line-2{ transform:translateY(-5px) rotate(-45deg); }
@@ -176,7 +176,7 @@
   /* ---------- our story: strongest founder page on the site.
      Same page-hero convention as Ingredients/Journal/Contact, then a
      dedicated founder-quote moment sized larger than any other plate
-     or blockquote on the site — this is where FronaVie's own pillar
+     or blockquote on the site: this is where FronaVie's own pillar
      (Maribeth's voice) should carry the most visual weight. ---------- */
   .story-quote-plate{ aspect-ratio:21/9; margin-bottom:52px; }
   @media (max-width:700px){ .story-quote-plate{ aspect-ratio:4/5; margin-bottom:34px; } }
@@ -205,7 +205,7 @@
   .statement .attr{ margin-top:30px; font-family:var(--sans); font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--navy-soft);}
 
   /* ---- Homepage's merged ritual-anticipation now lives under
-     .home-ritual (see HOMEPAGE block below) — the old .ritual /
+     .home-ritual (see HOMEPAGE block below): the old .ritual /
      .ritual-steps 3-card rail this replaced has been removed. ---- */
 
   /* heritage */
@@ -230,13 +230,13 @@
   .diff-row p{ color:var(--navy-soft); font-size:15px; max-width:440px; }
 
   /* =========================================================
-     HOMEPAGE — inherits The Ritual's locked visual language
+     HOMEPAGE: inherits The Ritual's locked visual language
      (atelier plate, restrained palette, scale/whitespace-led
      pacing) but Home's job is welcome + editorial breadth,
      not anticipation alone. Warmer and more open than Ritual.
      ========================================================= */
 
-  /* ---- hero: editorial two-panel spread — the grand entrance.
+  /* ---- hero: editorial two-panel spread: the grand entrance.
      Distinct in shape from Ritual's centered opening: a real
      photography panel sits beside the copy, explicitly reserved
      for Maribeth's portrait, so even the placeholder state implies
@@ -321,7 +321,7 @@
 
   /* ---------- journal: curated editorial, not a blog grid ----------
      One dominant feature, one supporting story, one quiet reading
-     list. Three scales, three compositions — no repeated card template. */
+     list. Three scales, three compositions: no repeated card template. */
 
   /* feature: largest scale, full-width plate, biggest type on the page */
   .journal-feature-plate{ aspect-ratio:21/9; margin-bottom:44px; }
@@ -339,7 +339,7 @@
   .journal-secondary-copy h3{ font-family:var(--serif); font-weight:400; font-size:clamp(21px,2.4vw,27px); line-height:1.3; margin-bottom:12px; }
   .journal-secondary-copy p{ color:var(--navy-soft); font-size:15px; max-width:440px; }
 
-  /* quiet list: smallest scale, no images, hairline-separated — reuses the
+  /* quiet list: smallest scale, no images, hairline-separated: reuses the
      site's established quiet-list language (ingredients pending list, etc.) */
   .journal-list{ display:flex; flex-direction:column; max-width:680px; }
   .journal-list-row{ padding:26px 0; border-top:1px solid var(--line); }
@@ -370,15 +370,15 @@
   .final-statement h2{ font-size:clamp(30px,4vw,54px); line-height:1.25; max-width:760px; margin:0 auto; }
 
   /* =========================================================
-     THE RITUAL — locked FronaVie cinematic language
+     THE RITUAL: locked FronaVie cinematic language
      One world, one palette. Cleanse / Revive / Awaken are told
-     through scale, whitespace, composition and pacing — never
+     through scale, whitespace, composition and pacing: never
      through new colors. Reusable by other pages later.
      ========================================================= */
 
   /* ---- the atelier plate: single placeholder treatment, reused
      everywhere. A warm paper field holding the sampaguita mark at
-     sculptural scale, like a printer's proof or specimen card —
+     sculptural scale, like a printer's proof or specimen card,
      not a "coming soon" web placeholder. Swap the inner .plate-fill
      for a real <img> or <video muted loop playsinline poster="...">
      once assets are supplied; the frame does not need to change. */
@@ -396,7 +396,7 @@
     position:absolute; left:22px; bottom:18px; z-index:2; font-family:var(--sans);
     font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--navy-soft); opacity:.6;
   }
-  /* dark variant of the same plate — Awaken only; still one system, not a new palette */
+  /* dark variant of the same plate: Awaken only; still one system, not a new palette */
   .plate-fill.on-dark{ background: linear-gradient(155deg, #1A2C4A 0%, var(--navy) 100%); }
   .plate-fill.on-dark::before{ border-color: rgba(250,247,242,.1); }
   .plate-fill.on-dark .plate-mark{ opacity:.32; stroke:var(--warm-white); }

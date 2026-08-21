@@ -28,7 +28,7 @@
     <div class="nav-right">
       <button class="icon-btn" aria-label="Account"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20c1.6-3.6 4.4-5.4 7.5-5.4s5.9 1.8 7.5 5.4"/></svg></button>
       <button class="icon-btn" aria-label="Cart"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg></button>
-      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="17" x2="21" y2="17"/></svg></button>
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><line class="menu-line menu-line-1" x1="3" y1="7" x2="21" y2="7"/><line class="menu-line menu-line-2" x1="3" y1="17" x2="21" y2="17"/></svg></button>
     </div>
   </div>
 </header>
@@ -44,16 +44,30 @@
 
 <main id="top">
 
-  <section class="hero-cinematic">
-    <div class="hero-cinematic-media">
-      <img src="https://picsum.photos/seed/fronavie-hero/1600/1000" alt="FronaVie hero visual, placeholder photography">
-    </div>
-    <div class="hero-cinematic-copy reveal in">
-      <h1>Brightening without stripping.</h1>
-      <p class="lede">Filipino skincare made for real days and real skin.</p>
-      <div class="hero-actions">
-        <a href="the-ritual.html" class="btn on-dark">Discover the FronaVie ritual</a>
-        <a href="our-story.html" class="btn quiet on-dark-quiet">Meet the founder</a>
+  <section class="home-hero">
+    <div class="wrap home-hero-grid">
+      <div class="home-hero-copy reveal in">
+        <div class="eyebrow">Filipino Skincare House</div>
+        <h1>Brightening without stripping.</h1>
+        <p class="lede">Filipino skincare made for real days and real skin, founded by Maribeth Roa.</p>
+        <div class="home-hero-actions">
+          <a href="the-ritual.html" class="btn solid">Discover the FronaVie ritual</a>
+          <a href="our-story.html" class="btn quiet">Meet the founder</a>
+        </div>
+      </div>
+      <div class="ritual-plate home-hero-plate reveal in">
+        <div class="plate-fill">
+          <svg class="plate-mark" width="140" height="140" viewBox="0 0 100 100" fill="none" stroke="var(--navy)" stroke-width="1.8">
+            <g stroke-linejoin="round">
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(72 50 50)"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(144 50 50)"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(216 50 50)"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(288 50 50)"/>
+            </g>
+          </svg>
+        </div>
+        <span class="plate-caption">Plate — Maribeth Roa. Photography in progress.</span>
       </div>
     </div>
   </section>
@@ -67,79 +81,62 @@
     </div>
   </section>
 
-  <section class="ritual" id="ritual">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <div class="eyebrow">The FronaVie Ritual</div>
-        <h2>Not a routine. A rhythm.</h2>
-        <p>Three movements, done in order, done gently. Everything we make belongs to one of them.</p>
-      </div>
-      <div class="ritual-rail">
-        <div class="ritual-line"></div>
-        <div class="ritual-steps stagger">
-          <div class="ritual-step reveal">
-            <div class="num">01</div>
-            <h3>Cleanse</h3>
-            <p class="chapter-line">Begin gently.</p>
-            <p>Remove what the day leaves behind, without stripping what your skin worked hard to keep.</p>
-            <span class="tag">Morning &amp; evening</span>
-          </div>
-          <div class="ritual-step reveal">
-            <div class="num">02</div>
-            <h3>Revive</h3>
-            <p class="chapter-line">Bring your radiance back.</p>
-            <p>Comfort, hydration, and the kind of brightness that shows up two days later, not two minutes.</p>
-            <span class="tag">Daily</span>
-          </div>
-          <div class="ritual-step reveal">
-            <div class="num">03</div>
-            <h3>Awaken</h3>
-            <p class="chapter-line">Let your skin feel renewed.</p>
-            <p>Firmness and overnight care, so skin can keep doing what it already knows how to do.</p>
-            <span class="tag">Evening</span>
-          </div>
+  <!--
+    HOME RITUAL ANTICIPATION — merges the former 3-step rail and the
+    separate film-spotlight into one moment. This is not the full
+    Cleanse/Revive/Awaken sequence (that lives on The Ritual page) —
+    it exists only to create desire and send the visitor there.
+  -->
+  <section class="home-ritual" id="ritual">
+    <div class="wrap home-ritual-grid">
+      <div class="ritual-plate home-ritual-plate reveal">
+        <div class="plate-fill on-dark">
+          <svg class="plate-mark" width="150" height="150" viewBox="0 0 100 100" fill="none" stroke="var(--warm-white)" stroke-width="1.6">
+            <g stroke-linejoin="round">
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(72 50 50)"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(144 50 50)"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(216 50 50)"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(288 50 50)"/>
+            </g>
+          </svg>
         </div>
+        <span class="plate-caption on-dark">Plate — The Ritual. Film in progress.</span>
       </div>
-      <div style="margin-top:50px; text-align:center;"><a href="the-ritual.html" class="btn on-dark">Watch the ritual</a></div>
-    </div>
-  </section>
-
-  <section id="skincare">
-    <div class="wrap spotlight-grid">
-      <div class="film-frame spotlight-photo reveal">
-        <img src="https://picsum.photos/seed/fronavie-film-teaser/800/1000" alt="The FronaVie ritual, placeholder film still">
-        <div class="film-play" aria-hidden="true">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-        </div>
-        <span class="film-caption">Film pending</span>
-      </div>
-      <div class="spotlight-copy reveal">
+      <div class="home-ritual-copy reveal">
         <div class="eyebrow">Coming Soon</div>
-        <h2>The ritual, on film.</h2>
-        <p class="desc">Maribeth is building the first FronaVie formulas now. Rather than show you products before they exist, we're starting with a short film of the ritual itself: Cleanse, Revive, Awaken.</p>
-        <div class="price-row">
-          <a href="the-ritual.html" class="btn solid">Watch the ritual</a>
-        </div>
+        <h2>Not a routine. A rhythm.</h2>
+        <p class="desc">Three movements, done in order, done gently. Maribeth is building the first FronaVie formulas now — this is where the whole line begins.</p>
+        <div class="ritual-sequence">Cleanse &nbsp;·&nbsp; Revive &nbsp;·&nbsp; Awaken</div>
+        <a href="the-ritual.html" class="btn on-dark">Discover the ritual</a>
       </div>
     </div>
   </section>
-
-  <hr class="rule">
 
   <section class="heritage" id="heritage">
     <div class="wrap heritage-grid">
-      <div class="photo green heritage-photo reveal">
-        <img src="https://picsum.photos/seed/fronavie-heritage/900/990" alt="Sampaguita and calamansi study, placeholder photography">
-        <span class="cap">Placeholder photo · swap on approval</span>
+      <div class="ritual-plate heritage-photo reveal">
+        <div class="plate-fill">
+          <svg class="plate-mark" width="140" height="140" viewBox="0 0 100 100" fill="none" stroke="var(--navy)" stroke-width="1.8">
+            <g stroke-linejoin="round">
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(72 50 50)"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(144 50 50)"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(216 50 50)"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(288 50 50)"/>
+            </g>
+          </svg>
+        </div>
+        <span class="plate-caption">Plate — Sampaguita &amp; Calamansi. Photography in progress.</span>
       </div>
       <div class="heritage-copy reveal">
         <div class="eyebrow">Where It Comes From</div>
         <h2>The flowers we know. The ingredients we grew up with. Reimagined for modern skin.</h2>
         <p>Sampaguita has always meant something in the Philippines. Offered at altars, sold at intersections, worn to weddings. We didn't want to print it on a label. We wanted to actually put it to work.</p>
         <p>Calamansi does the brightening most Filipino kitchens already understood, long before "vitamin C" became a shelf label.</p>
-        <div class="botanical-pair">
-          <div class="chip"><svg width="14" height="14" viewBox="0 0 100 100" fill="none" stroke="var(--green)" stroke-width="4"><g stroke-linejoin="round"><path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z"/><path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(72 50 50)"/><path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(144 50 50)"/><path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(216 50 50)"/><path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(288 50 50)"/></g><circle cx="50" cy="50" r="5" fill="var(--green)" stroke="none"/></svg> Sampaguita ferment</div>
-          <div class="chip">🍋‍🟩 Calamansi extract</div>
+        <div class="botanical-list">
+          <div class="botanical-item"><span class="b-name">Sampaguita</span><span class="b-role">Ferment</span></div>
+          <div class="botanical-item"><span class="b-name">Calamansi</span><span class="b-role">Extract</span></div>
         </div>
       </div>
     </div>
@@ -154,8 +151,8 @@
       <div class="diff-list">
         <div class="diff-row reveal">
           <div class="num">01</div>
-          <h3>Filipino ingredients, taken seriously</h3>
-          <p>Not decoration on a Western formula. The botanicals are the actives, sourced and tested like any imported ingredient would be.</p>
+          <h3>Tested with the same rigor as any imported active</h3>
+          <p>Filipino botanicals aren't a marketing layer here. They're formulated, measured, and tested the way any international lab would test its own actives.</p>
         </div>
         <div class="diff-row reveal">
           <div class="num">02</div>
@@ -173,16 +170,25 @@
 
   <section class="founder" id="story">
     <div class="wrap founder-grid">
-      <div class="photo navy founder-photo reveal">
-        <img src="https://picsum.photos/seed/fronavie-founder/900/1125" alt="Maribeth Roa, placeholder photography">
-        <span class="cap">Placeholder photo · swap on approval</span>
+      <div class="ritual-plate founder-photo reveal">
+        <div class="plate-fill on-dark">
+          <svg class="plate-mark" width="130" height="130" viewBox="0 0 100 100" fill="none" stroke="var(--warm-white)" stroke-width="1.7">
+            <g stroke-linejoin="round">
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(72 50 50)"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(144 50 50)"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(216 50 50)"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(288 50 50)"/>
+            </g>
+          </svg>
+        </div>
+        <span class="plate-caption on-dark">Plate — Maribeth Roa. Photography in progress.</span>
       </div>
       <div class="reveal">
         <div class="eyebrow">Our Story</div>
         <blockquote>"I started FronaVie because I got tired of choosing between what my skin needed and what felt like mine."</blockquote>
         <div class="who">Maribeth Roa, Founder of FronaVie</div>
-        <p class="body">Maribeth built FronaVie around a simple frustration. The skincare she could find either ignored where she came from, or leaned on it as decoration. She wanted formulas that took Filipino botanicals as seriously as any imported active, and a brand her own mother would recognize as respectful, not borrowed.</p>
-        <p class="body">This is written from the brief provided so far. The fuller founder story, background, the years before FronaVie, how the first formula came together, will be drafted with Maribeth directly and approved before it goes live.</p>
+        <p class="body">Maribeth built FronaVie around a simple frustration: skincare that either ignored where she came from, or leaned on it as decoration. She wanted formulas that took Filipino botanicals as seriously as any imported active, and a brand her own mother would recognize as respectful, not borrowed.</p>
         <div class="placeholder-note">Placeholder: full biography pending founder interview. Do not publish without Maribeth's review.</div>
         <a href="our-story.html" class="btn on-dark" style="margin-top:32px;">Read the full story</a>
       </div>
@@ -278,20 +284,6 @@
 
   <hr class="rule">
 
-  <section id="journal">
-    <div class="wrap journal-feature">
-      <div class="photo light j-photo-feature reveal">
-        <img src="https://picsum.photos/seed/fronavie-journal1/1300/750" alt="Journal feature, placeholder photography">
-      </div>
-      <div class="journal-feature-copy reveal">
-        <div class="eyebrow">From The Journal</div>
-        <h2>Why I didn't want sampaguita to be a story in our marketing</h2>
-        <p>Maribeth on the difference between honoring an ingredient and using it as decoration, and why that distinction shaped the whole brand.</p>
-        <a href="journal.html" class="btn quiet">Read the journal</a>
-      </div>
-    </div>
-  </section>
-
   <section class="invite" id="invite">
     <div class="wrap reveal">
       <div id="inviteForm">
@@ -322,23 +314,20 @@
         <p>A Filipino skincare house, quietly built by Maribeth Roa. Rooted in heritage, made for how women actually live.</p>
       </div>
       <div class="foot-col"><h5>Shop</h5>
-        <a href="the-ritual.html">The Ritual</a>
+        <a href="the-ritual.html">The Ritual</a><a href="ingredients.html">Ingredients</a>
       </div>
       <div class="foot-col"><h5>Brand</h5>
-        <a href="our-story.html">Our Story</a><a href="ingredients.html">Ingredients</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a><a href="join.html">Join FronaVie</a>
+        <a href="our-story.html">Our Story</a><a href="journal.html">Journal</a><a href="join.html">Join FronaVie</a>
       </div>
       <div class="foot-col"><h5>Support</h5>
-        <a href="contact.html">FAQ</a><a href="contact.html">Shipping</a><a href="contact.html">Returns</a><a href="contact.html">Privacy</a><a href="contact.html">Terms</a>
-      </div>
-      <div class="foot-col"><h5>Account</h5>
-        <a href="contact.html">Sign In</a><a href="contact.html">Orders</a><a href="contact.html">Appointments</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
     <div class="foot-bottom">
       <div>© 2026 FronaVie. Made in the Philippines.</div>
       <div class="foot-social">
-        <a href="#" aria-label="Instagram">Instagram</a>
-        <a href="#" aria-label="TikTok">TikTok</a>
+        <span class="foot-social-pending" aria-label="Instagram, coming soon">Instagram</span>
+        <span class="foot-social-pending" aria-label="TikTok, coming soon">TikTok</span>
       </div>
     </div>
   </div>

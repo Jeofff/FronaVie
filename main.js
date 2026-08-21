@@ -10,9 +10,15 @@ document.addEventListener('DOMContentLoaded', function(){
   var menuToggle = document.getElementById('menuToggle');
   var mobileMenu = document.getElementById('mobileMenu');
   if(menuToggle && mobileMenu){
-    menuToggle.addEventListener('click', function(){ mobileMenu.classList.toggle('open'); });
+    menuToggle.addEventListener('click', function(){
+      mobileMenu.classList.toggle('open');
+      menuToggle.classList.toggle('active');
+    });
     mobileMenu.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){ mobileMenu.classList.remove('open'); });
+      a.addEventListener('click', function(){
+        mobileMenu.classList.remove('open');
+        menuToggle.classList.remove('active');
+      });
     });
   }
 

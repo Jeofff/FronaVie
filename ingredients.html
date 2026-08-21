@@ -28,7 +28,7 @@
     <div class="nav-right">
       <button class="icon-btn" aria-label="Account"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20c1.6-3.6 4.4-5.4 7.5-5.4s5.9 1.8 7.5 5.4"/></svg></button>
       <button class="icon-btn" aria-label="Cart"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg></button>
-      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="17" x2="21" y2="17"/></svg></button>
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><line class="menu-line menu-line-1" x1="3" y1="7" x2="21" y2="7"/><line class="menu-line menu-line-2" x1="3" y1="17" x2="21" y2="17"/></svg></button>
     </div>
   </div>
 </header>
@@ -55,9 +55,19 @@
 
   <section style="padding-top:20px;">
     <div class="wrap ing-feature">
-      <div class="photo green ing-feature-photo reveal">
-        <img src="https://picsum.photos/seed/fv-ing-samp-big/900/1000" alt="Sampaguita, placeholder photography">
-        <span class="cap">Placeholder photo · swap on approval</span>
+      <div class="ritual-plate ing-feature-photo reveal">
+        <div class="plate-fill">
+          <svg class="plate-mark" width="130" height="130" viewBox="0 0 100 100" fill="none" stroke="var(--navy)" stroke-width="1.8">
+            <g stroke-linejoin="round">
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(72 50 50)"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(144 50 50)"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(216 50 50)"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(288 50 50)"/>
+            </g>
+          </svg>
+        </div>
+        <span class="plate-caption">Plate — Sampaguita. Photography in progress.</span>
       </div>
       <div class="reveal">
         <div class="eyebrow">Featured In Revive</div>
@@ -69,15 +79,37 @@
 
   <section style="padding-top:0;">
     <div class="wrap ing-feature reverse">
-      <div class="photo green ing-feature-photo reveal">
-        <img src="https://picsum.photos/seed/fv-ing-calam-big/900/1000" alt="Calamansi, placeholder photography">
-        <span class="cap">Placeholder photo · swap on approval</span>
+      <div class="ritual-plate ing-feature-photo reveal">
+        <div class="plate-fill">
+          <svg class="plate-mark" width="130" height="130" viewBox="0 0 100 100" fill="none" stroke="var(--navy)" stroke-width="1.8">
+            <g stroke-linejoin="round">
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(72 50 50)"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(144 50 50)"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(216 50 50)"/>
+              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(288 50 50)"/>
+            </g>
+          </svg>
+        </div>
+        <span class="plate-caption">Plate — Calamansi. Photography in progress.</span>
       </div>
       <div class="reveal">
         <div class="eyebrow">Featured In Cleanse &amp; Awaken</div>
         <h2>Calamansi</h2>
         <p>A small citrus common in Filipino kitchens, long used for brightening. FronaVie uses a stabilized extract for tone and dullness, in place of the raw juice most households already reach for.</p>
       </div>
+    </div>
+  </section>
+
+  <!--
+    BRIDGING STATEMENT — ties the heritage+botanicals content above to
+    the efficacy+trust pillar (Kiehl's), so the two spreads read as one
+    point of view rather than two parallel entries. Copy adapted from
+    the already-approved homepage diff-list line; no new claims made.
+  -->
+  <section class="statement">
+    <div class="wrap reveal">
+      <p>Heritage and rigor were never supposed to be opposites. Every botanical here is formulated, measured, and tested the way any imported active would be.</p>
     </div>
   </section>
 
@@ -99,6 +131,15 @@
     </div>
   </section>
 
+  <!-- CLOSING — intentional ending, not a trail-off. Reuses the same
+       final-statement pattern already established on Our Story. -->
+  <section class="final-statement" style="padding:110px 0 150px;">
+    <div class="wrap reveal">
+      <h2 style="font-size:clamp(26px,3.4vw,42px);">Two ingredients. One formula. See where they lead.</h2>
+      <div style="margin-top:40px;"><a href="the-ritual.html" class="btn solid">Discover the ritual</a></div>
+    </div>
+  </section>
+
 </main>
 
 <footer>
@@ -109,23 +150,20 @@
         <p>A Filipino skincare house, quietly built by Maribeth Roa. Rooted in heritage, made for how women actually live.</p>
       </div>
       <div class="foot-col"><h5>Shop</h5>
-        <a href="the-ritual.html">The Ritual</a>
+        <a href="the-ritual.html">The Ritual</a><a href="ingredients.html">Ingredients</a>
       </div>
       <div class="foot-col"><h5>Brand</h5>
-        <a href="our-story.html">Our Story</a><a href="ingredients.html">Ingredients</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a><a href="join.html">Join FronaVie</a>
+        <a href="our-story.html">Our Story</a><a href="journal.html">Journal</a><a href="join.html">Join FronaVie</a>
       </div>
       <div class="foot-col"><h5>Support</h5>
-        <a href="contact.html">FAQ</a><a href="contact.html">Shipping</a><a href="contact.html">Returns</a><a href="contact.html">Privacy</a><a href="contact.html">Terms</a>
-      </div>
-      <div class="foot-col"><h5>Account</h5>
-        <a href="contact.html">Sign In</a><a href="contact.html">Orders</a><a href="contact.html">Appointments</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
     <div class="foot-bottom">
       <div>© 2026 FronaVie. Made in the Philippines.</div>
       <div class="foot-social">
-        <a href="#" aria-label="Instagram">Instagram</a>
-        <a href="#" aria-label="TikTok">TikTok</a>
+        <span class="foot-social-pending" aria-label="Instagram, coming soon">Instagram</span>
+        <span class="foot-social-pending" aria-label="TikTok, coming soon">TikTok</span>
       </div>
     </div>
   </div>

@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><meta name="design_doc_mode" content="canvas"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"><style>body{margin:0;background:#e4e0d8;font-family:'Jost',system-ui,sans-serif}a{color:#16295B}a:hover{color:#C1934F}.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08)}.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}.dv-tid{font:500 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}.dv-tname{font:500 13px/1.2 'Jost',sans-serif;color:#1a1a1a}.dv-opts{display:flex;flex-wrap:wrap;gap:34px;align-items:flex-start}.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}.dv-oid{font:500 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.09);color:#1a1a1a;border-radius:5px;text-decoration:none}.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 'Jost',sans-serif;color:rgba(0,0,0,.55)}.dv-card{max-width:100%;background:#fff;border:1px solid rgba(0,0,0,.1);border-radius:5px;box-shadow:0 2px 12px rgba(0,0,0,.07);overflow:hidden}.dv-opt:target .dv-oid{background:#16295B;color:#fff}.dv-next{margin:26px 0 0;font:12px/1.7 'Jost',sans-serif;color:rgba(0,0,0,.5)}</style></helmet>
+
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">FronaVie &middot; storefront, admin dashboard and mobile</span></div>
+
+<div style="background:#FBF9F5;border:1px solid rgba(22,41,91,.14);border-radius:5px;padding:30px 34px;margin-bottom:34px;max-width:1000px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:34px">
+<div>
+<div style="font:500 10.5px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C1934F;margin-bottom:14px">THE DIRECTION</div>
+<p style="margin:0 0 10px;font:300 13px/1.8 'Jost',sans-serif;color:#3E4A6B">Quiet luxury structure: generous whitespace, and the product treated as an object of desire. Botanical warmth in the imagery and the storytelling, with candid, unembellished explanations of every ingredient and concern. Heritage remains understated, living in the mark, the landscape photography and the language, never in ornament.</p>
+</div>
+<div>
+<div style="font:500 10.5px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C1934F;margin-bottom:14px">THE SYSTEM</div>
+<p style="margin:0;font:300 13px/1.8 'Jost',sans-serif;color:#3E4A6B">Cormorant Garamond for display (it matches your logotype), Jost for interface and body. Two grounds only: cream <span style="font-family:ui-monospace,Menlo,monospace;font-size:11.5px">#F5F1E9</span> and off-white <span style="font-family:ui-monospace,Menlo,monospace;font-size:11.5px">#FBF9F5</span>, with navy <span style="font-family:ui-monospace,Menlo,monospace;font-size:11.5px">#16295B</span> reserved for statement sections. Gold appears only as eyebrow text, hairlines and the flower mark. 56px page gutters, 84px section rhythm.</p>
+</div>
+<div>
+<div style="font:500 10.5px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C1934F;margin-bottom:14px">WHAT I ASSUMED</div>
+<p style="margin:0;font:300 13px/1.8 'Jost',sans-serif;color:#3E4A6B">A US-facing storefront in USD: one live formula at $38, with three future products shown as &ldquo;coming soon&rdquo;. All photography is a labelled placeholder, so real imagery drops in without anything else moving. Every claim is written to be exchanged for your approved wording.</p>
+</div>
+</div>
+
+<div class="dv-opts">
+
+<div class="dv-opt" id="1a">
+<div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Homepage &middot; your crop, continued to the footer</div>
+<div class="dv-card" style="width:1440px">
+<dc-import name="FronaVie Nav" active="HOME" cart="{{ zero }}" hint-size="100%,120px"></dc-import>
+
+<div style="background:#F5F1E9;display:grid;grid-template-columns:1fr 1.05fr;align-items:stretch">
+<div style="padding:60px 44px 76px 56px;display:flex;flex-direction:column;justify-content:center">
+<div style="font:400 12.5px/1 'Jost',sans-serif;letter-spacing:.19em;color:#C1934F;margin-bottom:26px">FILIPINO-INSPIRED. SCIENCE-BACKED.</div>
+<h1 style="margin:0;font:500 76px/1.06 'Cormorant Garamond',serif;color:#16295B;letter-spacing:-.015em">Brightening<br>Without Stripping</h1>
+<div style="display:flex;align-items:center;gap:14px;margin:32px 0">
+<div style="width:112px;height:1px;background:#C1934F"></div>
+<img src="assets/logo-flower.png" alt="" style="height:20px;width:auto;opacity:.65">
+<div style="width:56px;height:1px;background:rgba(193,147,79,.4)"></div>
+</div>
+<p style="margin:0;font:300 17.5px/1.85 'Jost',sans-serif;color:#3E4A6B;max-width:392px">Gentle, effective skincare that helps reveal your natural radiance, while honoring the quiet beauty of your everyday.</p>
+<a href="#1c" style="margin-top:36px;align-self:flex-start;background:#16295B;color:#fff;text-decoration:none;padding:19px 42px;font:500 13px/1 'Jost',sans-serif;letter-spacing:.17em" style-hover="background:#0E1D42">DISCOVER FRONAVIE</a>
+<div style="display:flex;gap:48px;margin-top:66px">
+<div style="display:flex;flex-direction:column;align-items:center;gap:14px;width:112px">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="#16295B" stroke-width="1"><path d="M15 26V13"/><path d="M15 13c0-5 3.5-9 9-9 0 5-4 9-9 9Z"/><path d="M15 17c0-4-3-7-7-7 0 4 3 7 7 7Z"/></svg>
+<div style="font:400 10px/1.6 'Jost',sans-serif;letter-spacing:.15em;color:#16295B;text-align:center">GENTLE &amp;<br>NON-STRIPPING</div>
+</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:14px;width:112px">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="#16295B" stroke-width="1"><path d="M15 4c4 5.5 6.5 9 6.5 12.5A6.5 6.5 0 0 1 15 23a6.5 6.5 0 0 1-6.5-6.5C8.5 13 11 9.5 15 4Z"/></svg>
+<div style="font:400 10px/1.6 'Jost',sans-serif;letter-spacing:.15em;color:#16295B;text-align:center">BRIGHTENS &amp;<br>EVENS TONE</div>
+</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:14px;width:112px">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="#16295B" stroke-width="1"><path d="M15 4l9 3v8c0 5-4 8.5-9 11-5-2.5-9-6-9-11V7l9-3Z"/><path d="M15 11v7M11.5 14.5h7"/></svg>
+<div style="font:400 10px/1.6 'Jost',sans-serif;letter-spacing:.15em;color:#16295B;text-align:center">STRENGTHENS<br>SKIN BARRIER</div>
+</div>
+</div>
+</div>
+<div style="min-height:680px;background:repeating-linear-gradient(128deg,#E6DFD1 0 8px,#EFEAE0 8px 16px);display:flex;align-items:center;justify-content:center;position:relative">
+<div style="font:400 10.5px/1.7 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:12px 16px;text-align:center">Hero photography<br>model + product + sampaguita</div>
+<div style="position:absolute;top:52%;right:118px;width:92px;height:92px;border-radius:50%;background:#16295B;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font:400 9px/1.6 'Jost',sans-serif;letter-spacing:.14em"><span>NEW</span><span style="font:500 18px/1 'Cormorant Garamond',serif;letter-spacing:.05em">HERO</span><span style="font-size:7.5px">PRODUCT</span></div>
+</div>
+</div>
+
+<div style="background:#FBF9F5;padding:96px 56px;display:flex;flex-direction:column;align-items:center;text-align:center">
+<img src="assets/logo-flower.png" alt="" style="height:38px;width:auto;margin-bottom:30px">
+<p style="margin:0;font:400 33px/1.62 'Cormorant Garamond',serif;color:#16295B;max-width:940px;text-wrap:pretty">Honoring the timeless beauty rituals and heritage of the Philippines through a mindful approach to luxury skincare, where tradition is thoughtfully elevated by modern skincare science.</p>
+<div style="width:70px;height:1px;background:#C1934F;margin:38px 0 22px"></div>
+<div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.2em;color:#8A8578">THE FIRST LUXURY SKINCARE HOUSE BUILT ON FILIPINO PRIDE</div>
+</div>
+<div style="background:linear-gradient(180deg,#DCE3F0 0%,#ECEEF3 62%,#F2F0EB 100%);padding:60px 56px;display:grid;grid-template-columns:1fr 2.05fr;gap:56px">
+<div>
+<img src="assets/logo-flower.png" alt="" style="height:26px;width:auto;margin-bottom:20px;opacity:.55">
+<h2 style="margin:0 0 20px;font:500 38px/1.22 'Cormorant Garamond',serif;color:#16295B">Rooted in Heritage.<br>Made for You.</h2>
+<p style="margin:0;font:300 15px/1.95 'Jost',sans-serif;color:#3E4A6B;max-width:340px">Inspired by Filipino beauty rituals and the strength of women who give so much to others, FronaVie is our way of saying: you deserve care that honors you.</p>
+<a href="#1b" style="display:inline-block;margin-top:26px;font:400 12px/1 'Jost',sans-serif;letter-spacing:.15em;color:#16295B;text-decoration:none;border-bottom:1px solid rgba(193,147,79,.7);padding-bottom:6px">READ OUR STORY</a>
+</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr)">
+<div style="padding:6px 26px;border-left:1px solid rgba(22,41,91,.15);display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px">
+<img src="assets/logo-flower.png" alt="" style="height:34px;width:auto">
+<div style="font:400 12.5px/1.55 'Jost',sans-serif;letter-spacing:.14em;color:#16295B;border-bottom:1px solid rgba(22,41,91,.32);padding-bottom:7px">FILIPINO<br>HERITAGE</div>
+<p style="margin:0;font:300 13px/1.9 'Jost',sans-serif;color:#3E4A6B">Inspired by timeless rituals and the beauty of our roots.</p>
+</div>
+<div style="padding:6px 26px;border-left:1px solid rgba(22,41,91,.15);display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px">
+<svg width="34" height="34" viewBox="0 0 30 30" fill="none" stroke="#16295B" stroke-width="1"><path d="M12 4h6M13.5 4v6.5L7.5 21a3 3 0 0 0 2.6 4.5h9.8A3 3 0 0 0 22.5 21l-6-10.5V4"/><circle cx="13" cy="19" r="1.3"/><circle cx="17" cy="21.5" r="1"/></svg>
+<div style="font:400 12.5px/1.55 'Jost',sans-serif;letter-spacing:.14em;color:#16295B;border-bottom:1px solid rgba(22,41,91,.32);padding-bottom:7px">MODERN<br>SCIENCE</div>
+<p style="margin:0;font:300 13px/1.9 'Jost',sans-serif;color:#3E4A6B">Carefully crafted with effective, high-quality ingredients.</p>
+</div>
+<div style="padding:6px 26px;border-left:1px solid rgba(22,41,91,.15);display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px">
+<svg width="34" height="34" viewBox="0 0 30 30" fill="none" stroke="#16295B" stroke-width="1"><path d="M15 25S4.5 18.6 4.5 11.9A5.4 5.4 0 0 1 15 9.6a5.4 5.4 0 0 1 10.5 2.3C25.5 18.6 15 25 15 25Z"/></svg>
+<div style="font:400 12.5px/1.55 'Jost',sans-serif;letter-spacing:.14em;color:#16295B;border-bottom:1px solid rgba(22,41,91,.32);padding-bottom:7px">MADE FOR<br>EVERYDAY</div>
+<p style="margin:0;font:300 13px/1.9 'Jost',sans-serif;color:#3E4A6B">Gentle enough for daily use. Made for real life, real skin.</p>
+</div>
+<div style="padding:6px 26px;border-left:1px solid rgba(22,41,91,.15);display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px">
+<svg width="34" height="34" viewBox="0 0 30 30" fill="none" stroke="#16295B" stroke-width="1"><path d="M20.5 25c1.5-4 4-5.5 4-10.5A9.5 9.5 0 0 0 6.6 10c-.6 2-2.1 3.4-2.1 5s1.6 2 1.6 2"/><circle cx="12" cy="14.4" r="1"/></svg>
+<div style="font:400 12.5px/1.55 'Jost',sans-serif;letter-spacing:.14em;color:#16295B;border-bottom:1px solid rgba(22,41,91,.32);padding-bottom:7px">FOR WOMEN WHO<br>LIVE EARNESTLY</div>
+<p style="margin:0;font:300 13px/1.9 'Jost',sans-serif;color:#3E4A6B">Because you deserve skincare that works as hard as you do.</p>
+</div>
+</div>
+</div>
+
+<div style="background:#EAE6DE;padding:17px 56px;display:flex;align-items:center;justify-content:space-between;font:400 11px/1 'Jost',sans-serif;letter-spacing:.15em;color:#16295B">
+<span>CLEAN FORMULAS</span><span style="opacity:.28">|</span><span>DERMATOLOGICALLY TESTED</span><span style="opacity:.28">|</span><span>PARABEN FREE</span><span style="opacity:.28">|</span><span>CRUELTY FREE</span><span style="opacity:.28">|</span><span>MADE WITH CARE</span>
+</div>
+
+<div style="background:#FBF9F5;padding:88px 56px;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center">
+<div style="aspect-ratio:1/1;background:repeating-linear-gradient(128deg,#E9E2D4 0 8px,#F2EDE3 8px 16px);display:flex;align-items:center;justify-content:center">
+<div style="font:400 10.5px/1.7 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:12px 16px;text-align:center">Product still life<br>tube on stone, 1:1</div>
+</div>
+<div>
+<div style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.2em;color:#C1934F;margin-bottom:20px">THE HERO</div>
+<h2 style="margin:0 0 16px;font:500 46px/1.15 'Cormorant Garamond',serif;color:#16295B">Kojic Brightening<br>Cleansing Cream</h2>
+<p style="margin:0 0 28px;font:300 16px/1.85 'Jost',sans-serif;color:#3E4A6B;max-width:430px">A silken, non-foaming cleanser that lifts the day from your skin and leaves the barrier intact. Thirty unhurried seconds, morning and evening.</p>
+<div style="display:flex;flex-direction:column;gap:14px;margin-bottom:32px">
+<div style="display:flex;align-items:flex-start;gap:13px;font:300 15px/1.7 'Jost',sans-serif;color:#3E4A6B"><span style="width:5px;height:5px;background:#C1934F;transform:rotate(45deg);flex:none;margin-top:9px"></span><span>Refines tone with kojic acid, never bleaching, never rebounding</span></div>
+<div style="display:flex;align-items:flex-start;gap:13px;font:300 15px/1.7 'Jost',sans-serif;color:#3E4A6B"><span style="width:5px;height:5px;background:#C1934F;transform:rotate(45deg);flex:none;margin-top:9px"></span><span>Balanced at pH 5.5 and sulfate free, so skin feels supple rather than stripped</span></div>
+<div style="display:flex;align-items:flex-start;gap:13px;font:300 15px/1.7 'Jost',sans-serif;color:#3E4A6B"><span style="width:5px;height:5px;background:#C1934F;transform:rotate(45deg);flex:none;margin-top:9px"></span><span>Niacinamide and hyaluronic acid remain behind to hydrate</span></div>
+</div>
+<div style="display:flex;align-items:center;gap:28px;padding-top:26px;border-top:1px solid rgba(22,41,91,.13)">
+<div><div style="font:500 30px/1 'Cormorant Garamond',serif;color:#16295B">$38</div><div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.13em;color:#8A8578;margin-top:8px">120 ML / 4.05 FL OZ</div></div>
+<a href="#1h" style="background:#16295B;color:#fff;text-decoration:none;padding:18px 38px;font:500 12.5px/1 'Jost',sans-serif;letter-spacing:.17em" style-hover="background:#0E1D42">ADD TO BAG</a>
+<a href="#1d" style="color:#16295B;text-decoration:none;font:400 12.5px/1 'Jost',sans-serif;letter-spacing:.13em;border-bottom:1px solid rgba(22,41,91,.33);padding-bottom:6px">FULL DETAILS</a>
+</div>
+</div>
+</div>
+
+<div style="background:#16295B;color:#fff;padding:84px 56px">
+<div style="text-align:center;margin-bottom:54px">
+<div style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.2em;color:#C8A876;margin-bottom:18px">WHAT&#39;S INSIDE</div>
+<h2 style="margin:0;font:500 42px/1.2 'Cormorant Garamond',serif">Three ingredients, doing their jobs.</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.16)">
+<div style="background:#16295B;padding:38px 34px">
+<div style="font:500 12.5px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C8A876;margin-bottom:22px">KOJIC ACID</div>
+<h3 style="margin:0 0 14px;font:500 27px/1.25 'Cormorant Garamond',serif">Interrupts the spot</h3>
+<p style="margin:0;font:300 14px/1.9 'Jost',sans-serif;color:rgba(255,255,255,.74)">Slows excess melanin at the source, so dark marks fade instead of being scrubbed away.</p>
+</div>
+<div style="background:#16295B;padding:38px 34px">
+<div style="font:500 12.5px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C8A876;margin-bottom:22px">NIACINAMIDE</div>
+<h3 style="margin:0 0 14px;font:500 27px/1.25 'Cormorant Garamond',serif">Keeps the barrier</h3>
+<p style="margin:0;font:300 14px/1.9 'Jost',sans-serif;color:rgba(255,255,255,.74)">Calms redness and reinforces the skin barrier , which is precisely why it is safe to use twice daily.</p>
+</div>
+<div style="background:#16295B;padding:38px 34px">
+<div style="font:500 12.5px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C8A876;margin-bottom:22px">HYALURONIC ACID</div>
+<h3 style="margin:0 0 14px;font:500 27px/1.25 'Cormorant Garamond',serif">Holds the water in</h3>
+<p style="margin:0;font:300 14px/1.9 'Jost',sans-serif;color:rgba(255,255,255,.74)">Keeps moisture in the upper layers, which is why skin feels cushioned after rinsing.</p>
+</div>
+</div>
+<div style="text-align:center;margin-top:46px"><a href="#1e" style="color:#fff;text-decoration:none;font:400 12.5px/1 'Jost',sans-serif;letter-spacing:.15em;border-bottom:1px solid rgba(255,255,255,.42);padding-bottom:7px">SEE EVERY INGREDIENT WE USE</a></div>
+</div>
+
+<div style="background:#F5F1E9;padding:88px 56px;display:grid;grid-template-columns:1fr 1.15fr;gap:70px;align-items:center">
+<div style="aspect-ratio:4/5;background:repeating-linear-gradient(128deg,#E6DFD1 0 8px,#EFEAE0 8px 16px);display:flex;align-items:center;justify-content:center">
+<div style="font:400 10.5px/1.7 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:12px 16px;text-align:center">Founder portrait<br>4:5</div>
+</div>
+<div>
+<div style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.2em;color:#C1934F;margin-bottom:22px">A NOTE FROM THE FOUNDER</div>
+<p style="margin:0 0 26px;font:400 27px/1.55 'Cormorant Garamond',serif;color:#16295B;max-width:560px">&ldquo;I made this for the women in my family first: the ones who care for everyone else and leave themselves for last.&rdquo;</p>
+<p style="margin:0 0 20px;font:300 15px/1.95 'Jost',sans-serif;color:#3E4A6B;max-width:540px">Every brightening product I tried asked me to trade my barrier for a shade. So we composed the opposite: a formula that honors Filipino skin, proven in Filipino weather, made to be worn every day without apology.</p>
+<div style="width:58px;height:1px;background:#C1934F;margin:28px 0 18px"></div>
+<div style="font:400 11.5px/1.8 'Jost',sans-serif;letter-spacing:.14em;color:#8A8578">FOUNDER<br>FRONAVIE</div>
+</div>
+</div>
+
+<sc-if value="{{ showJournal }}" hint-placeholder-val="{{ true }}">
+<div style="background:#FBF9F5;padding:84px 56px">
+<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:44px">
+<h2 style="margin:0;font:500 40px/1.2 'Cormorant Garamond',serif;color:#16295B">From the Journal</h2>
+<a href="#1f" style="color:#16295B;text-decoration:none;font:400 12px/1 'Jost',sans-serif;letter-spacing:.15em;border-bottom:1px solid rgba(22,41,91,.33);padding-bottom:6px">READ EVERYTHING</a>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:30px">
+<a href="#1f" style="text-decoration:none">
+<div style="aspect-ratio:3/2;background:repeating-linear-gradient(128deg,#E6DFD1 0 8px,#EFEAE0 8px 16px);display:flex;align-items:center;justify-content:center;margin-bottom:20px"><div style="font:400 10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:9px 12px">Article image 3:2</div></div>
+<div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C1934F;margin-bottom:12px">INGREDIENTS &middot; 5 MIN</div>
+<h3 style="margin:0;font:500 24px/1.35 'Cormorant Garamond',serif;color:#16295B">What kojic acid truly does, and what it does not</h3>
+</a>
+<a href="#1f" style="text-decoration:none">
+<div style="aspect-ratio:3/2;background:repeating-linear-gradient(128deg,#E6DFD1 0 8px,#EFEAE0 8px 16px);display:flex;align-items:center;justify-content:center;margin-bottom:20px"><div style="font:400 10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:9px 12px">Article image 3:2</div></div>
+<div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C1934F;margin-bottom:12px">HERITAGE &middot; 4 MIN</div>
+<h3 style="margin:0;font:500 24px/1.35 'Cormorant Garamond',serif;color:#16295B">The rituals our grandmothers kept, refined for a modern routine</h3>
+</a>
+<a href="#1f" style="text-decoration:none">
+<div style="aspect-ratio:3/2;background:repeating-linear-gradient(128deg,#E6DFD1 0 8px,#EFEAE0 8px 16px);display:flex;align-items:center;justify-content:center;margin-bottom:20px"><div style="font:400 10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:9px 12px">Article image 3:2</div></div>
+<div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C1934F;margin-bottom:12px">EDUCATION &middot; 6 MIN</div>
+<h3 style="margin:0;font:500 24px/1.35 'Cormorant Garamond',serif;color:#16295B">Brightening is not bleaching, and the distinction matters</h3>
+</a>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ showFaq }}" hint-placeholder-val="{{ true }}">
+<div style="background:#F5F1E9;padding:84px 56px;display:grid;grid-template-columns:.85fr 1.4fr;gap:70px">
+<div>
+<h2 style="margin:0 0 16px;font:500 40px/1.2 'Cormorant Garamond',serif;color:#16295B">Good<br>questions</h2>
+<p style="margin:0 0 22px;font:300 14.5px/1.9 'Jost',sans-serif;color:#3E4A6B;max-width:270px">If yours isn&#39;t here, write to us. A person answers.</p>
+<a href="#1g" style="font:400 12px/1 'Jost',sans-serif;letter-spacing:.15em;color:#16295B;text-decoration:none;border-bottom:1px solid rgba(193,147,79,.7);padding-bottom:6px">ASK US ANYTHING</a>
+</div>
+<div style="display:flex;flex-direction:column">
+<div style="padding:26px 0;border-top:1px solid rgba(22,41,91,.16)">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin-bottom:14px"><h3 style="margin:0;font:500 22px/1.3 'Cormorant Garamond',serif;color:#16295B">Is brightening the same as skin whitening?</h3><span style="font:300 20px/1 'Jost',sans-serif;color:#C1934F">&minus;</span></div>
+<p style="margin:0;font:300 14.5px/1.9 'Jost',sans-serif;color:#3E4A6B;max-width:640px">No. Whitening tries to change your natural shade. Brightening evens out marks and dullness so your own tone reads clearer. Nothing in this formula lightens your baseline skin color.</p>
+</div>
+<div style="padding:26px 0;border-top:1px solid rgba(22,41,91,.16);display:flex;justify-content:space-between;align-items:baseline;gap:24px"><h3 style="margin:0;font:500 22px/1.3 'Cormorant Garamond',serif;color:#16295B">Can I use it twice a day?</h3><span style="font:300 20px/1 'Jost',sans-serif;color:#8A8578">+</span></div>
+<div style="padding:26px 0;border-top:1px solid rgba(22,41,91,.16);display:flex;justify-content:space-between;align-items:baseline;gap:24px"><h3 style="margin:0;font:500 22px/1.3 'Cormorant Garamond',serif;color:#16295B">How long before I see a difference?</h3><span style="font:300 20px/1 'Jost',sans-serif;color:#8A8578">+</span></div>
+<div style="padding:26px 0;border-top:1px solid rgba(22,41,91,.16);display:flex;justify-content:space-between;align-items:baseline;gap:24px"><h3 style="margin:0;font:500 22px/1.3 'Cormorant Garamond',serif;color:#16295B">Is it safe for sensitive or pregnant skin?</h3><span style="font:300 20px/1 'Jost',sans-serif;color:#8A8578">+</span></div>
+<div style="padding:26px 0;border-top:1px solid rgba(22,41,91,.16);border-bottom:1px solid rgba(22,41,91,.16);display:flex;justify-content:space-between;align-items:baseline;gap:24px"><h3 style="margin:0;font:500 22px/1.3 'Cormorant Garamond',serif;color:#16295B">Do I still need sunscreen?</h3><span style="font:300 20px/1 'Jost',sans-serif;color:#8A8578">+</span></div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ showStockists }}" hint-placeholder-val="{{ true }}">
+<div style="background:#FBF9F5;padding:84px 56px;text-align:center">
+<div style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.2em;color:#C1934F;margin-bottom:18px">WHERE TO BUY</div>
+<h2 style="margin:0 0 14px;font:500 40px/1.2 'Cormorant Garamond',serif;color:#16295B">Order here, or find us elsewhere</h2>
+<p style="margin:0 auto 46px;font:300 15px/1.9 'Jost',sans-serif;color:#3E4A6B;max-width:480px">Shipping across the United States within two business days, and available through our official partner stores.</p>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(22,41,91,.13);border:1px solid rgba(22,41,91,.13)">
+<div style="background:#FBF9F5;padding:34px 22px;display:flex;flex-direction:column;gap:12px;align-items:center"><div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578">ONLINE</div><div style="font:500 21px/1.3 'Cormorant Garamond',serif;color:#16295B">fronavie.com</div><div style="font:300 12.5px/1.7 'Jost',sans-serif;color:#3E4A6B">Full range, first access</div></div>
+<div style="background:#FBF9F5;padding:34px 22px;display:flex;flex-direction:column;gap:12px;align-items:center"><div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578">MARKETPLACE</div><div style="font:500 21px/1.3 'Cormorant Garamond',serif;color:#16295B">Official store</div><div style="font:300 12.5px/1.7 'Jost',sans-serif;color:#3E4A6B">Verified seller badge</div></div>
+<div style="background:#FBF9F5;padding:34px 22px;display:flex;flex-direction:column;gap:12px;align-items:center"><div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578">RETAIL</div><div style="font:500 21px/1.3 'Cormorant Garamond',serif;color:#16295B">Partner counters</div><div style="font:300 12.5px/1.7 'Jost',sans-serif;color:#3E4A6B">New York and Los Angeles, from Q4</div></div>
+<div style="background:#FBF9F5;padding:34px 22px;display:flex;flex-direction:column;gap:12px;align-items:center"><div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578">CLINICS</div><div style="font:500 21px/1.3 'Cormorant Garamond',serif;color:#16295B">Derm partners</div><div style="font:300 12.5px/1.7 'Jost',sans-serif;color:#3E4A6B">Ask for us by name</div></div>
+</div>
+</div>
+</sc-if>
+
+<div style="background:#EAE6DE;padding:70px 56px;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center">
+<div>
+<h2 style="margin:0 0 12px;font:500 34px/1.25 'Cormorant Garamond',serif;color:#16295B">Ten percent off your first ritual</h2>
+<p style="margin:0;font:300 14.5px/1.85 'Jost',sans-serif;color:#3E4A6B;max-width:400px">Plus our honest guide to brightening safely. One letter a month, nothing else.</p>
+</div>
+<div style="display:flex;align-items:stretch">
+<div style="flex:1;background:#FBF9F5;border:1px solid rgba(22,41,91,.2);border-right:none;padding:18px 20px;font:300 14px/1 'Jost',sans-serif;color:#9A9588;display:flex;align-items:center">your@email.com</div>
+<div style="background:#16295B;color:#fff;padding:18px 36px;font:500 12.5px/1 'Jost',sans-serif;letter-spacing:.16em;display:flex;align-items:center">JOIN</div>
+</div>
+</div>
+
+<dc-import name="FronaVie Footer" hint-size="100%,420px"></dc-import>
+</div>
+</div>
+
+<div class="dv-opt" id="1b">
+<div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Our Story &middot; heritage without ornament</div>
+<div class="dv-card" style="width:1440px">
+<dc-import name="FronaVie Nav" active="OUR STORY" cart="{{ zero }}" hint-size="100%,120px"></dc-import>
+
+<div style="position:relative;height:480px;background:repeating-linear-gradient(128deg,#DCE0D2 0 8px,#E7E9DE 8px 16px);display:flex;align-items:center;justify-content:center">
+<div style="font:400 10.5px/1.7 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#75786A;background:rgba(255,255,255,.86);padding:12px 16px;text-align:center">Full-bleed landscape<br>rice terraces at dawn, 1440&times;480</div>
+<div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,41,91,.5) 0%,rgba(22,41,91,.12) 62%,transparent 100%)"></div>
+<div style="position:absolute;left:56px;bottom:56px;color:#fff;max-width:520px">
+<div style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.2em;color:#DCC9A6;margin-bottom:20px">OUR STORY</div>
+<h1 style="margin:0;font:500 62px/1.1 'Cormorant Garamond',serif">Care that honors<br>where it came from</h1>
+</div>
+</div>
+
+<div style="background:#F5F1E9;padding:88px 56px;display:grid;grid-template-columns:1fr 1.3fr;gap:80px">
+<div>
+<img src="assets/logo-flower.png" alt="" style="height:30px;width:auto;opacity:.55;margin-bottom:22px">
+<h2 style="margin:0;font:500 36px/1.25 'Cormorant Garamond',serif;color:#16295B">It started with the women who never went first.</h2>
+</div>
+<div>
+<p style="margin:0 0 22px;font:300 16.5px/1.95 'Jost',sans-serif;color:#3E4A6B">FronaVie began in a kitchen in Manila, with a question that had no good answer: why did every brightening product on the shelf ask you to damage your skin to be seen?</p>
+<p style="margin:0 0 22px;font:300 16.5px/1.95 'Jost',sans-serif;color:#3E4A6B">The women in our family had been mixing rice water, calamansi and coconut oil for generations, rituals that were gentle by instinct. What they never had was the science to make those rituals reliable. That is the gap we set out to close.</p>
+<p style="margin:0;font:300 16.5px/1.95 'Jost',sans-serif;color:#3E4A6B">So we work the way a good formulator and a good grandmother would agree on: ingredients chosen for what they do, in amounts that respect the barrier, proven in genuine heat and humidity, on the Filipino skin it was made for.</p>
+</div>
+</div>
+
+<div style="background:#FBF9F5;padding:0 56px 88px">
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px">
+<div style="aspect-ratio:3/4;background:repeating-linear-gradient(128deg,#E9E2D4 0 8px,#F2EDE3 8px 16px);display:flex;align-items:center;justify-content:center;margin-top:-44px"><div style="font:400 10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:9px 12px;text-align:center">Botanical detail<br>3:4</div></div>
+<div style="aspect-ratio:3/4;background:repeating-linear-gradient(128deg,#E9E2D4 0 8px,#F2EDE3 8px 16px);display:flex;align-items:center;justify-content:center"><div style="font:400 10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:9px 12px;text-align:center">Hands / ritual<br>3:4</div></div>
+<div style="aspect-ratio:3/4;background:repeating-linear-gradient(128deg,#E9E2D4 0 8px,#F2EDE3 8px 16px);display:flex;align-items:center;justify-content:center;margin-top:44px"><div style="font:400 10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:9px 12px;text-align:center">Lab / formulation<br>3:4</div></div>
+</div>
+</div>
+
+<div style="background:#16295B;color:#fff;padding:84px 56px">
+<h2 style="margin:0 0 54px;font:500 40px/1.2 'Cormorant Garamond',serif;text-align:center">What we hold ourselves to</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.16)">
+<div style="background:#16295B;padding:40px 34px"><div style="font:500 34px/1 'Cormorant Garamond',serif;color:#C8A876;margin-bottom:20px">01</div><h3 style="margin:0 0 12px;font:500 25px/1.3 'Cormorant Garamond',serif">Never strip to brighten</h3><p style="margin:0;font:300 14px/1.9 'Jost',sans-serif;color:rgba(255,255,255,.74)">If a formula only works by compromising the barrier, we do not ship it.</p></div>
+<div style="background:#16295B;padding:40px 34px"><div style="font:500 34px/1 'Cormorant Garamond',serif;color:#C8A876;margin-bottom:20px">02</div><h3 style="margin:0 0 12px;font:500 25px/1.3 'Cormorant Garamond',serif">Say the percentage</h3><p style="margin:0;font:300 14px/1.9 'Jost',sans-serif;color:rgba(255,255,255,.74)">Full concentrations on every label, and a plain-language reason for each one.</p></div>
+<div style="background:#16295B;padding:40px 34px"><div style="font:500 34px/1 'Cormorant Garamond',serif;color:#C8A876;margin-bottom:20px">03</div><h3 style="margin:0 0 12px;font:500 25px/1.3 'Cormorant Garamond',serif">Rooted where it began</h3><p style="margin:0;font:300 14px/1.9 'Jost',sans-serif;color:rgba(255,255,255,.74)">Composed with Filipino botanicals and rituals, made for skin wherever it is worn.</p></div>
+</div>
+</div>
+
+<div style="background:#F5F1E9;padding:88px 56px;text-align:center">
+<h2 style="margin:0 0 14px;font:500 38px/1.25 'Cormorant Garamond',serif;color:#16295B">Start with the cleanse</h2>
+<p style="margin:0 auto 32px;font:300 15px/1.9 'Jost',sans-serif;color:#3E4A6B;max-width:440px">One product, doing one job properly. The rest of the ritual follows this year.</p>
+<a href="#1c" style="display:inline-block;background:#16295B;color:#fff;text-decoration:none;padding:19px 42px;font:500 12.5px/1 'Jost',sans-serif;letter-spacing:.17em" style-hover="background:#0E1D42">SEE OUR SKINCARE</a>
+</div>
+
+<dc-import name="FronaVie Footer" hint-size="100%,420px"></dc-import>
+</div>
+</div>
+
+<div class="dv-opt" id="1c">
+<div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Our Skincare &middot; one live product, the range coming</div>
+<div class="dv-card" style="width:1440px">
+<dc-import name="FronaVie Nav" active="OUR SKINCARE" cart="{{ zero }}" hint-size="100%,120px"></dc-import>
+
+<div style="background:#F5F1E9;padding:66px 56px 56px;text-align:center">
+<div style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.19em;color:#8A8578;margin-bottom:22px"><a href="#1a" style="color:#8A8578;text-decoration:none">HOME</a> &nbsp;/&nbsp; OUR SKINCARE</div>
+<h1 style="margin:0 0 18px;font:500 54px/1.1 'Cormorant Garamond',serif;color:#16295B">Our Skincare</h1>
+<p style="margin:0 auto;font:300 16px/1.85 'Jost',sans-serif;color:#3E4A6B;max-width:520px">A short range, released in the order you would actually use it. We would rather ship one formula properly than four in a hurry.</p>
+</div>
+
+<div style="background:#FBF9F5;padding:24px 56px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(22,41,91,.1);border-bottom:1px solid rgba(22,41,91,.1)">
+<div style="display:flex;gap:9px">
+<span style="background:#16295B;color:#fff;padding:10px 20px;font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.14em">ALL</span>
+<span style="border:1px solid rgba(22,41,91,.22);color:#16295B;padding:10px 20px;font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.14em">CLEANSE</span>
+<span style="border:1px solid rgba(22,41,91,.22);color:#8A8578;padding:10px 20px;font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.14em">TREAT</span>
+<span style="border:1px solid rgba(22,41,91,.22);color:#8A8578;padding:10px 20px;font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.14em">MOISTURIZE</span>
+<span style="border:1px solid rgba(22,41,91,.22);color:#8A8578;padding:10px 20px;font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.14em">PROTECT</span>
+</div>
+<div style="display:flex;align-items:center;gap:26px;font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.13em;color:#3E4A6B"><span>1 AVAILABLE &middot; 3 COMING</span><span style="border-bottom:1px solid rgba(22,41,91,.28);padding-bottom:6px">SORT: FEATURED</span></div>
+</div>
+
+<div style="background:#FBF9F5;padding:56px;display:grid;grid-template-columns:1.6fr 1fr;gap:34px;align-items:start">
+<a href="#1d" style="text-decoration:none;display:block;background:#F5F1E9;padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center">
+<div style="position:relative;aspect-ratio:1/1;background:repeating-linear-gradient(128deg,#E9E2D4 0 8px,#F2EDE3 8px 16px);display:flex;align-items:center;justify-content:center">
+<div style="font:400 10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:9px 12px;text-align:center">Product shot 1:1</div>
+<span style="position:absolute;top:14px;left:14px;background:#16295B;color:#fff;padding:6px 12px;font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.15em">HERO</span>
+</div>
+<div>
+<div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C1934F;margin-bottom:14px">CLEANSE &middot; STEP 01</div>
+<h2 style="margin:0 0 14px;font:500 34px/1.2 'Cormorant Garamond',serif;color:#16295B">Kojic Brightening Cleansing Cream</h2>
+<p style="margin:0 0 22px;font:300 14.5px/1.85 'Jost',sans-serif;color:#3E4A6B">Non-foaming, pH 5.5. Lifts sunscreen and city air from the skin in thirty seconds without stripping.</p>
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:26px;font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.1em;color:#8A8578"><span style="color:#C1934F">&#9670;&#9670;&#9670;&#9670;&#9670;</span> 128 REVIEWS</div>
+<div style="display:flex;align-items:center;gap:22px;padding-top:20px;border-top:1px solid rgba(22,41,91,.13)">
+<span style="font:500 26px/1 'Cormorant Garamond',serif;color:#16295B">$38</span>
+<span style="background:#16295B;color:#fff;padding:15px 30px;font:500 12px/1 'Jost',sans-serif;letter-spacing:.16em">ADD TO BAG</span>
+<span style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.12em;color:#8A8578">120 ML</span>
+</div>
+</div>
+</a>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="border:1px solid rgba(22,41,91,.14);padding:26px;display:flex;gap:22px;align-items:center;background:#FBF9F5">
+<div style="width:88px;height:88px;flex:none;background:repeating-linear-gradient(128deg,#EAE4D8 0 6px,#F3EFE7 6px 12px)"></div>
+<div><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.17em;color:#8A8578;margin-bottom:10px">TREAT &middot; COMING SOON</div><h3 style="margin:0 0 8px;font:500 21px/1.25 'Cormorant Garamond',serif;color:#16295B">Niacinamide Radiance Serum</h3><span style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.12em;color:#C1934F;border-bottom:1px solid rgba(193,147,79,.6);padding-bottom:4px">NOTIFY ME</span></div>
+</div>
+<div style="border:1px solid rgba(22,41,91,.14);padding:26px;display:flex;gap:22px;align-items:center;background:#FBF9F5">
+<div style="width:88px;height:88px;flex:none;background:repeating-linear-gradient(128deg,#EAE4D8 0 6px,#F3EFE7 6px 12px)"></div>
+<div><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.17em;color:#8A8578;margin-bottom:10px">MOISTURIZE &middot; COMING SOON</div><h3 style="margin:0 0 8px;font:500 21px/1.25 'Cormorant Garamond',serif;color:#16295B">Barrier Repair Moisturizer</h3><span style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.12em;color:#C1934F;border-bottom:1px solid rgba(193,147,79,.6);padding-bottom:4px">NOTIFY ME</span></div>
+</div>
+<div style="border:1px solid rgba(22,41,91,.14);padding:26px;display:flex;gap:22px;align-items:center;background:#FBF9F5">
+<div style="width:88px;height:88px;flex:none;background:repeating-linear-gradient(128deg,#EAE4D8 0 6px,#F3EFE7 6px 12px)"></div>
+<div><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.17em;color:#8A8578;margin-bottom:10px">PROTECT &middot; COMING SOON</div><h3 style="margin:0 0 8px;font:500 21px/1.25 'Cormorant Garamond',serif;color:#16295B">Daily Sunscreen SPF 50</h3><span style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.12em;color:#C1934F;border-bottom:1px solid rgba(193,147,79,.6);padding-bottom:4px">NOTIFY ME</span></div>
+</div>
+</div>
+</div>
+
+<div style="background:#EAE6DE;padding:60px 56px;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center">
+<div><h2 style="margin:0 0 12px;font:500 32px/1.25 'Cormorant Garamond',serif;color:#16295B">Be first when the serum lands</h2><p style="margin:0;font:300 14.5px/1.85 'Jost',sans-serif;color:#3E4A6B;max-width:400px">We tell our list two weeks before anyone else, and the first batch is always small.</p></div>
+<div style="display:flex;align-items:stretch"><div style="flex:1;background:#FBF9F5;border:1px solid rgba(22,41,91,.2);border-right:none;padding:18px 20px;font:300 14px/1 'Jost',sans-serif;color:#9A9588;display:flex;align-items:center">your@email.com</div><div style="background:#16295B;color:#fff;padding:18px 36px;font:500 12.5px/1 'Jost',sans-serif;letter-spacing:.16em;display:flex;align-items:center">NOTIFY ME</div></div>
+</div>
+
+<dc-import name="FronaVie Footer" hint-size="100%,420px"></dc-import>
+</div>
+</div>
+
+<div class="dv-opt" id="1d">
+<div class="dv-olabel"><a class="dv-oid" href="#1d">1d</a>Product detail &middot; the buy box, concerns, ingredients, reviews</div>
+<div class="dv-card" style="width:1440px">
+<dc-import name="FronaVie Nav" active="OUR SKINCARE" cart="{{ zero }}" hint-size="100%,120px"></dc-import>
+
+<div style="background:#F5F1E9;padding:26px 56px;font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.13em;color:#8A8578"><a href="#1a" style="color:#8A8578;text-decoration:none">HOME</a> &nbsp;/&nbsp; <a href="#1c" style="color:#8A8578;text-decoration:none">OUR SKINCARE</a> &nbsp;/&nbsp; <span style="color:#16295B">KOJIC BRIGHTENING CLEANSING CREAM</span></div>
+
+<div style="background:#F5F1E9;padding:0 56px 80px;display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:start">
+<div style="display:flex;gap:18px">
+<div style="display:flex;flex-direction:column;gap:14px;flex:none">
+<div style="width:80px;height:96px;background:repeating-linear-gradient(128deg,#E9E2D4 0 6px,#F2EDE3 6px 12px);border:1.5px solid #16295B"></div>
+<div style="width:80px;height:96px;background:repeating-linear-gradient(128deg,#E9E2D4 0 6px,#F2EDE3 6px 12px)"></div>
+<div style="width:80px;height:96px;background:repeating-linear-gradient(128deg,#E9E2D4 0 6px,#F2EDE3 6px 12px)"></div>
+<div style="width:80px;height:96px;background:repeating-linear-gradient(128deg,#E9E2D4 0 6px,#F2EDE3 6px 12px)"></div>
+</div>
+<div style="flex:1;aspect-ratio:4/5;background:repeating-linear-gradient(128deg,#E9E2D4 0 8px,#F2EDE3 8px 16px);display:flex;align-items:center;justify-content:center"><div style="font:400 10.5px/1.7 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:12px 16px;text-align:center">Primary product image<br>4:5 &middot; zoom on hover</div></div>
+</div>
+<div style="padding-top:8px">
+<div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.19em;color:#C1934F;margin-bottom:18px">CLEANSE &middot; STEP 01</div>
+<h1 style="margin:0 0 16px;font:500 46px/1.12 'Cormorant Garamond',serif;color:#16295B">Kojic Brightening Cleansing Cream</h1>
+<div style="display:flex;align-items:center;gap:14px;margin-bottom:24px;font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.1em;color:#8A8578"><span style="color:#C1934F;font-size:12px">&#9670;&#9670;&#9670;&#9670;&#9670;</span> 4.8 &middot; 128 REVIEWS</div>
+<p style="margin:0 0 30px;font:300 16px/1.9 'Jost',sans-serif;color:#3E4A6B;max-width:470px">A creamy, non-foaming cleanser that lifts sunscreen, sweat and city air off the skin in thirty seconds, and leaves the barrier exactly where it found it.</p>
+
+<div style="display:flex;gap:10px;margin-bottom:30px">
+<span style="border:1px solid rgba(22,41,91,.2);padding:9px 15px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.13em;color:#16295B">pH 5.5</span>
+<span style="border:1px solid rgba(22,41,91,.2);padding:9px 15px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.13em;color:#16295B">SULFATE-FREE</span>
+<span style="border:1px solid rgba(22,41,91,.2);padding:9px 15px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.13em;color:#16295B">FRAGRANCE: LOW</span>
+<span style="border:1px solid rgba(22,41,91,.2);padding:9px 15px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.13em;color:#16295B">AM + PM</span>
+</div>
+
+<div style="border-top:1px solid rgba(22,41,91,.14);padding-top:26px">
+<div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578;margin-bottom:14px">SIZE</div>
+<div style="display:flex;gap:12px;margin-bottom:28px">
+<div style="border:1.5px solid #16295B;padding:14px 22px;display:flex;flex-direction:column;gap:6px;background:#fff"><span style="font:400 13px/1 'Jost',sans-serif;color:#16295B">120 ml</span><span style="font:400 11px/1 'Jost',sans-serif;color:#8A8578">$38</span></div>
+<div style="border:1px solid rgba(22,41,91,.2);padding:14px 22px;display:flex;flex-direction:column;gap:6px"><span style="font:400 13px/1 'Jost',sans-serif;color:#16295B">120 ml &times; 2</span><span style="font:400 11px/1 'Jost',sans-serif;color:#8A8578">$72 &middot; save 5%</span></div>
+</div>
+<div style="display:flex;gap:14px;align-items:stretch;margin-bottom:16px">
+<div style="border:1px solid rgba(22,41,91,.22);display:flex;align-items:center;gap:20px;padding:0 18px;font:400 15px/1 'Jost',sans-serif;color:#16295B"><span style="cursor:pointer;color:#8A8578">&minus;</span><span>1</span><span style="cursor:pointer">+</span></div>
+<a href="#1h" style="flex:1;background:#16295B;color:#fff;text-decoration:none;padding:20px 0;text-align:center;font:500 12.5px/1 'Jost',sans-serif;letter-spacing:.17em" style-hover="background:#0E1D42">ADD TO BAG &middot; $38</a>
+</div>
+<div style="font:300 12.5px/1.8 'Jost',sans-serif;color:#8A8578">Complimentary shipping across the United States over $50 &middot; Dispatched within two business days</div>
+</div>
+
+<div style="margin-top:34px;border-top:1px solid rgba(22,41,91,.14)">
+<div style="padding:22px 0;border-bottom:1px solid rgba(22,41,91,.1)">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px"><span style="font:400 12px/1 'Jost',sans-serif;letter-spacing:.15em;color:#16295B">HOW TO USE</span><span style="font:300 18px/1 'Jost',sans-serif;color:#C1934F">&minus;</span></div>
+<p style="margin:0;font:300 14px/1.9 'Jost',sans-serif;color:#3E4A6B;max-width:470px">Warm a coin-sized amount in dry hands, massage over damp skin for thirty seconds, rinse with lukewarm water. Morning and night. Follow with moisturizer, and sunscreen in the morning.</p>
+</div>
+<div style="padding:22px 0;border-bottom:1px solid rgba(22,41,91,.1);display:flex;justify-content:space-between;align-items:center"><span style="font:400 12px/1 'Jost',sans-serif;letter-spacing:.15em;color:#16295B">FULL INGREDIENT LIST</span><span style="font:300 18px/1 'Jost',sans-serif;color:#8A8578">+</span></div>
+<div style="padding:22px 0;border-bottom:1px solid rgba(22,41,91,.1);display:flex;justify-content:space-between;align-items:center"><span style="font:400 12px/1 'Jost',sans-serif;letter-spacing:.15em;color:#16295B">SHIPPING &amp; RETURNS</span><span style="font:300 18px/1 'Jost',sans-serif;color:#8A8578">+</span></div>
+</div>
+</div>
+</div>
+
+<div style="background:#FBF9F5;padding:80px 56px">
+<div style="text-align:center;margin-bottom:54px"><div style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.2em;color:#C1934F;margin-bottom:16px">WHAT IT WORKS ON</div><h2 style="margin:0;font:500 38px/1.2 'Cormorant Garamond',serif;color:#16295B">Concerns this was built for</h2></div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(22,41,91,.12);border:1px solid rgba(22,41,91,.12)">
+<div style="background:#FBF9F5;padding:34px 26px"><div style="font:500 12px/1 'Jost',sans-serif;letter-spacing:.15em;color:#C1934F;margin-bottom:16px">01</div><h3 style="margin:0 0 10px;font:500 21px/1.3 'Cormorant Garamond',serif;color:#16295B">Uneven tone</h3><p style="margin:0;font:300 13px/1.85 'Jost',sans-serif;color:#3E4A6B">Post-acne marks and patchiness from sun exposure.</p></div>
+<div style="background:#FBF9F5;padding:34px 26px"><div style="font:500 12px/1 'Jost',sans-serif;letter-spacing:.15em;color:#C1934F;margin-bottom:16px">02</div><h3 style="margin:0 0 10px;font:500 21px/1.3 'Cormorant Garamond',serif;color:#16295B">Dullness</h3><p style="margin:0;font:300 13px/1.85 'Jost',sans-serif;color:#3E4A6B">Skin that looks tired even when you are not.</p></div>
+<div style="background:#FBF9F5;padding:34px 26px"><div style="font:500 12px/1 'Jost',sans-serif;letter-spacing:.15em;color:#C1934F;margin-bottom:16px">03</div><h3 style="margin:0 0 10px;font:500 21px/1.3 'Cormorant Garamond',serif;color:#16295B">Tightness after washing</h3><p style="margin:0;font:300 13px/1.85 'Jost',sans-serif;color:#3E4A6B">The squeaky feeling that means your barrier just took a hit.</p></div>
+<div style="background:#FBF9F5;padding:34px 26px"><div style="font:500 12px/1 'Jost',sans-serif;letter-spacing:.15em;color:#C1934F;margin-bottom:16px">04</div><h3 style="margin:0 0 10px;font:500 21px/1.3 'Cormorant Garamond',serif;color:#16295B">Sunscreen residue</h3><p style="margin:0;font:300 13px/1.85 'Jost',sans-serif;color:#3E4A6B">Heavy SPF that a foaming wash never fully removes.</p></div>
+</div>
+</div>
+
+<div style="background:#16295B;color:#fff;padding:80px 56px;display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:center">
+<div>
+<div style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.2em;color:#C8A876;margin-bottom:18px">THE FORMULA</div>
+<h2 style="margin:0 0 18px;font:500 38px/1.22 'Cormorant Garamond',serif">Nothing in here is decoration</h2>
+<p style="margin:0;font:300 14.5px/1.9 'Jost',sans-serif;color:rgba(255,255,255,.74);max-width:330px">Every active is listed with its concentration. Everything else is there to carry it, or to keep the skin comfortable while it works.</p>
+<a href="#1e" style="display:inline-block;margin-top:26px;color:#fff;text-decoration:none;font:400 12px/1 'Jost',sans-serif;letter-spacing:.15em;border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:6px">INGREDIENT GLOSSARY</a>
+</div>
+<div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.18)"><span style="font:400 18px/1.3 'Cormorant Garamond',serif">Kojic Acid</span><span style="font:300 13px/1 'Jost',sans-serif;color:rgba(255,255,255,.7)">brightening &middot; 2%</span></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.18)"><span style="font:400 18px/1.3 'Cormorant Garamond',serif">Niacinamide</span><span style="font:300 13px/1 'Jost',sans-serif;color:rgba(255,255,255,.7)">barrier &middot; 4%</span></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.18)"><span style="font:400 18px/1.3 'Cormorant Garamond',serif">Sodium Hyaluronate</span><span style="font:300 13px/1 'Jost',sans-serif;color:rgba(255,255,255,.7)">hydration &middot; 1%</span></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.18)"><span style="font:400 18px/1.3 'Cormorant Garamond',serif">Glycerin &amp; Coconut Esters</span><span style="font:300 13px/1 'Jost',sans-serif;color:rgba(255,255,255,.7)">gentle cleansing base</span></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;padding:20px 0"><span style="font:400 18px/1.3 'Cormorant Garamond',serif">Sampaguita Extract</span><span style="font:300 13px/1 'Jost',sans-serif;color:rgba(255,255,255,.7)">scent &middot; trace</span></div>
+</div>
+</div>
+
+<div style="background:#F5F1E9;padding:80px 56px">
+<div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:44px">
+<div><h2 style="margin:0 0 14px;font:500 38px/1.2 'Cormorant Garamond',serif;color:#16295B">128 reviews</h2><div style="display:flex;align-items:center;gap:12px;font:400 12px/1 'Jost',sans-serif;letter-spacing:.1em;color:#8A8578"><span style="color:#C1934F;font-size:13px">&#9670;&#9670;&#9670;&#9670;&#9670;</span> 4.8 AVERAGE &middot; 94% WOULD REPURCHASE</div></div>
+<span style="border:1px solid rgba(22,41,91,.25);padding:14px 26px;font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B">WRITE A REVIEW</span>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px">
+<div style="background:#FBF9F5;padding:34px 30px;display:flex;flex-direction:column;gap:18px"><span style="color:#C1934F;font-size:12px">&#9670;&#9670;&#9670;&#9670;&#9670;</span><p style="margin:0;font:400 17px/1.7 'Cormorant Garamond',serif;color:#16295B">&ldquo;My skin looks even for the first time in years, and it never feels tight after washing.&rdquo;</p><div style="margin-top:auto;font:400 10.5px/1.8 'Jost',sans-serif;letter-spacing:.13em;color:#8A8578">MARICEL D., 41 &middot; DALY CITY, CA<br>COMBINATION SKIN</div></div>
+<div style="background:#FBF9F5;padding:34px 30px;display:flex;flex-direction:column;gap:18px"><span style="color:#C1934F;font-size:12px">&#9670;&#9670;&#9670;&#9670;&#9670;</span><p style="margin:0;font:400 17px/1.7 'Cormorant Garamond',serif;color:#16295B">&ldquo;I use it before night shift and after. Gentle enough that my barrier finally calmed down.&rdquo;</p><div style="margin-top:auto;font:400 10.5px/1.8 'Jost',sans-serif;letter-spacing:.13em;color:#8A8578">JOY A., 34 &middot; JERSEY CITY, NJ<br>SENSITIVE SKIN</div></div>
+<div style="background:#FBF9F5;padding:34px 30px;display:flex;flex-direction:column;gap:18px"><span style="color:#C1934F;font-size:12px">&#9670;&#9670;&#9670;&#9670;&#9670;</span><p style="margin:0;font:400 17px/1.7 'Cormorant Garamond',serif;color:#16295B">&ldquo;Takes off my SPF properly and smells faintly of sampaguita. Thirty seconds is all I have.&rdquo;</p><div style="margin-top:auto;font:400 10.5px/1.8 'Jost',sans-serif;letter-spacing:.13em;color:#8A8578">BETH R., 47 &middot; HOUSTON, TX<br>DRY SKIN</div></div>
+</div>
+</div>
+
+<dc-import name="FronaVie Footer" hint-size="100%,420px"></dc-import>
+</div>
+</div>
+
+<div class="dv-opt" id="1e">
+<div class="dv-olabel"><a class="dv-oid" href="#1e">1e</a>Ingredients &middot; the trust page</div>
+<div class="dv-card" style="width:1440px">
+<dc-import name="FronaVie Nav" active="INGREDIENTS" cart="{{ zero }}" hint-size="100%,120px"></dc-import>
+
+<div style="background:#F5F1E9;padding:66px 56px 58px;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end">
+<div>
+<div style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.19em;color:#C1934F;margin-bottom:22px">INGREDIENTS</div>
+<h1 style="margin:0 0 20px;font:500 54px/1.1 'Cormorant Garamond',serif;color:#16295B">We will always<br>tell you why</h1>
+<p style="margin:0;font:300 16px/1.9 'Jost',sans-serif;color:#3E4A6B;max-width:440px">Concentrations, sources and the reason each ingredient is in the bottle. If we cannot explain it plainly, it does not belong in the formula.</p>
+</div>
+<div style="display:flex;gap:34px">
+<div><div style="font:500 44px/1 'Cormorant Garamond',serif;color:#16295B">14</div><div style="font:400 10.5px/1.7 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-top:10px">INGREDIENTS<br>TOTAL</div></div>
+<div><div style="font:500 44px/1 'Cormorant Garamond',serif;color:#16295B">3</div><div style="font:400 10.5px/1.7 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-top:10px">ACTIVES,<br>DISCLOSED</div></div>
+<div><div style="font:500 44px/1 'Cormorant Garamond',serif;color:#16295B">0</div><div style="font:400 10.5px/1.7 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-top:10px">HYDROQUINONE<br>OR MERCURY</div></div>
+</div>
+</div>
+
+<div style="background:#FBF9F5;padding:70px 56px">
+<h2 style="margin:0 0 40px;font:500 32px/1.2 'Cormorant Garamond',serif;color:#16295B">The actives</h2>
+<div style="display:flex;flex-direction:column">
+<div style="display:grid;grid-template-columns:180px 1fr 1.4fr;gap:34px;padding:32px 0;border-top:1px solid rgba(22,41,91,.14);align-items:start">
+<div style="aspect-ratio:1/1;background:repeating-linear-gradient(128deg,#E9E2D4 0 7px,#F2EDE3 7px 14px);display:flex;align-items:center;justify-content:center"><span style="font:400 9px/1.5 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:7px 9px;text-align:center">Ingredient<br>macro</span></div>
+<div><h3 style="margin:0 0 10px;font:500 26px/1.25 'Cormorant Garamond',serif;color:#16295B">Kojic Acid</h3><div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.15em;color:#C1934F;margin-bottom:14px">2% &middot; FROM RICE FERMENTATION</div><p style="margin:0;font:300 13.5px/1.85 'Jost',sans-serif;color:#3E4A6B">A by-product of fermented rice, the same tradition behind heirloom rice water rinses.</p></div>
+<div><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578;margin-bottom:14px">WHAT IT DOES</div><p style="margin:0 0 16px;font:300 14px/1.9 'Jost',sans-serif;color:#3E4A6B">Slows tyrosinase, the enzyme that triggers excess melanin. Existing marks fade as skin renews; your natural tone is untouched.</p><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578;margin-bottom:10px">WHAT IT WILL NOT DO</div><p style="margin:0;font:300 14px/1.9 'Jost',sans-serif;color:#3E4A6B">It will not bleach skin, and it cannot outpace sun exposure, so sunscreen is never optional.</p></div>
+</div>
+<div style="display:grid;grid-template-columns:180px 1fr 1.4fr;gap:34px;padding:32px 0;border-top:1px solid rgba(22,41,91,.14);align-items:start">
+<div style="aspect-ratio:1/1;background:repeating-linear-gradient(128deg,#E9E2D4 0 7px,#F2EDE3 7px 14px);display:flex;align-items:center;justify-content:center"><span style="font:400 9px/1.5 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:7px 9px;text-align:center">Ingredient<br>macro</span></div>
+<div><h3 style="margin:0 0 10px;font:500 26px/1.25 'Cormorant Garamond',serif;color:#16295B">Niacinamide</h3><div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.15em;color:#C1934F;margin-bottom:14px">4% &middot; VITAMIN B3</div><p style="margin:0;font:300 13.5px/1.85 'Jost',sans-serif;color:#3E4A6B">The best-studied barrier ingredient in modern skincare.</p></div>
+<div><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578;margin-bottom:14px">WHAT IT DOES</div><p style="margin:0 0 16px;font:300 14px/1.9 'Jost',sans-serif;color:#3E4A6B">Supports ceramide production and calms redness, so a brightening routine can be used daily without irritation building up.</p><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578;margin-bottom:10px">WHAT IT WILL NOT DO</div><p style="margin:0;font:300 14px/1.9 'Jost',sans-serif;color:#3E4A6B">It is not an exfoliant, , and 4% is deliberate: higher is not gentler.</p></div>
+</div>
+<div style="display:grid;grid-template-columns:180px 1fr 1.4fr;gap:34px;padding:32px 0;border-top:1px solid rgba(22,41,91,.14);border-bottom:1px solid rgba(22,41,91,.14);align-items:start">
+<div style="aspect-ratio:1/1;background:repeating-linear-gradient(128deg,#E9E2D4 0 7px,#F2EDE3 7px 14px);display:flex;align-items:center;justify-content:center"><span style="font:400 9px/1.5 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:7px 9px;text-align:center">Ingredient<br>macro</span></div>
+<div><h3 style="margin:0 0 10px;font:500 26px/1.25 'Cormorant Garamond',serif;color:#16295B">Sodium Hyaluronate</h3><div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.15em;color:#C1934F;margin-bottom:14px">1% &middot; LOW MOLECULAR WEIGHT</div><p style="margin:0;font:300 13.5px/1.85 'Jost',sans-serif;color:#3E4A6B">The salt form of hyaluronic acid: smaller, and far better suited to a rinse off.</p></div>
+<div><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578;margin-bottom:14px">WHAT IT DOES</div><p style="margin:0 0 16px;font:300 14px/1.9 'Jost',sans-serif;color:#3E4A6B">Holds water in the upper layers of skin so the face feels cushioned, not tight, after rinsing.</p><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578;margin-bottom:10px">WHAT IT WILL NOT DO</div><p style="margin:0;font:300 14px/1.9 'Jost',sans-serif;color:#3E4A6B">It does not replace a moisturizer in humid weather, or in air conditioning.</p></div>
+</div>
+</div>
+</div>
+
+<div style="background:#16295B;color:#fff;padding:76px 56px;display:grid;grid-template-columns:1fr 1.5fr;gap:64px">
+<div><h2 style="margin:0 0 16px;font:500 36px/1.22 'Cormorant Garamond',serif">What we leave out</h2><p style="margin:0;font:300 14.5px/1.9 'Jost',sans-serif;color:rgba(255,255,255,.72);max-width:290px">Not because an exclusion list flatters us, but because these are the shortcuts the brightening category is known for.</p></div>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.16);align-self:start">
+<div style="background:#16295B;padding:26px 28px"><div style="font:400 16px/1.3 'Cormorant Garamond',serif;margin-bottom:8px">Hydroquinone</div><div style="font:300 12.5px/1.7 'Jost',sans-serif;color:rgba(255,255,255,.66)">Prescription territory, with rebound risk</div></div>
+<div style="background:#16295B;padding:26px 28px"><div style="font:400 16px/1.3 'Cormorant Garamond',serif;margin-bottom:8px">Mercury compounds</div><div style="font:300 12.5px/1.7 'Jost',sans-serif;color:rgba(255,255,255,.66)">Banned, and still in circulation</div></div>
+<div style="background:#16295B;padding:26px 28px"><div style="font:400 16px/1.3 'Cormorant Garamond',serif;margin-bottom:8px">SLS &amp; SLES</div><div style="font:300 12.5px/1.7 'Jost',sans-serif;color:rgba(255,255,255,.66)">The origin of that squeaking finish</div></div>
+<div style="background:#16295B;padding:26px 28px"><div style="font:400 16px/1.3 'Cormorant Garamond',serif;margin-bottom:8px">Parabens</div><div style="font:300 12.5px/1.7 'Jost',sans-serif;color:rgba(255,255,255,.66)">Gentler preservatives perform as well</div></div>
+<div style="background:#16295B;padding:26px 28px"><div style="font:400 16px/1.3 'Cormorant Garamond',serif;margin-bottom:8px">Denatured alcohol</div><div style="font:300 12.5px/1.7 'Jost',sans-serif;color:rgba(255,255,255,.66)">A fast finish, and slow damage</div></div>
+<div style="background:#16295B;padding:26px 28px"><div style="font:400 16px/1.3 'Cormorant Garamond',serif;margin-bottom:8px">Heavy fragrance</div><div style="font:300 12.5px/1.7 'Jost',sans-serif;color:rgba(255,255,255,.66)">A whisper of sampaguita, nothing more</div></div>
+</div>
+</div>
+
+<dc-import name="FronaVie Footer" hint-size="100%,420px"></dc-import>
+</div>
+</div>
+
+<div class="dv-opt" id="1f">
+<div class="dv-olabel"><a class="dv-oid" href="#1f">1f</a>Journal &middot; index with featured piece</div>
+<div class="dv-card" style="width:1440px">
+<dc-import name="FronaVie Nav" active="JOURNAL" cart="{{ zero }}" hint-size="100%,120px"></dc-import>
+
+<div style="background:#F5F1E9;padding:62px 56px 46px;text-align:center">
+<div style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.19em;color:#C1934F;margin-bottom:20px">THE JOURNAL</div>
+<h1 style="margin:0 0 16px;font:500 52px/1.1 'Cormorant Garamond',serif;color:#16295B">Knowledge, not marketing</h1>
+<p style="margin:0 auto;font:300 15.5px/1.9 'Jost',sans-serif;color:#3E4A6B;max-width:500px">Plain answers about brightening, barriers and the rituals we grew up with, written by the people who compose the formulas.</p>
+<div style="display:flex;gap:9px;justify-content:center;margin-top:34px">
+<span style="background:#16295B;color:#fff;padding:9px 19px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em">ALL</span>
+<span style="border:1px solid rgba(22,41,91,.22);padding:9px 19px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B">INGREDIENTS</span>
+<span style="border:1px solid rgba(22,41,91,.22);padding:9px 19px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B">HERITAGE</span>
+<span style="border:1px solid rgba(22,41,91,.22);padding:9px 19px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B">ROUTINES</span>
+<span style="border:1px solid rgba(22,41,91,.22);padding:9px 19px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B">MYTHS</span>
+</div>
+</div>
+
+<div style="background:#F5F1E9;padding:0 56px 62px">
+<a href="#1f" style="text-decoration:none;display:grid;grid-template-columns:1.25fr 1fr;gap:0;background:#FBF9F5">
+<div style="aspect-ratio:16/10;background:repeating-linear-gradient(128deg,#E6DFD1 0 8px,#EFEAE0 8px 16px);display:flex;align-items:center;justify-content:center"><div style="font:400 10.5px/1.7 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:12px 16px;text-align:center">Featured article image<br>16:10</div></div>
+<div style="padding:54px 48px;display:flex;flex-direction:column;justify-content:center">
+<div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C1934F;margin-bottom:18px">MYTHS &middot; 7 MIN &middot; FEATURED</div>
+<h2 style="margin:0 0 18px;font:500 38px/1.22 'Cormorant Garamond',serif;color:#16295B">Brightening is not bleaching. Here is the difference.</h2>
+<p style="margin:0 0 26px;font:300 15px/1.9 'Jost',sans-serif;color:#3E4A6B">One evens out what the sun and old breakouts left behind. The other tries to change the skin you were born with. Only one of them is skincare.</p>
+<span style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B;border-bottom:1px solid rgba(193,147,79,.7);padding-bottom:6px;align-self:flex-start">READ THE ARTICLE</span>
+</div>
+</a>
+</div>
+
+<div style="background:#FBF9F5;padding:62px 56px">
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:34px 30px">
+<a href="#1f" style="text-decoration:none"><div style="aspect-ratio:3/2;background:repeating-linear-gradient(128deg,#E6DFD1 0 8px,#EFEAE0 8px 16px);display:flex;align-items:center;justify-content:center;margin-bottom:20px"><div style="font:400 10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:9px 12px">Article image</div></div><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C1934F;margin-bottom:12px">INGREDIENTS &middot; 5 MIN</div><h3 style="margin:0 0 10px;font:500 23px/1.35 'Cormorant Garamond',serif;color:#16295B">What kojic acid truly does, and what it does not</h3><p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:#3E4A6B">Where it comes from, how fast it works, and why patience beats percentage.</p></a>
+<a href="#1f" style="text-decoration:none"><div style="aspect-ratio:3/2;background:repeating-linear-gradient(128deg,#E6DFD1 0 8px,#EFEAE0 8px 16px);display:flex;align-items:center;justify-content:center;margin-bottom:20px"><div style="font:400 10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:9px 12px">Article image</div></div><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C1934F;margin-bottom:12px">HERITAGE &middot; 4 MIN</div><h3 style="margin:0 0 10px;font:500 23px/1.35 'Cormorant Garamond',serif;color:#16295B">The rituals our grandmothers kept, refined for a modern routine</h3><p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:#3E4A6B">Rice water, calamansi, coconut oil: what holds up and what to leave behind.</p></a>
+<a href="#1f" style="text-decoration:none"><div style="aspect-ratio:3/2;background:repeating-linear-gradient(128deg,#E6DFD1 0 8px,#EFEAE0 8px 16px);display:flex;align-items:center;justify-content:center;margin-bottom:20px"><div style="font:400 10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:9px 12px">Article image</div></div><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C1934F;margin-bottom:12px">ROUTINES &middot; 6 MIN</div><h3 style="margin:0 0 10px;font:500 23px/1.35 'Cormorant Garamond',serif;color:#16295B">A four-step routine for humid climates</h3><p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:#3E4A6B">Humidity changes everything. Build the routine around it, not against it.</p></a>
+<a href="#1f" style="text-decoration:none"><div style="aspect-ratio:3/2;background:repeating-linear-gradient(128deg,#E6DFD1 0 8px,#EFEAE0 8px 16px);display:flex;align-items:center;justify-content:center;margin-bottom:20px"><div style="font:400 10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:9px 12px">Article image</div></div><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C1934F;margin-bottom:12px">INGREDIENTS &middot; 4 MIN</div><h3 style="margin:0 0 10px;font:500 23px/1.35 'Cormorant Garamond',serif;color:#16295B">Why pH 5.5 matters more than lather</h3><p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:#3E4A6B">The squeaky-clean feeling is a warning sign, not a result.</p></a>
+<a href="#1f" style="text-decoration:none"><div style="aspect-ratio:3/2;background:repeating-linear-gradient(128deg,#E6DFD1 0 8px,#EFEAE0 8px 16px);display:flex;align-items:center;justify-content:center;margin-bottom:20px"><div style="font:400 10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:9px 12px">Article image</div></div><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C1934F;margin-bottom:12px">MYTHS &middot; 5 MIN</div><h3 style="margin:0 0 10px;font:500 23px/1.35 'Cormorant Garamond',serif;color:#16295B">Five brightening claims to walk away from</h3><p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:#3E4A6B">If a label promises a shade in a week, read the ingredient list twice.</p></a>
+<a href="#1f" style="text-decoration:none"><div style="aspect-ratio:3/2;background:repeating-linear-gradient(128deg,#E6DFD1 0 8px,#EFEAE0 8px 16px);display:flex;align-items:center;justify-content:center;margin-bottom:20px"><div style="font:400 10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.13em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:9px 12px">Article image</div></div><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C1934F;margin-bottom:12px">HERITAGE &middot; 6 MIN</div><h3 style="margin:0 0 10px;font:500 23px/1.35 'Cormorant Garamond',serif;color:#16295B">Sampaguita: the scent of coming home</h3><p style="margin:0;font:300 13.5px/1.8 'Jost',sans-serif;color:#3E4A6B">Why our formula carries only a trace of it, and never more.</p></a>
+</div>
+<div style="text-align:center;margin-top:52px"><span style="border:1px solid rgba(22,41,91,.25);padding:15px 34px;font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.15em;color:#16295B">LOAD MORE</span></div>
+</div>
+
+<dc-import name="FronaVie Footer" hint-size="100%,420px"></dc-import>
+</div>
+</div>
+
+<div class="dv-opt" id="1g">
+<div class="dv-olabel"><a class="dv-oid" href="#1g">1g</a>Contact &middot; a person answers</div>
+<div class="dv-card" style="width:1440px">
+<dc-import name="FronaVie Nav" active="CONTACT" cart="{{ zero }}" hint-size="100%,120px"></dc-import>
+
+<div style="background:#F5F1E9;padding:66px 56px 76px;display:grid;grid-template-columns:1fr 1.15fr;gap:80px;align-items:start">
+<div>
+<div style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.19em;color:#C1934F;margin-bottom:20px">CONTACT</div>
+<h1 style="margin:0 0 20px;font:500 50px/1.12 'Cormorant Garamond',serif;color:#16295B">Write to us</h1>
+<p style="margin:0 0 40px;font:300 15.5px/1.9 'Jost',sans-serif;color:#3E4A6B;max-width:390px">Questions about your skin, your order, or stocking FronaVie. A member of our team replies within one business day, Pacific time.</p>
+<div style="display:flex;flex-direction:column;gap:26px">
+<div style="padding-top:22px;border-top:1px solid rgba(22,41,91,.15)"><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578;margin-bottom:10px">CUSTOMER CARE</div><div style="font:400 19px/1.4 'Cormorant Garamond',serif;color:#16295B">hello@fronavie.com</div></div>
+<div style="padding-top:22px;border-top:1px solid rgba(22,41,91,.15)"><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578;margin-bottom:10px">STOCKISTS &amp; PRESS</div><div style="font:400 19px/1.4 'Cormorant Garamond',serif;color:#16295B">partners@fronavie.com</div></div>
+<div style="padding-top:22px;border-top:1px solid rgba(22,41,91,.15)"><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578;margin-bottom:10px">HOURS</div><div style="font:300 14px/1.8 'Jost',sans-serif;color:#3E4A6B">Monday to Friday, 9am&ndash;6pm PT<br>Saturday, 9am&ndash;12nn PT</div></div>
+</div>
+<div style="margin-top:40px;display:flex;gap:20px">
+<a href="#1j" style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B;text-decoration:none;border-bottom:1px solid rgba(193,147,79,.7);padding-bottom:6px">TRACK AN ORDER</a>
+<a href="#1a" style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B;text-decoration:none;border-bottom:1px solid rgba(193,147,79,.7);padding-bottom:6px">READ THE FAQ</a>
+</div>
+</div>
+<div style="background:#FBF9F5;padding:44px 42px">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:22px">
+<div><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:11px">FIRST NAME</div><div style="border:1px solid rgba(22,41,91,.2);background:#fff;padding:15px 16px;font:300 14px/1 'Jost',sans-serif;color:#B4AFA3">Maria</div></div>
+<div><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:11px">LAST NAME</div><div style="border:1px solid rgba(22,41,91,.2);background:#fff;padding:15px 16px;font:300 14px/1 'Jost',sans-serif;color:#B4AFA3">Santos</div></div>
+</div>
+<div style="margin-bottom:22px"><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:11px">EMAIL</div><div style="border:1px solid rgba(22,41,91,.2);background:#fff;padding:15px 16px;font:300 14px/1 'Jost',sans-serif;color:#B4AFA3">maria@email.com</div></div>
+<div style="margin-bottom:22px"><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:11px">WHAT IS THIS ABOUT?</div><div style="border:1px solid rgba(22,41,91,.2);background:#fff;padding:15px 16px;font:300 14px/1 'Jost',sans-serif;color:#16295B;display:flex;justify-content:space-between"><span>A question about my skin</span><span style="color:#8A8578">&#9662;</span></div></div>
+<div style="margin-bottom:26px"><div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:11px">MESSAGE</div><div style="border:1px solid rgba(22,41,91,.2);background:#fff;padding:15px 16px;height:132px;font:300 14px/1.8 'Jost',sans-serif;color:#B4AFA3">Tell us what you are working on and what your skin has been doing lately&hellip;</div></div>
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:28px"><span style="width:16px;height:16px;border:1px solid rgba(22,41,91,.35);flex:none"></span><span style="font:300 12.5px/1.6 'Jost',sans-serif;color:#3E4A6B">Send me the monthly letter and ten percent off my first order</span></div>
+<div style="background:#16295B;color:#fff;padding:19px 0;text-align:center;font:500 12.5px/1 'Jost',sans-serif;letter-spacing:.17em">SEND MESSAGE</div>
+</div>
+</div>
+
+<dc-import name="FronaVie Footer" hint-size="100%,420px"></dc-import>
+</div>
+</div>
+
+<div class="dv-opt" id="1h">
+<div class="dv-olabel"><a class="dv-oid" href="#1h">1h</a>Bag &middot; with quantity, gift note and shipping threshold</div>
+<div class="dv-card" style="width:1440px">
+<dc-import name="FronaVie Nav" active="OUR SKINCARE" cart="{{ two }}" hint-size="100%,120px"></dc-import>
+
+<div style="background:#F5F1E9;padding:56px 56px 76px">
+<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:40px">
+<h1 style="margin:0;font:500 44px/1.1 'Cormorant Garamond',serif;color:#16295B">Your bag</h1>
+<a href="#1c" style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B;text-decoration:none;border-bottom:1px solid rgba(22,41,91,.3);padding-bottom:6px">CONTINUE SHOPPING</a>
+</div>
+<div style="display:grid;grid-template-columns:1.7fr 1fr;gap:44px;align-items:start">
+<div>
+<div style="background:#FBF9F5;padding:30px 32px;display:flex;gap:28px;align-items:center;margin-bottom:18px">
+<div style="width:112px;height:134px;flex:none;background:repeating-linear-gradient(128deg,#E9E2D4 0 7px,#F2EDE3 7px 14px)"></div>
+<div style="flex:1">
+<div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C1934F;margin-bottom:10px">CLEANSE</div>
+<h3 style="margin:0 0 8px;font:500 24px/1.25 'Cormorant Garamond',serif;color:#16295B">Kojic Brightening Cleansing Cream</h3>
+<div style="font:300 12.5px/1.7 'Jost',sans-serif;color:#8A8578;margin-bottom:18px">120 ml &middot; In stock, dispatched tomorrow</div>
+<div style="display:flex;align-items:center;gap:22px">
+<div style="border:1px solid rgba(22,41,91,.22);display:flex;align-items:center;gap:20px;padding:10px 15px;font:400 14px/1 'Jost',sans-serif;color:#16295B"><span style="color:#8A8578">&minus;</span><span>2</span><span>+</span></div>
+<span style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.13em;color:#8A8578;border-bottom:1px solid rgba(22,41,91,.2);padding-bottom:4px">REMOVE</span>
+</div>
+</div>
+<div style="text-align:right"><div style="font:500 24px/1 'Cormorant Garamond',serif;color:#16295B">$76</div><div style="font:300 11.5px/1 'Jost',sans-serif;color:#8A8578;margin-top:8px">$38 each</div></div>
+</div>
+<div style="background:#FBF9F5;padding:26px 32px;display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+<div style="display:flex;align-items:center;gap:16px"><span style="width:16px;height:16px;border:1px solid rgba(22,41,91,.35);flex:none"></span><span style="font:300 14px/1.6 'Jost',sans-serif;color:#3E4A6B">Add a handwritten gift note, with our compliments</span></div>
+<span style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.13em;color:#C1934F">FREE</span>
+</div>
+<div style="background:#EAE6DE;padding:26px 32px;display:flex;align-items:center;gap:24px">
+<div style="width:64px;height:64px;flex:none;background:repeating-linear-gradient(128deg,#E3DCCC 0 6px,#EEE9DE 6px 12px)"></div>
+<div style="flex:1"><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578;margin-bottom:8px">GOES WELL WITH</div><div style="font:500 19px/1.3 'Cormorant Garamond',serif;color:#16295B">Muslin cleansing cloth, $9</div></div>
+<span style="border:1px solid rgba(22,41,91,.3);padding:12px 22px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B">ADD</span>
+</div>
+</div>
+<div style="background:#FBF9F5;padding:34px 32px">
+<h2 style="margin:0 0 26px;font:500 26px/1.2 'Cormorant Garamond',serif;color:#16295B">Summary</h2>
+<div style="display:flex;justify-content:space-between;padding:13px 0;font:300 14px/1 'Jost',sans-serif;color:#3E4A6B"><span>Subtotal</span><span>$76</span></div>
+<div style="display:flex;justify-content:space-between;padding:13px 0;font:300 14px/1 'Jost',sans-serif;color:#3E4A6B"><span>Shipping</span><span style="color:#C1934F">Free</span></div>
+<div style="display:flex;justify-content:space-between;padding:13px 0;font:300 14px/1 'Jost',sans-serif;color:#3E4A6B"><span>Est. tax</span><span>Included</span></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;padding:20px 0;margin-top:8px;border-top:1px solid rgba(22,41,91,.15)"><span style="font:400 12px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B">TOTAL</span><span style="font:500 28px/1 'Cormorant Garamond',serif;color:#16295B">$76</span></div>
+<div style="background:#EAE6DE;padding:14px 16px;font:300 12.5px/1.7 'Jost',sans-serif;color:#3E4A6B;margin:8px 0 22px">You have qualified for complimentary nationwide shipping.</div>
+<a href="#1i" style="display:block;background:#16295B;color:#fff;text-decoration:none;padding:19px 0;text-align:center;font:500 12.5px/1 'Jost',sans-serif;letter-spacing:.17em" style-hover="background:#0E1D42">CHECKOUT</a>
+<div style="margin-top:22px;display:flex;flex-direction:column;gap:11px;font:300 12.5px/1.6 'Jost',sans-serif;color:#8A8578">
+<span>30-day satisfaction guarantee</span>
+<span>Cards, Apple Pay, PayPal and Shop Pay</span>
+<span>Ships within two business days</span>
+</div>
+</div>
+</div>
+</div>
+
+<dc-import name="FronaVie Footer" hint-size="100%,420px"></dc-import>
+</div>
+</div>
+
+<div class="dv-opt" id="1i">
+<div class="dv-olabel"><a class="dv-oid" href="#1i">1i</a>Checkout &middot; single page, three disclosed steps</div>
+<div class="dv-card" style="width:1440px">
+<div style="background:#F5F1E9;padding:26px 56px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(22,41,91,.1)">
+<img src="assets/logo-nav.png" alt="FronaVie" style="height:40px;width:auto;display:block">
+<div style="display:flex;gap:34px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.16em">
+<span style="color:#16295B;border-bottom:1.5px solid #16295B;padding-bottom:6px">01 &nbsp;DELIVERY</span>
+<span style="color:#8A8578">02 &nbsp;PAYMENT</span>
+<span style="color:#8A8578">03 &nbsp;REVIEW</span>
+</div>
+<a href="#1h" style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#8A8578;text-decoration:none">RETURN TO BAG</a>
+</div>
+
+<div style="background:#F5F1E9;padding:56px;display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:start">
+<div>
+<h1 style="margin:0 0 34px;font:500 40px/1.1 'Cormorant Garamond',serif;color:#16295B">Checkout</h1>
+
+<div style="background:#FBF9F5;padding:38px 40px;margin-bottom:20px">
+<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:28px"><h2 style="margin:0;font:500 24px/1.2 'Cormorant Garamond',serif;color:#16295B">Delivery</h2><span style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.15em;color:#C1934F">STEP 01</span></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px">
+<div><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:10px">FIRST NAME</div><div style="border:1px solid rgba(22,41,91,.2);background:#fff;padding:14px 15px;font:300 13.5px/1 'Jost',sans-serif;color:#16295B">Amelia</div></div>
+<div><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:10px">LAST NAME</div><div style="border:1px solid rgba(22,41,91,.2);background:#fff;padding:14px 15px;font:300 13.5px/1 'Jost',sans-serif;color:#16295B">Reyes</div></div>
+</div>
+<div style="margin-bottom:20px"><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:10px">STREET ADDRESS</div><div style="border:1px solid rgba(22,41,91,.2);background:#fff;padding:14px 15px;font:300 13.5px/1 'Jost',sans-serif;color:#16295B">1418 Sunset Boulevard, Apt 6B</div></div>
+<div style="display:grid;grid-template-columns:1.3fr 1fr .9fr;gap:20px;margin-bottom:24px">
+<div><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:10px">CITY</div><div style="border:1px solid rgba(22,41,91,.2);background:#fff;padding:14px 15px;font:300 13.5px/1 'Jost',sans-serif;color:#16295B">Los Angeles</div></div>
+<div><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:10px">STATE</div><div style="border:1px solid rgba(22,41,91,.2);background:#fff;padding:14px 15px;font:300 13.5px/1 'Jost',sans-serif;color:#16295B;display:flex;justify-content:space-between"><span>CA</span><span style="color:#8A8578">&#9662;</span></div></div>
+<div><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:10px">ZIP</div><div style="border:1px solid rgba(22,41,91,.2);background:#fff;padding:14px 15px;font:300 13.5px/1 'Jost',sans-serif;color:#16295B">90026</div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="border:1.5px solid #16295B;background:#fff;padding:18px 20px;display:flex;align-items:center;justify-content:space-between">
+<div style="display:flex;align-items:center;gap:14px"><span style="width:14px;height:14px;border-radius:50%;border:4px solid #16295B;flex:none"></span><div><div style="font:400 14px/1.4 'Jost',sans-serif;color:#16295B">Standard, two to four business days</div><div style="font:300 12px/1.5 'Jost',sans-serif;color:#8A8578;margin-top:5px">Tracked, signature not required</div></div></div>
+<span style="font:400 13px/1 'Jost',sans-serif;color:#C1934F;letter-spacing:.08em">COMPLIMENTARY</span>
+</div>
+<div style="border:1px solid rgba(22,41,91,.18);padding:18px 20px;display:flex;align-items:center;justify-content:space-between">
+<div style="display:flex;align-items:center;gap:14px"><span style="width:14px;height:14px;border-radius:50%;border:1px solid rgba(22,41,91,.4);flex:none"></span><div><div style="font:400 14px/1.4 'Jost',sans-serif;color:#16295B">Express, next business day</div><div style="font:300 12px/1.5 'Jost',sans-serif;color:#8A8578;margin-top:5px">Order before 11am PT</div></div></div>
+<span style="font:400 13px/1 'Jost',sans-serif;color:#16295B">$14</span>
+</div>
+</div>
+</div>
+
+<div style="background:#FBF9F5;padding:38px 40px;margin-bottom:20px">
+<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:26px"><h2 style="margin:0;font:500 24px/1.2 'Cormorant Garamond',serif;color:#16295B">Payment</h2><span style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.15em;color:#C1934F">STEP 02</span></div>
+<div style="display:flex;gap:10px;margin-bottom:26px">
+<span style="border:1.5px solid #16295B;padding:12px 20px;font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.12em;color:#16295B;background:#fff">CARD</span>
+<span style="border:1px solid rgba(22,41,91,.18);padding:12px 20px;font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.12em;color:#8A8578">APPLE PAY</span>
+<span style="border:1px solid rgba(22,41,91,.18);padding:12px 20px;font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.12em;color:#8A8578">PAYPAL</span>
+<span style="border:1px solid rgba(22,41,91,.18);padding:12px 20px;font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.12em;color:#8A8578">SHOP PAY</span>
+</div>
+<div style="margin-bottom:20px"><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:10px">CARD NUMBER</div><div style="border:1px solid rgba(22,41,91,.2);background:#fff;padding:14px 15px;font:300 13.5px/1 'Jost',sans-serif;color:#B4AFA3">0000 0000 0000 0000</div></div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:20px">
+<div><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:10px">EXPIRY</div><div style="border:1px solid rgba(22,41,91,.2);background:#fff;padding:14px 15px;font:300 13.5px/1 'Jost',sans-serif;color:#B4AFA3">MM / YY</div></div>
+<div><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:10px">CVC</div><div style="border:1px solid rgba(22,41,91,.2);background:#fff;padding:14px 15px;font:300 13.5px/1 'Jost',sans-serif;color:#B4AFA3">123</div></div>
+<div><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:10px">NAME ON CARD</div><div style="border:1px solid rgba(22,41,91,.2);background:#fff;padding:14px 15px;font:300 13.5px/1 'Jost',sans-serif;color:#B4AFA3">Amelia Reyes</div></div>
+</div>
+</div>
+
+<div style="background:#FBF9F5;padding:38px 40px">
+<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:24px"><h2 style="margin:0;font:500 24px/1.2 'Cormorant Garamond',serif;color:#16295B">Review</h2><span style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.15em;color:#C1934F">STEP 03</span></div>
+<div style="display:flex;align-items:center;gap:14px;margin-bottom:16px"><span style="width:16px;height:16px;border:1px solid rgba(22,41,91,.35);flex:none"></span><span style="font:300 13.5px/1.7 'Jost',sans-serif;color:#3E4A6B">Include a handwritten note with this order</span></div>
+<div style="display:flex;align-items:center;gap:14px;margin-bottom:28px"><span style="width:16px;height:16px;border:1px solid rgba(22,41,91,.35);flex:none"></span><span style="font:300 13.5px/1.7 'Jost',sans-serif;color:#3E4A6B">Send me the monthly letter, and ten percent toward my next order</span></div>
+<div style="background:#16295B;color:#fff;padding:20px 0;text-align:center;font:500 12.5px/1 'Jost',sans-serif;letter-spacing:.17em">PLACE ORDER &middot; $76</div>
+<div style="margin-top:18px;font:300 12px/1.7 'Jost',sans-serif;color:#8A8578;text-align:center">By placing this order you accept our terms and privacy policy.</div>
+</div>
+</div>
+
+<div style="background:#FBF9F5;padding:34px 32px">
+<h2 style="margin:0 0 24px;font:500 24px/1.2 'Cormorant Garamond',serif;color:#16295B">Your order</h2>
+<div style="display:flex;gap:18px;align-items:center;padding-bottom:22px;border-bottom:1px solid rgba(22,41,91,.12)">
+<div style="width:66px;height:80px;flex:none;background:repeating-linear-gradient(128deg,#E9E2D4 0 6px,#F2EDE3 6px 12px)"></div>
+<div style="flex:1"><div style="font:500 17px/1.3 'Cormorant Garamond',serif;color:#16295B">Kojic Brightening Cleansing Cream</div><div style="font:300 11.5px/1.6 'Jost',sans-serif;color:#8A8578;margin-top:6px">120 ml &middot; Quantity 2</div></div>
+<div style="font:400 15px/1 'Jost',sans-serif;color:#16295B">$76</div>
+</div>
+<div style="display:flex;justify-content:space-between;padding:13px 0;font:300 13.5px/1 'Jost',sans-serif;color:#3E4A6B"><span>Subtotal</span><span>$76</span></div>
+<div style="display:flex;justify-content:space-between;padding:13px 0;font:300 13.5px/1 'Jost',sans-serif;color:#3E4A6B"><span>Shipping</span><span style="color:#C1934F">Complimentary</span></div>
+<div style="display:flex;justify-content:space-between;padding:13px 0;font:300 13.5px/1 'Jost',sans-serif;color:#3E4A6B"><span>Estimated tax</span><span>$6.65</span></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;padding:20px 0;border-top:1px solid rgba(22,41,91,.15);margin-top:8px"><span style="font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B">TOTAL</span><span style="font:500 26px/1 'Cormorant Garamond',serif;color:#16295B">$82.65</span></div>
+<div style="border:1px solid rgba(22,41,91,.18);padding:14px 16px;display:flex;justify-content:space-between;font:300 12.5px/1 'Jost',sans-serif;color:#8A8578;margin-bottom:22px"><span>Gift card or promotion code</span><span style="color:#16295B">APPLY</span></div>
+<div style="display:flex;flex-direction:column;gap:11px;font:300 12.5px/1.6 'Jost',sans-serif;color:#8A8578;padding-top:20px;border-top:1px solid rgba(22,41,91,.12)">
+<span>Thirty day satisfaction guarantee</span>
+<span>Secure payment, encrypted end to end</span>
+<span>Questions? hello@fronavie.com</span>
+</div>
+</div>
+</div>
+
+<dc-import name="FronaVie Footer" hint-size="100%,420px"></dc-import>
+</div>
+</div>
+
+<div class="dv-opt" id="1j">
+<div class="dv-olabel"><a class="dv-oid" href="#1j">1j</a>Account &middot; orders, tracking and the ritual so far</div>
+<div class="dv-card" style="width:1440px">
+<dc-import name="FronaVie Nav" active="HOME" cart="{{ zero }}" hint-size="100%,120px"></dc-import>
+
+<div style="background:#F5F1E9;padding:52px 56px 46px;display:flex;align-items:flex-end;justify-content:space-between">
+<div>
+<div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.19em;color:#C1934F;margin-bottom:18px">YOUR ACCOUNT</div>
+<h1 style="margin:0;font:500 44px/1.1 'Cormorant Garamond',serif;color:#16295B">Good evening, Amelia</h1>
+</div>
+<div style="display:flex;gap:40px;text-align:right">
+<div><div style="font:500 30px/1 'Cormorant Garamond',serif;color:#16295B">4</div><div style="font:400 10px/1.6 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-top:8px">ORDERS</div></div>
+<div><div style="font:500 30px/1 'Cormorant Garamond',serif;color:#16295B">14</div><div style="font:400 10px/1.6 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-top:8px">MONTHS WITH US</div></div>
+<div><div style="font:500 30px/1 'Cormorant Garamond',serif;color:#16295B">$18</div><div style="font:400 10px/1.6 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-top:8px">CREDIT</div></div>
+</div>
+</div>
+
+<div style="background:#F5F1E9;padding:0 56px 24px;display:flex;gap:32px;font:400 11.5px/1 'Jost',sans-serif;letter-spacing:.14em;border-bottom:1px solid rgba(22,41,91,.12)">
+<span style="color:#16295B;border-bottom:1.5px solid #16295B;padding-bottom:14px">ORDERS</span>
+<span style="color:#8A8578;padding-bottom:14px">DELIVERY DETAILS</span>
+<span style="color:#8A8578;padding-bottom:14px">PAYMENT</span>
+<span style="color:#8A8578;padding-bottom:14px">MY REVIEWS</span>
+<span style="color:#8A8578;padding-bottom:14px">PREFERENCES</span>
+</div>
+
+<div style="background:#F5F1E9;padding:44px 56px 70px">
+<div style="background:#FBF9F5;padding:38px 40px;margin-bottom:24px">
+<div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:34px">
+<div>
+<div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.16em;color:#C1934F;margin-bottom:12px">IN TRANSIT</div>
+<h2 style="margin:0 0 8px;font:500 26px/1.2 'Cormorant Garamond',serif;color:#16295B">Order FV&ndash;10428</h2>
+<div style="font:300 13px/1.7 'Jost',sans-serif;color:#8A8578">Placed 19 August &middot; Arriving Friday 22 August</div>
+</div>
+<div style="display:flex;gap:12px">
+<span style="border:1px solid rgba(22,41,91,.25);padding:12px 22px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B">TRACK PARCEL</span>
+<span style="background:#16295B;color:#fff;padding:12px 22px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em">BUY AGAIN</span>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-bottom:36px">
+<div style="border-top:2px solid #16295B;padding-top:16px"><div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B;margin-bottom:8px">CONFIRMED</div><div style="font:300 12px/1.6 'Jost',sans-serif;color:#8A8578">19 Aug, 9:04am</div></div>
+<div style="border-top:2px solid #16295B;padding-top:16px"><div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B;margin-bottom:8px">PACKED</div><div style="font:300 12px/1.6 'Jost',sans-serif;color:#8A8578">19 Aug, 4:40pm</div></div>
+<div style="border-top:2px solid #16295B;padding-top:16px"><div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B;margin-bottom:8px">IN TRANSIT</div><div style="font:300 12px/1.6 'Jost',sans-serif;color:#8A8578">Left Los Angeles hub</div></div>
+<div style="border-top:2px solid rgba(22,41,91,.18);padding-top:16px"><div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#B4AFA3;margin-bottom:8px">DELIVERED</div><div style="font:300 12px/1.6 'Jost',sans-serif;color:#B4AFA3">Expected Friday</div></div>
+</div>
+<div style="display:flex;gap:20px;align-items:center;padding-top:26px;border-top:1px solid rgba(22,41,91,.12)">
+<div style="width:64px;height:78px;flex:none;background:repeating-linear-gradient(128deg,#E9E2D4 0 6px,#F2EDE3 6px 12px)"></div>
+<div style="flex:1"><div style="font:500 18px/1.3 'Cormorant Garamond',serif;color:#16295B">Kojic Brightening Cleansing Cream</div><div style="font:300 12px/1.6 'Jost',sans-serif;color:#8A8578;margin-top:6px">120 ml &middot; Quantity 2</div></div>
+<div style="font:400 15px/1 'Jost',sans-serif;color:#16295B">$76</div>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+<div style="background:#FBF9F5;padding:32px 34px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:20px"><h3 style="margin:0;font:500 21px/1.2 'Cormorant Garamond',serif;color:#16295B">Order FV&ndash;10233</h3><span style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.14em;color:#8A8578">DELIVERED 2 JUL</span></div>
+<div style="font:300 13px/1.8 'Jost',sans-serif;color:#3E4A6B;margin-bottom:22px">Cleansing cream, single &middot; $38</div>
+<div style="display:flex;gap:20px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.13em"><span style="color:#16295B;border-bottom:1px solid rgba(193,147,79,.7);padding-bottom:5px">LEAVE A REVIEW</span><span style="color:#8A8578;border-bottom:1px solid rgba(22,41,91,.2);padding-bottom:5px">VIEW INVOICE</span></div>
+</div>
+<div style="background:#FBF9F5;padding:32px 34px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:20px"><h3 style="margin:0;font:500 21px/1.2 'Cormorant Garamond',serif;color:#16295B">Order FV&ndash;09871</h3><span style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.14em;color:#8A8578">DELIVERED 14 MAY</span></div>
+<div style="font:300 13px/1.8 'Jost',sans-serif;color:#3E4A6B;margin-bottom:22px">Cleansing cream, single &middot; $38</div>
+<div style="display:flex;gap:20px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.13em"><span style="color:#8A8578;border-bottom:1px solid rgba(22,41,91,.2);padding-bottom:5px">REVIEW SUBMITTED</span><span style="color:#8A8578;border-bottom:1px solid rgba(22,41,91,.2);padding-bottom:5px">VIEW INVOICE</span></div>
+</div>
+</div>
+
+<div style="background:#EAE6DE;padding:34px 40px;margin-top:24px;display:flex;align-items:center;justify-content:space-between;gap:40px">
+<div><h3 style="margin:0 0 8px;font:500 22px/1.25 'Cormorant Garamond',serif;color:#16295B">Your ritual is due for a refill in eleven days</h3><p style="margin:0;font:300 13.5px/1.7 'Jost',sans-serif;color:#3E4A6B">Based on two pumps a day. We can send it automatically and hold ten percent for you.</p></div>
+<span style="background:#16295B;color:#fff;padding:16px 30px;font:500 11.5px/1 'Jost',sans-serif;letter-spacing:.15em;flex:none">SET UP REFILLS</span>
+</div>
+</div>
+
+<dc-import name="FronaVie Footer" hint-size="100%,420px"></dc-import>
+</div>
+</div>
+
+<div class="dv-opt" id="1k">
+<div class="dv-olabel"><a class="dv-oid" href="#1k">1k</a>Admin &middot; overview, sales and the day&#39;s work</div>
+<div class="dv-card" style="width:1440px">
+<div style="display:grid;grid-template-columns:236px 1fr;min-height:1080px;background:#FBF9F5">
+
+<div style="background:#16295B;padding:28px 0;display:flex;flex-direction:column">
+<div style="padding:0 24px 30px;border-bottom:1px solid rgba(255,255,255,.14);margin-bottom:26px"><img src="assets/logo-nav-white.png" alt="FronaVie" style="height:34px;width:auto;display:block"></div>
+<div style="padding:0 16px;display:flex;flex-direction:column;gap:3px">
+<div style="background:rgba(255,255,255,.1);padding:13px 16px;font:400 12.5px/1 'Jost',sans-serif;letter-spacing:.06em;color:#fff">Overview</div>
+<div style="padding:13px 16px;font:300 12.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.66)">Orders</div>
+<div style="padding:13px 16px;font:300 12.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.66)">Products</div>
+<div style="padding:13px 16px;font:300 12.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.66);display:flex;justify-content:space-between"><span>Customers</span></div>
+<a href="#1l" style="padding:13px 16px;font:300 12.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.66);text-decoration:none;display:flex;justify-content:space-between;align-items:center"><span>Feedback</span><span style="background:#C1934F;color:#fff;min-width:19px;height:18px;border-radius:9px;font:500 10px/18px 'Jost',sans-serif;text-align:center;padding:0 5px">7</span></a>
+<div style="padding:13px 16px;font:300 12.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.66)">Reviews</div>
+<div style="padding:13px 16px;font:300 12.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.66)">Subscribers</div>
+<div style="padding:13px 16px;font:300 12.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.66)">Campaigns</div>
+<div style="padding:13px 16px;font:300 12.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.66)">Journal</div>
+<div style="padding:13px 16px;font:300 12.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.66)">Discounts</div>
+</div>
+<div style="margin-top:auto;padding:24px 24px 0;border-top:1px solid rgba(255,255,255,.14)">
+<div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.16em;color:rgba(255,255,255,.45);margin-bottom:12px">SIGNED IN</div>
+<div style="font:400 14px/1.4 'Cormorant Garamond',serif;color:#fff;font-size:16px">Frona, Founder</div>
+<div style="font:300 11.5px/1.6 'Jost',sans-serif;color:rgba(255,255,255,.5);margin-top:4px">Settings &middot; Sign out</div>
+</div>
+</div>
+
+<div>
+<div style="padding:28px 36px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(22,41,91,.1);background:#fff">
+<div><h1 style="margin:0 0 6px;font:500 30px/1.1 'Cormorant Garamond',serif;color:#16295B">Overview</h1><div style="font:300 12.5px/1 'Jost',sans-serif;color:#8A8578">Friday 22 August &middot; all figures in USD</div></div>
+<div style="display:flex;gap:10px;align-items:center">
+<span style="border:1px solid rgba(22,41,91,.2);padding:11px 18px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.12em;color:#16295B">LAST 30 DAYS &nbsp;&#9662;</span>
+<span style="border:1px solid rgba(22,41,91,.2);padding:11px 18px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.12em;color:#16295B">EXPORT</span>
+<span style="background:#16295B;color:#fff;padding:11px 20px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.12em">NEW DISCOUNT</span>
+</div>
+</div>
+
+<div style="padding:30px 36px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(22,41,91,.1)">
+<div style="background:#fff;padding:26px 24px"><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578;margin-bottom:16px">GROSS SALES</div><div style="font:500 34px/1 'Cormorant Garamond',serif;color:#16295B">$41,268</div><div style="font:300 11.5px/1 'Jost',sans-serif;color:#5C7A55;margin-top:12px">&#9650; 18.4% vs prior 30 days</div></div>
+<div style="background:#fff;padding:26px 24px"><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578;margin-bottom:16px">ORDERS</div><div style="font:500 34px/1 'Cormorant Garamond',serif;color:#16295B">1,086</div><div style="font:300 11.5px/1 'Jost',sans-serif;color:#5C7A55;margin-top:12px">&#9650; 12.1% vs prior 30 days</div></div>
+<div style="background:#fff;padding:26px 24px"><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578;margin-bottom:16px">AVERAGE ORDER</div><div style="font:500 34px/1 'Cormorant Garamond',serif;color:#16295B">$38.00</div><div style="font:300 11.5px/1 'Jost',sans-serif;color:#8A8578;margin-top:12px">Flat, single product catalogue</div></div>
+<div style="background:#fff;padding:26px 24px"><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.16em;color:#8A8578;margin-bottom:16px">REPEAT RATE</div><div style="font:500 34px/1 'Cormorant Garamond',serif;color:#16295B">31%</div><div style="font:300 11.5px/1 'Jost',sans-serif;color:#A0574B;margin-top:12px">&#9660; 2.3% vs prior 30 days</div></div>
+</div>
+
+<div style="padding:0 36px 30px;display:grid;grid-template-columns:1.55fr 1fr;gap:24px;align-items:start">
+<div style="background:#fff;border:1px solid rgba(22,41,91,.1);padding:28px 30px">
+<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:30px"><h2 style="margin:0;font:500 21px/1.2 'Cormorant Garamond',serif;color:#16295B">Sales by week</h2><div style="display:flex;gap:18px;font:300 11px/1 'Jost',sans-serif;color:#8A8578"><span style="display:flex;align-items:center;gap:7px"><span style="width:9px;height:9px;background:#16295B"></span>Website</span><span style="display:flex;align-items:center;gap:7px"><span style="width:9px;height:9px;background:#C1934F"></span>Marketplace</span></div></div>
+<div style="display:flex;align-items:flex-end;gap:20px;height:212px;padding-bottom:2px;border-bottom:1px solid rgba(22,41,91,.15)">
+<div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:3px"><div style="height:38px;background:#C1934F"></div><div style="height:96px;background:#16295B"></div></div>
+<div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:3px"><div style="height:30px;background:#C1934F"></div><div style="height:118px;background:#16295B"></div></div>
+<div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:3px"><div style="height:44px;background:#C1934F"></div><div style="height:104px;background:#16295B"></div></div>
+<div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:3px"><div style="height:52px;background:#C1934F"></div><div style="height:142px;background:#16295B"></div></div>
+<div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:3px"><div style="height:40px;background:#C1934F"></div><div style="height:130px;background:#16295B"></div></div>
+<div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:3px"><div style="height:58px;background:#C1934F"></div><div style="height:158px;background:#16295B"></div></div>
+</div>
+<div style="display:flex;gap:20px;margin-top:12px"><div style="flex:1;text-align:center;font:300 10.5px/1 'Jost',sans-serif;color:#8A8578">W28</div><div style="flex:1;text-align:center;font:300 10.5px/1 'Jost',sans-serif;color:#8A8578">W29</div><div style="flex:1;text-align:center;font:300 10.5px/1 'Jost',sans-serif;color:#8A8578">W30</div><div style="flex:1;text-align:center;font:300 10.5px/1 'Jost',sans-serif;color:#8A8578">W31</div><div style="flex:1;text-align:center;font:300 10.5px/1 'Jost',sans-serif;color:#8A8578">W32</div><div style="flex:1;text-align:center;font:300 10.5px/1 'Jost',sans-serif;color:#8A8578">W33</div></div>
+</div>
+<div style="background:#fff;border:1px solid rgba(22,41,91,.1);padding:28px 30px">
+<h2 style="margin:0 0 24px;font:500 21px/1.2 'Cormorant Garamond',serif;color:#16295B">Needs you today</h2>
+<div style="display:flex;flex-direction:column;gap:0">
+<a href="#1l" style="text-decoration:none;display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(22,41,91,.1)"><span style="font:300 13.5px/1.5 'Jost',sans-serif;color:#3E4A6B">Feedback awaiting reply</span><span style="font:500 19px/1 'Cormorant Garamond',serif;color:#C1934F">7</span></a>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(22,41,91,.1)"><span style="font:300 13.5px/1.5 'Jost',sans-serif;color:#3E4A6B">Reviews to approve</span><span style="font:500 19px/1 'Cormorant Garamond',serif;color:#C1934F">4</span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(22,41,91,.1)"><span style="font:300 13.5px/1.5 'Jost',sans-serif;color:#3E4A6B">Orders to fulfil</span><span style="font:500 19px/1 'Cormorant Garamond',serif;color:#16295B">23</span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(22,41,91,.1)"><span style="font:300 13.5px/1.5 'Jost',sans-serif;color:#3E4A6B">Refund requests</span><span style="font:500 19px/1 'Cormorant Garamond',serif;color:#16295B">1</span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:16px 0"><span style="font:300 13.5px/1.5 'Jost',sans-serif;color:#3E4A6B">Notify-me signups on serum</span><span style="font:500 19px/1 'Cormorant Garamond',serif;color:#16295B">312</span></div>
+</div>
+<div style="margin-top:22px;padding:16px 18px;background:#F5F1E9;font:300 12.5px/1.7 'Jost',sans-serif;color:#3E4A6B">Stock: 412 units on hand. At the current rate, thirty four days of cover.</div>
+</div>
+</div>
+
+<div style="padding:0 36px 36px;display:grid;grid-template-columns:1.55fr 1fr;gap:24px;align-items:start">
+<div style="background:#fff;border:1px solid rgba(22,41,91,.1)">
+<div style="padding:24px 30px;display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid rgba(22,41,91,.1)"><h2 style="margin:0;font:500 21px/1.2 'Cormorant Garamond',serif;color:#16295B">Recent orders</h2><span style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.13em;color:#8A8578">VIEW ALL</span></div>
+<div style="display:grid;grid-template-columns:1fr 1.6fr 1fr .9fr .8fr;padding:14px 30px;background:#FBF9F5;font:400 10px/1 'Jost',sans-serif;letter-spacing:.14em;color:#8A8578"><span>ORDER</span><span>CUSTOMER</span><span>CHANNEL</span><span>STATUS</span><span style="text-align:right">TOTAL</span></div>
+<div style="display:grid;grid-template-columns:1fr 1.6fr 1fr .9fr .8fr;padding:18px 30px;border-top:1px solid rgba(22,41,91,.08);font:300 13px/1.4 'Jost',sans-serif;color:#3E4A6B;align-items:center"><span style="color:#16295B">FV&ndash;10428</span><span>Amelia Reyes &middot; Los Angeles, CA</span><span>Website</span><span style="color:#C1934F">In transit</span><span style="text-align:right">$76</span></div>
+<div style="display:grid;grid-template-columns:1fr 1.6fr 1fr .9fr .8fr;padding:18px 30px;border-top:1px solid rgba(22,41,91,.08);font:300 13px/1.4 'Jost',sans-serif;color:#3E4A6B;align-items:center"><span style="color:#16295B">FV&ndash;10427</span><span>Denise Ocampo &middot; Daly City, CA</span><span>Website</span><span>Packed</span><span style="text-align:right">$38</span></div>
+<div style="display:grid;grid-template-columns:1fr 1.6fr 1fr .9fr .8fr;padding:18px 30px;border-top:1px solid rgba(22,41,91,.08);font:300 13px/1.4 'Jost',sans-serif;color:#3E4A6B;align-items:center"><span style="color:#16295B">FV&ndash;10426</span><span>Grace Villanueva &middot; Jersey City, NJ</span><span>Marketplace</span><span>Awaiting</span><span style="text-align:right">$72</span></div>
+<div style="display:grid;grid-template-columns:1fr 1.6fr 1fr .9fr .8fr;padding:18px 30px;border-top:1px solid rgba(22,41,91,.08);font:300 13px/1.4 'Jost',sans-serif;color:#3E4A6B;align-items:center"><span style="color:#16295B">FV&ndash;10425</span><span>Teresa Lim &middot; Houston, TX</span><span>Website</span><span style="color:#5C7A55">Delivered</span><span style="text-align:right">$38</span></div>
+<div style="display:grid;grid-template-columns:1fr 1.6fr 1fr .9fr .8fr;padding:18px 30px;border-top:1px solid rgba(22,41,91,.08);font:300 13px/1.4 'Jost',sans-serif;color:#3E4A6B;align-items:center"><span style="color:#16295B">FV&ndash;10424</span><span>Nina Cortez &middot; Chicago, IL</span><span>Website</span><span style="color:#A0574B">Refund asked</span><span style="text-align:right">$38</span></div>
+<div style="display:grid;grid-template-columns:1fr 1.6fr 1fr .9fr .8fr;padding:18px 30px;border-top:1px solid rgba(22,41,91,.08);font:300 13px/1.4 'Jost',sans-serif;color:#3E4A6B;align-items:center"><span style="color:#16295B">FV&ndash;10423</span><span>Bea Salvador &middot; Seattle, WA</span><span>Marketplace</span><span style="color:#5C7A55">Delivered</span><span style="text-align:right">$38</span></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:24px">
+<div style="background:#fff;border:1px solid rgba(22,41,91,.1);padding:28px 30px">
+<h2 style="margin:0 0 22px;font:500 21px/1.2 'Cormorant Garamond',serif;color:#16295B">Where sales come from</h2>
+<div style="display:flex;flex-direction:column;gap:16px">
+<div><div style="display:flex;justify-content:space-between;font:300 12.5px/1 'Jost',sans-serif;color:#3E4A6B;margin-bottom:8px"><span>Instagram</span><span>38%</span></div><div style="height:5px;background:rgba(22,41,91,.1)"><div style="width:38%;height:5px;background:#16295B"></div></div></div>
+<div><div style="display:flex;justify-content:space-between;font:300 12.5px/1 'Jost',sans-serif;color:#3E4A6B;margin-bottom:8px"><span>Search</span><span>24%</span></div><div style="height:5px;background:rgba(22,41,91,.1)"><div style="width:24%;height:5px;background:#16295B"></div></div></div>
+<div><div style="display:flex;justify-content:space-between;font:300 12.5px/1 'Jost',sans-serif;color:#3E4A6B;margin-bottom:8px"><span>Email letter</span><span>19%</span></div><div style="height:5px;background:rgba(22,41,91,.1)"><div style="width:19%;height:5px;background:#16295B"></div></div></div>
+<div><div style="display:flex;justify-content:space-between;font:300 12.5px/1 'Jost',sans-serif;color:#3E4A6B;margin-bottom:8px"><span>Marketplace</span><span>12%</span></div><div style="height:5px;background:rgba(22,41,91,.1)"><div style="width:12%;height:5px;background:#C1934F"></div></div></div>
+<div><div style="display:flex;justify-content:space-between;font:300 12.5px/1 'Jost',sans-serif;color:#3E4A6B;margin-bottom:8px"><span>Direct</span><span>7%</span></div><div style="height:5px;background:rgba(22,41,91,.1)"><div style="width:7%;height:5px;background:#16295B"></div></div></div>
+</div>
+</div>
+<div style="background:#16295B;color:#fff;padding:28px 30px">
+<h2 style="margin:0 0 20px;font:500 21px/1.2 'Cormorant Garamond',serif">The letter</h2>
+<div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font:300 13px/1 'Jost',sans-serif;color:rgba(255,255,255,.78)"><span>Subscribers</span><span style="color:#fff">6,412</span></div>
+<div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font:300 13px/1 'Jost',sans-serif;color:rgba(255,255,255,.78)"><span>Opened last send</span><span style="color:#fff">54%</span></div>
+<div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font:300 13px/1 'Jost',sans-serif;color:rgba(255,255,255,.78)"><span>Revenue attributed</span><span style="color:#fff">$7,840</span></div>
+<div style="display:flex;justify-content:space-between;padding:12px 0;font:300 13px/1 'Jost',sans-serif;color:rgba(255,255,255,.78)"><span>Next send</span><span style="color:#fff">28 Aug</span></div>
+<div style="margin-top:20px;border:1px solid rgba(255,255,255,.35);padding:13px 0;text-align:center;font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em">COMPOSE A LETTER</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="1l">
+<div class="dv-olabel"><a class="dv-oid" href="#1l">1l</a>Admin &middot; feedback inbox and review moderation</div>
+<div class="dv-card" style="width:1440px">
+<div style="display:grid;grid-template-columns:236px 1fr;min-height:940px;background:#FBF9F5">
+
+<div style="background:#16295B;padding:28px 0;display:flex;flex-direction:column">
+<div style="padding:0 24px 30px;border-bottom:1px solid rgba(255,255,255,.14);margin-bottom:26px"><img src="assets/logo-nav-white.png" alt="FronaVie" style="height:34px;width:auto;display:block"></div>
+<div style="padding:0 16px;display:flex;flex-direction:column;gap:3px">
+<a href="#1k" style="padding:13px 16px;font:300 12.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.66);text-decoration:none">Overview</a>
+<div style="padding:13px 16px;font:300 12.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.66)">Orders</div>
+<div style="padding:13px 16px;font:300 12.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.66)">Products</div>
+<div style="padding:13px 16px;font:300 12.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.66)">Customers</div>
+<div style="background:rgba(255,255,255,.1);padding:13px 16px;font:400 12.5px/1 'Jost',sans-serif;color:#fff;display:flex;justify-content:space-between;align-items:center"><span>Feedback</span><span style="background:#C1934F;color:#fff;min-width:19px;height:18px;border-radius:9px;font:500 10px/18px 'Jost',sans-serif;text-align:center;padding:0 5px">7</span></div>
+<div style="padding:13px 16px;font:300 12.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.66)">Reviews</div>
+<div style="padding:13px 16px;font:300 12.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.66)">Subscribers</div>
+<div style="padding:13px 16px;font:300 12.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.66)">Campaigns</div>
+<div style="padding:13px 16px;font:300 12.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.66)">Journal</div>
+<div style="padding:13px 16px;font:300 12.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.66)">Discounts</div>
+</div>
+<div style="margin-top:auto;padding:24px 24px 0;border-top:1px solid rgba(255,255,255,.14)">
+<div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.16em;color:rgba(255,255,255,.45);margin-bottom:12px">SIGNED IN</div>
+<div style="font:400 16px/1.4 'Cormorant Garamond',serif;color:#fff">Frona, Founder</div>
+</div>
+</div>
+
+<div>
+<div style="padding:28px 36px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(22,41,91,.1);background:#fff">
+<div><h1 style="margin:0 0 6px;font:500 30px/1.1 'Cormorant Garamond',serif;color:#16295B">Feedback</h1><div style="font:300 12.5px/1 'Jost',sans-serif;color:#8A8578">Everything customers said, in one place. Seven awaiting a reply.</div></div>
+<div style="display:flex;gap:10px"><span style="border:1px solid rgba(22,41,91,.2);padding:11px 18px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.12em;color:#16295B">ALL SOURCES &nbsp;&#9662;</span><span style="background:#16295B;color:#fff;padding:11px 20px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.12em">EXPORT CSV</span></div>
+</div>
+
+<div style="padding:26px 36px;display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(22,41,91,.1)">
+<div style="background:#fff;padding:22px 20px"><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:14px">AVG RATING</div><div style="font:500 28px/1 'Cormorant Garamond',serif;color:#16295B">4.8</div></div>
+<div style="background:#fff;padding:22px 20px"><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:14px">NEW THIS WEEK</div><div style="font:500 28px/1 'Cormorant Garamond',serif;color:#16295B">19</div></div>
+<div style="background:#fff;padding:22px 20px"><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:14px">AWAITING REPLY</div><div style="font:500 28px/1 'Cormorant Garamond',serif;color:#C1934F">7</div></div>
+<div style="background:#fff;padding:22px 20px"><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:14px">MEDIAN REPLY TIME</div><div style="font:500 28px/1 'Cormorant Garamond',serif;color:#16295B">6h</div></div>
+<div style="background:#fff;padding:22px 20px"><div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:14px">WOULD REPURCHASE</div><div style="font:500 28px/1 'Cormorant Garamond',serif;color:#16295B">94%</div></div>
+</div>
+
+<div style="padding:0 36px 36px;display:grid;grid-template-columns:1.45fr 1fr;gap:24px;align-items:start">
+<div style="background:#fff;border:1px solid rgba(22,41,91,.1)">
+<div style="display:flex;gap:8px;padding:20px 26px;border-bottom:1px solid rgba(22,41,91,.1)">
+<span style="background:#16295B;color:#fff;padding:9px 16px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.12em">ALL 34</span>
+<span style="border:1px solid rgba(22,41,91,.18);padding:9px 16px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.12em;color:#16295B">NEEDS REPLY 7</span>
+<span style="border:1px solid rgba(22,41,91,.18);padding:9px 16px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.12em;color:#8A8578">REVIEWS 22</span>
+<span style="border:1px solid rgba(22,41,91,.18);padding:9px 16px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.12em;color:#8A8578">FORM 9</span>
+<span style="border:1px solid rgba(22,41,91,.18);padding:9px 16px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.12em;color:#8A8578">SOCIAL 3</span>
+</div>
+
+<div style="padding:26px;border-bottom:1px solid rgba(22,41,91,.08);background:#F5F1E9">
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px">
+<div style="display:flex;align-items:center;gap:12px"><span style="font:400 14px/1 'Jost',sans-serif;color:#16295B">Denise Ocampo</span><span style="font:300 11.5px/1 'Jost',sans-serif;color:#8A8578">Contact form &middot; 2 hours ago</span><span style="background:#C1934F;color:#fff;padding:4px 9px;font:500 9px/1 'Jost',sans-serif;letter-spacing:.13em">NEEDS REPLY</span></div>
+<span style="font:300 11.5px/1 'Jost',sans-serif;color:#8A8578">Order FV&ndash;10427</span>
+</div>
+<p style="margin:0 0 18px;font:300 14px/1.85 'Jost',sans-serif;color:#3E4A6B">Is the cleansing cream safe while pregnant? My dermatologist asked about the kojic percentage and I could not find it on the box.</p>
+<div style="border:1px solid rgba(22,41,91,.2);background:#fff;padding:14px 16px;font:300 13px/1.7 'Jost',sans-serif;color:#B4AFA3;margin-bottom:14px">Write a reply, or insert a saved answer&hellip;</div>
+<div style="display:flex;gap:10px;align-items:center">
+<span style="background:#16295B;color:#fff;padding:11px 22px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.13em">SEND REPLY</span>
+<span style="border:1px solid rgba(22,41,91,.2);padding:11px 18px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.13em;color:#16295B">SAVED ANSWERS</span>
+<span style="border:1px solid rgba(22,41,91,.2);padding:11px 18px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.13em;color:#16295B">ASSIGN</span>
+<span style="font:300 11.5px/1 'Jost',sans-serif;color:#8A8578;margin-left:auto">Tag: pregnancy safety</span>
+</div>
+</div>
+
+<div style="padding:26px;border-bottom:1px solid rgba(22,41,91,.08)">
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px">
+<div style="display:flex;align-items:center;gap:12px"><span style="font:400 14px/1 'Jost',sans-serif;color:#16295B">Grace Villanueva</span><span style="font:300 11.5px/1 'Jost',sans-serif;color:#8A8578">Product review &middot; 5 hours ago</span><span style="border:1px solid rgba(22,41,91,.25);padding:4px 9px;font:400 9px/1 'Jost',sans-serif;letter-spacing:.13em;color:#16295B">PENDING APPROVAL</span></div>
+<span style="color:#C1934F;font-size:11px">&#9670;&#9670;&#9670;&#9670;&#9670;</span>
+</div>
+<p style="margin:0 0 16px;font:300 14px/1.85 'Jost',sans-serif;color:#3E4A6B">Third bottle. It takes off sunscreen without that tight feeling, and my post acne marks are genuinely lighter after two months.</p>
+<div style="display:flex;gap:10px;align-items:center">
+<span style="background:#16295B;color:#fff;padding:10px 20px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.13em">APPROVE</span>
+<span style="border:1px solid rgba(22,41,91,.2);padding:10px 18px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.13em;color:#16295B">FEATURE ON SITE</span>
+<span style="border:1px solid rgba(22,41,91,.2);padding:10px 18px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.13em;color:#8A8578">HIDE</span>
+</div>
+</div>
+
+<div style="padding:26px;border-bottom:1px solid rgba(22,41,91,.08)">
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px">
+<div style="display:flex;align-items:center;gap:12px"><span style="font:400 14px/1 'Jost',sans-serif;color:#16295B">Nina Cortez</span><span style="font:300 11.5px/1 'Jost',sans-serif;color:#8A8578">Product review &middot; yesterday</span><span style="background:#C1934F;color:#fff;padding:4px 9px;font:500 9px/1 'Jost',sans-serif;letter-spacing:.13em">NEEDS REPLY</span></div>
+<span style="color:#C1934F;font-size:11px">&#9670;&#9670;&#9670;<span style="color:rgba(22,41,91,.2)">&#9670;&#9670;</span></span>
+</div>
+<p style="margin:0 0 16px;font:300 14px/1.85 'Jost',sans-serif;color:#3E4A6B">The formula is lovely but the pump arrived cracked and leaked into the box. I have asked for a refund rather than a replacement.</p>
+<div style="display:flex;gap:10px;align-items:center">
+<span style="background:#16295B;color:#fff;padding:10px 20px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.13em">REPLY AND REFUND</span>
+<span style="border:1px solid rgba(22,41,91,.2);padding:10px 18px;font:400 11px/1 'Jost',sans-serif;letter-spacing:.13em;color:#16295B">OPEN ORDER</span>
+<span style="font:300 11.5px/1 'Jost',sans-serif;color:#A0574B;margin-left:auto">Flagged: packaging</span>
+</div>
+</div>
+
+<div style="padding:26px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px">
+<div style="display:flex;align-items:center;gap:12px"><span style="font:400 14px/1 'Jost',sans-serif;color:#16295B">@teresa.lim</span><span style="font:300 11.5px/1 'Jost',sans-serif;color:#8A8578">Instagram comment &middot; 2 days ago</span><span style="border:1px solid rgba(22,41,91,.2);padding:4px 9px;font:400 9px/1 'Jost',sans-serif;letter-spacing:.13em;color:#8A8578">REPLIED</span></div>
+</div>
+<p style="margin:0 0 14px;font:300 14px/1.85 'Jost',sans-serif;color:#3E4A6B">When is the serum coming? I have been on the notify list since May.</p>
+<div style="background:#F5F1E9;padding:14px 18px;font:300 13px/1.8 'Jost',sans-serif;color:#3E4A6B;border-left:2px solid #C1934F">Frona replied: October, and the notify list hears two weeks before anyone else. Thank you for waiting with us.</div>
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:24px">
+<div style="background:#fff;border:1px solid rgba(22,41,91,.1);padding:26px 28px">
+<h2 style="margin:0 0 22px;font:500 20px/1.2 'Cormorant Garamond',serif;color:#16295B">What people write about</h2>
+<div style="display:flex;flex-direction:column;gap:14px">
+<div><div style="display:flex;justify-content:space-between;font:300 12.5px/1 'Jost',sans-serif;color:#3E4A6B;margin-bottom:7px"><span>Results on dark marks</span><span>41%</span></div><div style="height:5px;background:rgba(22,41,91,.1)"><div style="width:41%;height:5px;background:#16295B"></div></div></div>
+<div><div style="display:flex;justify-content:space-between;font:300 12.5px/1 'Jost',sans-serif;color:#3E4A6B;margin-bottom:7px"><span>Texture and scent</span><span>23%</span></div><div style="height:5px;background:rgba(22,41,91,.1)"><div style="width:23%;height:5px;background:#16295B"></div></div></div>
+<div><div style="display:flex;justify-content:space-between;font:300 12.5px/1 'Jost',sans-serif;color:#3E4A6B;margin-bottom:7px"><span>Pregnancy and sensitivity</span><span>16%</span></div><div style="height:5px;background:rgba(22,41,91,.1)"><div style="width:16%;height:5px;background:#16295B"></div></div></div>
+<div><div style="display:flex;justify-content:space-between;font:300 12.5px/1 'Jost',sans-serif;color:#3E4A6B;margin-bottom:7px"><span>Packaging and delivery</span><span>12%</span></div><div style="height:5px;background:rgba(22,41,91,.1)"><div style="width:12%;height:5px;background:#A0574B"></div></div></div>
+<div><div style="display:flex;justify-content:space-between;font:300 12.5px/1 'Jost',sans-serif;color:#3E4A6B;margin-bottom:7px"><span>When is the serum</span><span>8%</span></div><div style="height:5px;background:rgba(22,41,91,.1)"><div style="width:8%;height:5px;background:#C1934F"></div></div></div>
+</div>
+<div style="margin-top:22px;padding:15px 18px;background:#F5F1E9;font:300 12.5px/1.75 'Jost',sans-serif;color:#3E4A6B">Packaging complaints tripled this month. All four mention the pump seal on the August batch.</div>
+</div>
+<div style="background:#fff;border:1px solid rgba(22,41,91,.1);padding:26px 28px">
+<h2 style="margin:0 0 20px;font:500 20px/1.2 'Cormorant Garamond',serif;color:#16295B">Saved answers</h2>
+<div style="display:flex;flex-direction:column;gap:0">
+<div style="display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid rgba(22,41,91,.1);font:300 13px/1.4 'Jost',sans-serif;color:#3E4A6B"><span>Pregnancy and kojic acid</span><span style="color:#8A8578">used 46&times;</span></div>
+<div style="display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid rgba(22,41,91,.1);font:300 13px/1.4 'Jost',sans-serif;color:#3E4A6B"><span>How long until results</span><span style="color:#8A8578">used 38&times;</span></div>
+<div style="display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid rgba(22,41,91,.1);font:300 13px/1.4 'Jost',sans-serif;color:#3E4A6B"><span>Brightening is not bleaching</span><span style="color:#8A8578">used 31&times;</span></div>
+<div style="display:flex;justify-content:space-between;padding:13px 0;font:300 13px/1.4 'Jost',sans-serif;color:#3E4A6B"><span>Damaged parcel and refunds</span><span style="color:#8A8578">used 12&times;</span></div>
+</div>
+<div style="margin-top:20px;border:1px solid rgba(22,41,91,.2);padding:12px 0;text-align:center;font:400 11px/1 'Jost',sans-serif;letter-spacing:.13em;color:#16295B">WRITE A NEW ANSWER</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="1m">
+<div class="dv-olabel"><a class="dv-oid" href="#1m">1m</a>Mobile &middot; home</div>
+<div class="dv-card" style="width:390px">
+<div style="background:#16295B;color:#fff;padding:9px 0;text-align:center;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.02em">Complimentary US shipping over $50</div>
+<div style="background:#F5F1E9;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(22,41,91,.1)">
+<div style="display:flex;flex-direction:column;gap:5px;width:22px"><span style="height:1.2px;background:#16295B"></span><span style="height:1.2px;background:#16295B"></span><span style="height:1.2px;background:#16295B"></span></div>
+<img src="assets/logo-nav.png" alt="FronaVie" style="height:32px;width:auto">
+<div style="display:flex;gap:16px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16295B" stroke-width="1.2"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16295B" stroke-width="1.2"><path d="M4.5 7.5h15L18 21H6L4.5 7.5Z"/><path d="M8.8 7.5V6a3.2 3.2 0 0 1 6.4 0v1.5"/></svg></div>
+</div>
+<div style="background:#F5F1E9;padding:34px 24px 40px;text-align:center">
+<div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.19em;color:#C1934F;margin-bottom:20px">FILIPINO-INSPIRED. SCIENCE-BACKED.</div>
+<h1 style="margin:0 0 22px;font:500 46px/1.06 'Cormorant Garamond',serif;color:#16295B">Brightening Without Stripping</h1>
+<p style="margin:0 auto 26px;font:300 14.5px/1.85 'Jost',sans-serif;color:#3E4A6B;max-width:290px">Gentle, effective skincare that helps reveal your natural radiance, while honoring the quiet beauty of your everyday.</p>
+<a href="#1n" style="display:block;background:#16295B;color:#fff;text-decoration:none;padding:18px 0;font:500 12px/1 'Jost',sans-serif;letter-spacing:.16em">DISCOVER FRONAVIE</a>
+</div>
+<div style="height:420px;background:repeating-linear-gradient(128deg,#E6DFD1 0 8px,#EFEAE0 8px 16px);display:flex;align-items:center;justify-content:center;position:relative">
+<div style="font:400 9.5px/1.7 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:10px 13px;text-align:center">Hero photography<br>portrait crop, 390&times;420</div>
+<div style="position:absolute;bottom:18px;right:18px;width:74px;height:74px;border-radius:50%;background:#16295B;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font:400 7.5px/1.6 'Jost',sans-serif;letter-spacing:.13em"><span>NEW</span><span style="font:500 15px/1 'Cormorant Garamond',serif">HERO</span><span style="font-size:6.5px">PRODUCT</span></div>
+</div>
+<div style="background:#F5F1E9;padding:26px 20px;display:flex;justify-content:space-between">
+<div style="display:flex;flex-direction:column;align-items:center;gap:10px;width:96px"><svg width="26" height="26" viewBox="0 0 30 30" fill="none" stroke="#16295B" stroke-width="1"><path d="M15 26V13"/><path d="M15 13c0-5 3.5-9 9-9 0 5-4 9-9 9Z"/><path d="M15 17c0-4-3-7-7-7 0 4 3 7 7 7Z"/></svg><div style="font:400 8.5px/1.6 'Jost',sans-serif;letter-spacing:.13em;color:#16295B;text-align:center">GENTLE &amp;<br>NON-STRIPPING</div></div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:10px;width:96px"><svg width="26" height="26" viewBox="0 0 30 30" fill="none" stroke="#16295B" stroke-width="1"><path d="M15 4c4 5.5 6.5 9 6.5 12.5A6.5 6.5 0 0 1 15 23a6.5 6.5 0 0 1-6.5-6.5C8.5 13 11 9.5 15 4Z"/></svg><div style="font:400 8.5px/1.6 'Jost',sans-serif;letter-spacing:.13em;color:#16295B;text-align:center">BRIGHTENS &amp;<br>EVENS TONE</div></div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:10px;width:96px"><svg width="26" height="26" viewBox="0 0 30 30" fill="none" stroke="#16295B" stroke-width="1"><path d="M15 4l9 3v8c0 5-4 8.5-9 11-5-2.5-9-6-9-11V7l9-3Z"/><path d="M15 11v7M11.5 14.5h7"/></svg><div style="font:400 8.5px/1.6 'Jost',sans-serif;letter-spacing:.13em;color:#16295B;text-align:center">STRENGTHENS<br>BARRIER</div></div>
+</div>
+<div style="background:#FBF9F5;padding:52px 26px;text-align:center">
+<img src="assets/logo-flower.png" alt="" style="height:30px;width:auto;margin-bottom:22px">
+<p style="margin:0;font:400 22px/1.6 'Cormorant Garamond',serif;color:#16295B;text-wrap:pretty">Honoring the timeless beauty rituals and heritage of the Philippines through a mindful approach to luxury skincare, where tradition is thoughtfully elevated by modern skincare science.</p>
+<div style="width:50px;height:1px;background:#C1934F;margin:26px auto 16px"></div>
+<div style="font:400 9px/1 'Jost',sans-serif;letter-spacing:.18em;color:#8A8578">THE FIRST LUXURY SKINCARE HOUSE<br>BUILT ON FILIPINO PRIDE</div>
+</div>
+<div style="background:linear-gradient(180deg,#DCE3F0 0%,#F2F0EB 100%);padding:44px 24px;text-align:center">
+<h2 style="margin:0 0 16px;font:500 30px/1.24 'Cormorant Garamond',serif;color:#16295B">Rooted in Heritage.<br>Made for You.</h2>
+<p style="margin:0 auto 24px;font:300 14px/1.9 'Jost',sans-serif;color:#3E4A6B;max-width:300px">Inspired by Filipino beauty rituals and the strength of women who give so much to others.</p>
+<a href="#1b" style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.15em;color:#16295B;text-decoration:none;border-bottom:1px solid rgba(193,147,79,.7);padding-bottom:6px">READ OUR STORY</a>
+</div>
+<div style="background:#16295B;color:#fff;padding:44px 24px;text-align:center">
+<div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.19em;color:#C8A876;margin-bottom:16px">WHAT&#39;S INSIDE</div>
+<h2 style="margin:0 0 30px;font:500 30px/1.24 'Cormorant Garamond',serif">Three ingredients, doing their jobs.</h2>
+<div style="display:flex;flex-direction:column;gap:1px;background:rgba(255,255,255,.16);text-align:left">
+<div style="background:#16295B;padding:22px 20px"><div style="font:500 10.5px/1 'Jost',sans-serif;letter-spacing:.16em;color:#C8A876;margin-bottom:12px">KOJIC ACID</div><div style="font:400 19px/1.3 'Cormorant Garamond',serif">Interrupts the spot</div></div>
+<div style="background:#16295B;padding:22px 20px"><div style="font:500 10.5px/1 'Jost',sans-serif;letter-spacing:.16em;color:#C8A876;margin-bottom:12px">NIACINAMIDE</div><div style="font:400 19px/1.3 'Cormorant Garamond',serif">Keeps the barrier</div></div>
+<div style="background:#16295B;padding:22px 20px"><div style="font:500 10.5px/1 'Jost',sans-serif;letter-spacing:.16em;color:#C8A876;margin-bottom:12px">HYALURONIC ACID</div><div style="font:400 19px/1.3 'Cormorant Garamond',serif">Holds the water in</div></div>
+</div>
+</div>
+<div style="background:#F5F1E9;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(22,41,91,.1)">
+<div><div style="font:500 19px/1 'Cormorant Garamond',serif;color:#16295B">$38</div><div style="font:400 9px/1 'Jost',sans-serif;letter-spacing:.13em;color:#8A8578;margin-top:5px">CLEANSING CREAM</div></div>
+<a href="#1o" style="background:#16295B;color:#fff;text-decoration:none;padding:16px 26px;font:500 11px/1 'Jost',sans-serif;letter-spacing:.15em">ADD TO BAG</a>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="1n">
+<div class="dv-olabel"><a class="dv-oid" href="#1n">1n</a>Mobile &middot; product detail with sticky buy bar</div>
+<div class="dv-card" style="width:390px">
+<div style="background:#F5F1E9;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(22,41,91,.1)">
+<span style="font:300 20px/1 'Jost',sans-serif;color:#16295B">&#8249;</span>
+<img src="assets/logo-nav.png" alt="FronaVie" style="height:30px;width:auto">
+<div style="position:relative"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16295B" stroke-width="1.2"><path d="M4.5 7.5h15L18 21H6L4.5 7.5Z"/><path d="M8.8 7.5V6a3.2 3.2 0 0 1 6.4 0v1.5"/></svg><span style="position:absolute;top:-5px;right:-7px;background:#C1934F;color:#fff;width:15px;height:15px;border-radius:50%;font:500 9px/15px 'Jost',sans-serif;text-align:center">1</span></div>
+</div>
+<div style="height:400px;background:repeating-linear-gradient(128deg,#E9E2D4 0 8px,#F2EDE3 8px 16px);display:flex;align-items:flex-end;justify-content:center;padding-bottom:18px;position:relative">
+<div style="position:absolute;top:44%;font:400 9.5px/1.7 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#7E7969;background:rgba(255,255,255,.86);padding:10px 13px;text-align:center">Product image 1 of 4</div>
+<div style="display:flex;gap:7px"><span style="width:22px;height:2px;background:#16295B"></span><span style="width:22px;height:2px;background:rgba(22,41,91,.25)"></span><span style="width:22px;height:2px;background:rgba(22,41,91,.25)"></span><span style="width:22px;height:2px;background:rgba(22,41,91,.25)"></span></div>
+</div>
+<div style="background:#F5F1E9;padding:28px 24px 24px">
+<div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.18em;color:#C1934F;margin-bottom:14px">CLEANSE &middot; STEP 01</div>
+<h1 style="margin:0 0 12px;font:500 34px/1.14 'Cormorant Garamond',serif;color:#16295B">Kojic Brightening Cleansing Cream</h1>
+<div style="display:flex;align-items:center;gap:10px;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.1em;color:#8A8578;margin-bottom:20px"><span style="color:#C1934F;font-size:11px">&#9670;&#9670;&#9670;&#9670;&#9670;</span> 4.8 &middot; 128 REVIEWS</div>
+<p style="margin:0 0 24px;font:300 14.5px/1.85 'Jost',sans-serif;color:#3E4A6B">A silken, non-foaming cleanser that lifts the day from your skin and leaves the barrier intact. Thirty unhurried seconds, morning and evening.</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px">
+<span style="border:1px solid rgba(22,41,91,.2);padding:8px 13px;font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.12em;color:#16295B">pH 5.5</span>
+<span style="border:1px solid rgba(22,41,91,.2);padding:8px 13px;font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.12em;color:#16295B">SULFATE-FREE</span>
+<span style="border:1px solid rgba(22,41,91,.2);padding:8px 13px;font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.12em;color:#16295B">AM + PM</span>
+</div>
+<div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:12px">SIZE</div>
+<div style="display:flex;gap:10px;margin-bottom:8px">
+<div style="flex:1;border:1.5px solid #16295B;background:#fff;padding:13px 0;text-align:center"><div style="font:400 12.5px/1 'Jost',sans-serif;color:#16295B">120 ml</div><div style="font:400 10.5px/1 'Jost',sans-serif;color:#8A8578;margin-top:6px">$38</div></div>
+<div style="flex:1;border:1px solid rgba(22,41,91,.2);padding:13px 0;text-align:center"><div style="font:400 12.5px/1 'Jost',sans-serif;color:#16295B">120 ml &times; 2</div><div style="font:400 10.5px/1 'Jost',sans-serif;color:#8A8578;margin-top:6px">$72, save 5%</div></div>
+</div>
+</div>
+<div style="background:#FBF9F5;padding:8px 24px 24px">
+<div style="padding:20px 0;border-bottom:1px solid rgba(22,41,91,.12)"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><span style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B">HOW TO USE</span><span style="font:300 17px/1 'Jost',sans-serif;color:#C1934F">&minus;</span></div><p style="margin:0;font:300 13.5px/1.85 'Jost',sans-serif;color:#3E4A6B">Warm a coin-sized amount in dry hands, massage over damp skin for thirty seconds, rinse with lukewarm water. Follow with moisturizer, and sunscreen in the morning.</p></div>
+<div style="padding:20px 0;border-bottom:1px solid rgba(22,41,91,.12);display:flex;justify-content:space-between;align-items:center"><span style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B">FULL INGREDIENT LIST</span><span style="font:300 17px/1 'Jost',sans-serif;color:#8A8578">+</span></div>
+<div style="padding:20px 0;border-bottom:1px solid rgba(22,41,91,.12);display:flex;justify-content:space-between;align-items:center"><span style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B">SHIPPING &amp; RETURNS</span><span style="font:300 17px/1 'Jost',sans-serif;color:#8A8578">+</span></div>
+<div style="padding:20px 0;display:flex;justify-content:space-between;align-items:center"><span style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B">REVIEWS (128)</span><span style="font:300 17px/1 'Jost',sans-serif;color:#8A8578">+</span></div>
+</div>
+<div style="background:#16295B;color:#fff;padding:36px 24px">
+<div style="font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.19em;color:#C8A876;margin-bottom:14px">THE FORMULA</div>
+<h2 style="margin:0 0 22px;font:500 27px/1.24 'Cormorant Garamond',serif">Nothing in here is decoration</h2>
+<div style="display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.18)"><span style="font:400 16px/1.3 'Cormorant Garamond',serif">Kojic Acid</span><span style="font:300 11.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.7)">brightening &middot; 2%</span></div>
+<div style="display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.18)"><span style="font:400 16px/1.3 'Cormorant Garamond',serif">Niacinamide</span><span style="font:300 11.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.7)">barrier &middot; 4%</span></div>
+<div style="display:flex;justify-content:space-between;padding:15px 0"><span style="font:400 16px/1.3 'Cormorant Garamond',serif">Sodium Hyaluronate</span><span style="font:300 11.5px/1 'Jost',sans-serif;color:rgba(255,255,255,.7)">hydration &middot; 1%</span></div>
+</div>
+<div style="background:#F5F1E9;padding:16px 20px;display:flex;align-items:center;gap:12px;border-top:1px solid rgba(22,41,91,.12);box-shadow:0 -6px 18px rgba(22,41,91,.07)">
+<div style="border:1px solid rgba(22,41,91,.22);display:flex;align-items:center;gap:14px;padding:13px 14px;font:400 13px/1 'Jost',sans-serif;color:#16295B"><span style="color:#8A8578">&minus;</span><span>1</span><span>+</span></div>
+<a href="#1o" style="flex:1;background:#16295B;color:#fff;text-decoration:none;padding:16px 0;text-align:center;font:500 11.5px/1 'Jost',sans-serif;letter-spacing:.15em">ADD TO BAG &middot; $38</a>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="1o">
+<div class="dv-olabel"><a class="dv-oid" href="#1o">1o</a>Mobile &middot; bag</div>
+<div class="dv-card" style="width:390px">
+<div style="background:#F5F1E9;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(22,41,91,.1)">
+<span style="font:300 20px/1 'Jost',sans-serif;color:#16295B">&#8249;</span>
+<span style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.16em;color:#16295B">YOUR BAG (2)</span>
+<span style="font:300 11px/1 'Jost',sans-serif;letter-spacing:.1em;color:#8A8578">CLOSE</span>
+</div>
+<div style="background:#F5F1E9;padding:24px 20px 28px">
+<div style="background:#FBF9F5;padding:20px;display:flex;gap:16px;margin-bottom:14px">
+<div style="width:76px;height:94px;flex:none;background:repeating-linear-gradient(128deg,#E9E2D4 0 6px,#F2EDE3 6px 12px)"></div>
+<div style="flex:1">
+<div style="font:400 9px/1 'Jost',sans-serif;letter-spacing:.16em;color:#C1934F;margin-bottom:8px">CLEANSE</div>
+<div style="font:500 18px/1.25 'Cormorant Garamond',serif;color:#16295B;margin-bottom:6px">Kojic Brightening Cleansing Cream</div>
+<div style="font:300 11px/1.6 'Jost',sans-serif;color:#8A8578;margin-bottom:14px">120 ml &middot; In stock</div>
+<div style="display:flex;align-items:center;justify-content:space-between">
+<div style="border:1px solid rgba(22,41,91,.22);display:flex;align-items:center;gap:14px;padding:8px 12px;font:400 12.5px/1 'Jost',sans-serif;color:#16295B"><span style="color:#8A8578">&minus;</span><span>2</span><span>+</span></div>
+<span style="font:500 18px/1 'Cormorant Garamond',serif;color:#16295B">$76</span>
+</div>
+</div>
+</div>
+<div style="background:#FBF9F5;padding:16px 20px;display:flex;align-items:center;gap:12px;margin-bottom:14px"><span style="width:15px;height:15px;border:1px solid rgba(22,41,91,.35);flex:none"></span><span style="font:300 12.5px/1.6 'Jost',sans-serif;color:#3E4A6B">Add a handwritten gift note, with our compliments</span></div>
+<div style="background:#EAE6DE;padding:16px 20px;display:flex;align-items:center;gap:14px;margin-bottom:24px">
+<div style="width:48px;height:48px;flex:none;background:repeating-linear-gradient(128deg,#E3DCCC 0 6px,#EEE9DE 6px 12px)"></div>
+<div style="flex:1"><div style="font:400 9px/1 'Jost',sans-serif;letter-spacing:.15em;color:#8A8578;margin-bottom:6px">GOES WELL WITH</div><div style="font:500 15px/1.3 'Cormorant Garamond',serif;color:#16295B">Muslin cleansing cloth, $9</div></div>
+<span style="border:1px solid rgba(22,41,91,.3);padding:9px 14px;font:400 9.5px/1 'Jost',sans-serif;letter-spacing:.13em;color:#16295B">ADD</span>
+</div>
+<div style="display:flex;justify-content:space-between;padding:11px 0;font:300 13px/1 'Jost',sans-serif;color:#3E4A6B"><span>Subtotal</span><span>$76</span></div>
+<div style="display:flex;justify-content:space-between;padding:11px 0;font:300 13px/1 'Jost',sans-serif;color:#3E4A6B"><span>Shipping</span><span style="color:#C1934F">Complimentary</span></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;padding:16px 0;border-top:1px solid rgba(22,41,91,.15);margin-top:6px"><span style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B">TOTAL</span><span style="font:500 24px/1 'Cormorant Garamond',serif;color:#16295B">$76</span></div>
+<div style="background:#EAE6DE;padding:12px 14px;font:300 11.5px/1.7 'Jost',sans-serif;color:#3E4A6B;margin-bottom:18px">You have qualified for complimentary nationwide shipping.</div>
+<a href="#1i" style="display:block;background:#16295B;color:#fff;text-decoration:none;padding:18px 0;text-align:center;font:500 11.5px/1 'Jost',sans-serif;letter-spacing:.16em">CHECKOUT</a>
+<div style="display:flex;justify-content:center;gap:16px;margin-top:16px;font:300 10.5px/1 'Jost',sans-serif;color:#8A8578"><span>Apple Pay</span><span>PayPal</span><span>Shop Pay</span></div>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="1p">
+<div class="dv-olabel"><a class="dv-oid" href="#1p">1p</a>Mobile &middot; order tracking</div>
+<div class="dv-card" style="width:390px">
+<div style="background:#F5F1E9;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(22,41,91,.1)">
+<span style="font:300 20px/1 'Jost',sans-serif;color:#16295B">&#8249;</span>
+<img src="assets/logo-nav.png" alt="FronaVie" style="height:30px;width:auto">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16295B" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4.5 21c0-4.1 3.4-6.5 7.5-6.5s7.5 2.4 7.5 6.5"/></svg>
+</div>
+<div style="background:#F5F1E9;padding:28px 24px 24px">
+<div style="font:400 10px/1 'Jost',sans-serif;letter-spacing:.17em;color:#C1934F;margin-bottom:12px">IN TRANSIT</div>
+<h1 style="margin:0 0 8px;font:500 32px/1.14 'Cormorant Garamond',serif;color:#16295B">Order FV&ndash;10428</h1>
+<div style="font:300 12.5px/1.7 'Jost',sans-serif;color:#8A8578">Placed 19 August &middot; Arriving Friday 22 August</div>
+</div>
+<div style="background:#FBF9F5;padding:26px 24px">
+<div style="display:flex;flex-direction:column;gap:0">
+<div style="display:flex;gap:16px"><div style="display:flex;flex-direction:column;align-items:center;flex:none"><span style="width:10px;height:10px;background:#16295B;border-radius:50%"></span><span style="width:1px;flex:1;background:#16295B;min-height:44px"></span></div><div style="padding-bottom:24px"><div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B;margin-bottom:7px">CONFIRMED</div><div style="font:300 12px/1.6 'Jost',sans-serif;color:#8A8578">19 Aug, 9:04am</div></div></div>
+<div style="display:flex;gap:16px"><div style="display:flex;flex-direction:column;align-items:center;flex:none"><span style="width:10px;height:10px;background:#16295B;border-radius:50%"></span><span style="width:1px;flex:1;background:#16295B;min-height:44px"></span></div><div style="padding-bottom:24px"><div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B;margin-bottom:7px">PACKED IN MANILA-INSPIRED TISSUE</div><div style="font:300 12px/1.6 'Jost',sans-serif;color:#8A8578">19 Aug, 4:40pm</div></div></div>
+<div style="display:flex;gap:16px"><div style="display:flex;flex-direction:column;align-items:center;flex:none"><span style="width:10px;height:10px;background:#C1934F;border-radius:50%"></span><span style="width:1px;flex:1;background:rgba(22,41,91,.2);min-height:44px"></span></div><div style="padding-bottom:24px"><div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B;margin-bottom:7px">IN TRANSIT</div><div style="font:300 12px/1.6 'Jost',sans-serif;color:#8A8578">Left the Los Angeles hub, 21 Aug</div></div></div>
+<div style="display:flex;gap:16px"><div style="display:flex;flex-direction:column;align-items:center;flex:none"><span style="width:10px;height:10px;border:1px solid rgba(22,41,91,.3);border-radius:50%"></span></div><div><div style="font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#B4AFA3;margin-bottom:7px">DELIVERED</div><div style="font:300 12px/1.6 'Jost',sans-serif;color:#B4AFA3">Expected Friday, by 6pm</div></div></div>
+</div>
+<div style="margin-top:22px;border:1px solid rgba(22,41,91,.22);padding:15px 0;text-align:center;font:400 11px/1 'Jost',sans-serif;letter-spacing:.14em;color:#16295B">TRACK WITH THE CARRIER</div>
+</div>
+<div style="background:#F5F1E9;padding:24px;border-top:1px solid rgba(22,41,91,.1)">
+<div style="display:flex;gap:16px;align-items:center;margin-bottom:22px">
+<div style="width:60px;height:74px;flex:none;background:repeating-linear-gradient(128deg,#E9E2D4 0 6px,#F2EDE3 6px 12px)"></div>
+<div style="flex:1"><div style="font:500 16px/1.3 'Cormorant Garamond',serif;color:#16295B">Kojic Brightening Cleansing Cream</div><div style="font:300 11.5px/1.6 'Jost',sans-serif;color:#8A8578;margin-top:5px">120 ml &middot; Quantity 2</div></div>
+<div style="font:400 14px/1 'Jost',sans-serif;color:#16295B">$76</div>
+</div>
+<div style="display:flex;gap:10px"><span style="flex:1;border:1px solid rgba(22,41,91,.25);padding:14px 0;text-align:center;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.13em;color:#16295B">VIEW INVOICE</span><span style="flex:1;background:#16295B;color:#fff;padding:14px 0;text-align:center;font:400 10.5px/1 'Jost',sans-serif;letter-spacing:.13em">BUY AGAIN</span></div>
+</div>
+<div style="background:#EAE6DE;padding:24px;text-align:center">
+<div style="font:500 19px/1.3 'Cormorant Garamond',serif;color:#16295B;margin-bottom:8px">Refill due in eleven days</div>
+<p style="margin:0 0 16px;font:300 12.5px/1.7 'Jost',sans-serif;color:#3E4A6B">We can send it automatically and hold ten percent for you.</p>
+<span style="display:inline-block;background:#16295B;color:#fff;padding:14px 28px;font:500 10.5px/1 'Jost',sans-serif;letter-spacing:.14em">SET UP REFILLS</span>
+</div>
+</div>
+</div>
+
+<div id="ins"></div>
+</div>
+<p class="dv-next">Try next: &ldquo;tighten the homepage, it runs long&rdquo; &middot; &ldquo;give the admin dashboard a products and inventory screen&rdquo; &middot; &ldquo;mobile versions of <a class="dv-oid" href="#1b">1b</a> and <a class="dv-oid" href="#1e">1e</a>&rdquo; &middot; &ldquo;drop in the real product photography&rdquo;</p>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showJournal&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Homepage sections&quot;},&quot;showFaq&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Homepage sections&quot;},&quot;showStockists&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Homepage sections&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      zero: 0,
+      two: 2,
+      showJournal: this.props.showJournal ?? true,
+      showFaq: this.props.showFaq ?? true,
+      showStockists: this.props.showStockists ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>

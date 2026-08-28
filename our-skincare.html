@@ -66,42 +66,71 @@
     that is real.
   -->
 
-  <section class="ritual-open" id="top">
-    <div class="wrap">
-      <svg class="ritual-open-mark" width="46" height="46" viewBox="0 0 100 100" fill="none" stroke="var(--navy)" stroke-width="2" style="margin:0 auto;">
-        <g stroke-linejoin="round">
-          <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z"/>
-          <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(72 50 50)"/>
-          <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(144 50 50)"/>
-          <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(216 50 50)"/>
-          <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(288 50 50)"/>
-        </g>
-        <circle cx="50" cy="50" r="5" fill="var(--navy)" stroke="none"/>
-      </svg>
-      <div class="eyebrow reveal in">Our Skincare</div>
-      <h1 class="reveal in">Something worth waiting for.</h1>
-      <p class="lede reveal in">Each formula begins with a tradition already trusted for generations, refined with the same care and rigor as any modern active.</p>
+  <!--
+    OUR SKINCARE: pre-launch product reveal using the real product
+    photography Maribeth supplied. No live launch date is asserted
+    here (that is a fact to confirm with her, not a design choice),
+    and no fabricated signup counters are used. Once real inventory
+    and a confirmed date exist, this is where the actual shopping
+    experience (grid, cart, checkout) belongs.
+  -->
+
+  <section style="padding:30px 0 80px; background:linear-gradient(160deg,var(--pale-blue) 0%, var(--ivory) 52%, var(--warm-white) 100%);">
+    <div class="wrap pdp-hero-grid">
+      <div class="pdp-gallery">
+        <div class="pdp-thumbs">
+          <div class="pdp-thumb is-active"><img src="assets/photos/shot-serum.png" alt=""></div>
+          <div class="pdp-thumb pdp-thumb-crop"><img src="assets/photos/shot-hero-trio.png" alt=""></div>
+          <div class="pdp-thumb"><img src="assets/photos/shot-cleanser.png" alt=""></div>
+          <div class="pdp-thumb"><img src="assets/photos/shot-eye.png" alt=""></div>
+        </div>
+        <div class="pdp-main-shot reveal">
+          <img src="assets/photos/shot-serum.png" alt="Lumière Revitalizing Essence Serum">
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="eyebrow" style="letter-spacing:.24em;">Step 02 &middot; The FronaVie Ritual</div>
+        <h1 style="margin:18px 0 8px;">Lumière Revitalizing Essence Serum</h1>
+        <div style="font-family:var(--sans); font-style:italic; font-weight:300; font-size:15px; color:var(--navy-soft); margin-bottom:24px;">Radiance. Renewal. Resilience.</div>
+        <p class="lede" style="margin-bottom:28px;">A weightless essence that settles into damp skin and leaves it looking lit from within. Formulated to hydrate, restore and awaken, so radiance arrives as care rather than correction.</p>
+        <div class="pdp-ingredient-rows">
+          <div class="pdp-ingredient-row">
+            <img src="assets/logo-flower.png" alt="">
+            <span>Niacinamide, to help even tone and support the skin barrier</span>
+          </div>
+          <div class="pdp-ingredient-row">
+            <img src="assets/logo-flower.png" alt="">
+            <span>A ferment inspired by the rice water rituals our grandmothers kept</span>
+          </div>
+          <div class="pdp-ingredient-row">
+            <img src="assets/logo-flower.png" alt="">
+            <span>Sampaguita extract in trace amount, for scent and for memory</span>
+          </div>
+        </div>
+        <div class="pdp-tags">
+          <span class="pdp-tag">30 ML</span>
+          <span class="pdp-tag">AM + PM</span>
+          <span class="pdp-tag">FRAGRANCE IN TRACE</span>
+          <span class="pdp-tag">ALL SKIN TYPES</span>
+        </div>
+        <div class="pdp-notify-box">
+          <div style="font-family:var(--serif); font-size:18px; letter-spacing:.08em; color:var(--navy); margin-bottom:16px;">Coming Soon</div>
+          <form class="ritual-close-form" id="notifyForm" style="border-bottom:1px solid var(--line); max-width:none;">
+            <input type="email" placeholder="Your email address" required aria-label="Email address" style="color:var(--navy);">
+            <button type="submit" style="color:var(--navy);">Notify Me</button>
+          </form>
+          <p class="fine" style="color:var(--navy-soft); margin-top:12px;">Early access before launch, and a gift with your first ritual.</p>
+          <div class="form-confirm" id="notifyConfirm" style="padding:10px 0 0; text-align:left;">
+            <p style="color:var(--navy-soft); font-size:14px;">You're on the list. We'll write when there's something real to share.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section style="padding:20px 0 80px;">
+  <section style="padding:0 0 80px;">
     <div class="wrap" style="max-width:760px; text-align:center;">
-      <div class="ritual-plate reveal" style="aspect-ratio:16/9; margin-bottom:36px;">
-        <div class="plate-fill">
-          <svg class="plate-mark" width="140" height="140" viewBox="0 0 100 100" fill="none" stroke="var(--navy)" stroke-width="1.7">
-            <g stroke-linejoin="round">
-              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z"/>
-              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(72 50 50)"/>
-              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(144 50 50)"/>
-              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(216 50 50)"/>
-              <path d="M50 8c8 0 13 10 13 20 0 8-6 14-13 14s-13-6-13-14c0-10 5-20 13-20z" transform="rotate(288 50 50)"/>
-            </g>
-          </svg>
-        </div>
-        <span class="plate-caption">Plate: Product video in progress.</span>
-        <div class="premium-hero-badge" style="top:20px; right:20px;">New<br>Hero<br>Product</div>
-      </div>
-      <p class="reveal" style="color:var(--navy-soft); font-size:15.5px; max-width:520px; margin:0 auto;">This is a short look, not the full collection. Formulas are still being finalized, with care. When there is something real to show you, this is where it will live.</p>
+      <p class="reveal" style="color:var(--navy-soft); font-size:14px; opacity:.8;">This is a short look, not the full collection. Formulas are still being finalized, with care.</p>
     </div>
   </section>
 
@@ -208,6 +237,11 @@
     e.preventDefault();
     document.getElementById('ritualCloseIntro').style.display = 'none';
     document.getElementById('ritualCloseConfirm').classList.add('show');
+  });
+  document.getElementById('notifyForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    this.style.display = 'none';
+    document.getElementById('notifyConfirm').classList.add('show');
   });
 </script>
 </body>

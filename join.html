@@ -9,34 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<style>
-  body{ background:var(--navy); }
-  .join-shell{
-    position:relative; min-height:100vh; display:flex; flex-direction:column; align-items:center;
-    text-align:center; padding:110px 24px 70px; color:var(--warm-white); overflow:hidden;
-  }
-  .join-watermark{
-    position:absolute; top:8%; left:50%; transform:translateX(-50%); width:560px; max-width:140vw;
-    opacity:.05; pointer-events:none; z-index:0;
-  }
-  .join-shell > *{ position:relative; z-index:1; }
-  .join-shell .logo-img{ height:60px; margin-bottom:50px; }
-  .join-eyebrow{ font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--champagne); margin-bottom:22px; }
-  .join-shell h1{ font-size:clamp(30px,4.6vw,48px); line-height:1.25; max-width:600px; margin:0 0 20px; color:var(--warm-white); }
-  .join-shell p.sub{ font-size:15px; color:rgba(250,247,242,.68); max-width:420px; margin:0 0 48px; }
-  .join-form{ display:flex; gap:0; border-bottom:1px solid rgba(250,247,242,.4); padding-bottom:14px; width:100%; max-width:360px; }
-  .join-form input{
-    flex:1; border:none; background:transparent; font-family:var(--sans); font-size:15px; outline:none; color:var(--warm-white);
-  }
-  .join-form input::placeholder{ color:rgba(250,247,242,.5); }
-  .join-form button{ background:none; border:none; font-size:12px; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; color:var(--warm-white); font-weight:500; }
-  .join-back{ margin-top:60px; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:rgba(250,247,242,.55); }
-  .join-back:hover{ color:var(--warm-white); }
-  .join-confirm{ display:none; }
-  .join-confirm.show{ display:block; }
-</style>
 </head>
-<body>
+<body class="page-join">
 
 <div class="join-shell">
 

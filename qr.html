@@ -14,9 +14,20 @@
      no footer, one screen, one decision. Mobile-first, fast, focused. */
   body{ background:var(--warm-white); }
   .qr-shell{
-    max-width:440px; margin:0 auto; min-height:100vh; box-sizing:border-box;
-    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    max-width:440px; margin:0 auto; box-sizing:border-box;
+    min-height:100vh; min-height:100svh;
+    display:flex; flex-direction:column; align-items:center;
+    justify-content:center; justify-content:safe center;
     padding:48px 28px; text-align:center;
+  }
+  /* Short viewports (small phones, large system font, split screen):
+     trim the largest elements so the logo and the last action button
+     stay on screen instead of being clipped by centering. */
+  @media (max-height:720px){
+    .qr-shell{ padding:32px 24px; }
+    .qr-logo{ height:84px; margin-bottom:16px; }
+    .qr-welcome{ margin-bottom:26px; }
+    .qr-plate{ max-width:240px; margin-bottom:26px; }
   }
   .qr-logo{ height:108px; width:auto; margin-bottom:20px; }
   .qr-tagline{

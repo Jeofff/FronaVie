@@ -14,7 +14,6 @@
   body{ margin:0; font-family:'Manrope',sans-serif; background:var(--bg); color:var(--ink); }
   a{ color:inherit; text-decoration:none; }
   .shell{ display:grid; grid-template-columns:220px 1fr; min-height:100vh; }
-  @media (max-width:800px){ .shell{ grid-template-columns:1fr; } .side{ display:none; } }
   .side{ background:var(--card); border-right:1px solid var(--line); padding:26px 20px; }
   .side .brand{ font-size:15px; font-weight:600; margin-bottom:2px; }
   .side .brand-sub{ font-size:11px; color:var(--ink-soft); margin-bottom:30px; }
@@ -25,8 +24,9 @@
   main{ padding:30px 36px; }
   .topline{ display:flex; justify-content:space-between; align-items:center; margin-bottom:28px; flex-wrap:wrap; gap:12px; }
   .topline h1{ font-size:20px; font-weight:600; margin:0; }
-  .date-filter{ display:flex; gap:6px; }
-  .date-filter button{ font-family:'Manrope',sans-serif; font-size:12px; padding:7px 13px; border:1px solid var(--line); background:var(--card); cursor:pointer; border-radius:6px; color:var(--ink-soft); }
+  .date-filter{ display:flex; gap:6px; flex-wrap:wrap; }
+  .date-filter button{ font-family:'Manrope',sans-serif; font-size:12px; min-height:40px; padding:8px 14px; border:1px solid var(--line); background:var(--card); cursor:pointer; border-radius:6px; color:var(--ink-soft); }
+  @media (max-width:800px){ .date-filter button{ min-height:44px; } }
   .date-filter button.active{ background:var(--ink); color:#fff; border-color:var(--ink); }
   .metric-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:30px; }
   @media (max-width:900px){ .metric-grid{ grid-template-columns:repeat(2,1fr); } }
@@ -54,13 +54,58 @@
   .bar-fill{ height:100%; background:var(--ink); border-radius:4px; }
   .bar-row .bar-value{ width:40px; text-align:right; font-size:12px; color:var(--ink-soft); }
   .note{ font-size:11.5px; color:var(--ink-soft); background:#FBF1E2; border:1px solid #EFDDBB; padding:10px 14px; border-radius:6px; margin-bottom:24px; }
+  .empty-row{ color:var(--ink-soft); text-align:center; padding:26px 0; }
+  .panel-note{ font-size:11.5px; color:var(--ink-soft); margin-top:14px; }
+
+  /* tables scroll inside their own container so real data rows
+     never push the whole page sideways */
+  .table-wrap{ width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+
+  /* mobile: the sidebar becomes a slide-out drawer instead of
+     disappearing, so every admin section stays reachable on a phone */
+  .admin-topbar{ display:none; }
+  .side-backdrop{ display:none; }
+  @media (max-width:800px){
+    .shell{ grid-template-columns:1fr; }
+    .admin-topbar{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:12px 16px; background:var(--card); border-bottom:1px solid var(--line);
+      position:sticky; top:0; z-index:30;
+    }
+    .admin-topbar .brand{ font-size:15px; font-weight:600; }
+    .admin-menu-btn{
+      font-family:'Manrope',sans-serif; font-size:13px; font-weight:500;
+      display:inline-flex; align-items:center; gap:8px;
+      min-height:44px; padding:0 16px;
+      background:var(--card); border:1px solid var(--line); border-radius:6px;
+      color:var(--ink); cursor:pointer;
+    }
+    .side{
+      position:fixed; top:0; left:0; bottom:0; width:240px; z-index:50;
+      transform:translateX(-100%); transition:transform .28s ease; overflow-y:auto;
+    }
+    .side.open{ transform:translateX(0); }
+    .side nav a{ min-height:44px; display:flex; align-items:center; }
+    .side-backdrop{
+      display:block; position:fixed; inset:0; z-index:40;
+      background:rgba(22,35,58,.4); opacity:0; pointer-events:none;
+      transition:opacity .28s ease;
+    }
+    .side-backdrop.open{ opacity:1; pointer-events:auto; }
+    main{ padding:24px 18px; }
+  }
 </style>
 </head>
 <body>
 
+<div class="admin-topbar">
+  <span class="brand">FronaVie Admin</span>
+  <button class="admin-menu-btn" id="adminMenuBtn" type="button" aria-expanded="false" aria-controls="adminSide">Menu</button>
+</div>
+
 <div class="shell">
 
-  <div class="side">
+  <div class="side" id="adminSide">
     <div class="brand">FronaVie</div>
     <div class="brand-sub">Admin</div>
     <nav>
@@ -106,10 +151,12 @@
     <div class="panels">
       <div class="panel">
         <h2>Recent orders</h2>
+        <div class="table-wrap">
         <table>
           <tr><th>Order</th><th>Customer</th><th>Total</th><th>Status</th></tr>
-          <tr><td colspan="4" style="color:var(--ink-soft); text-align:center; padding:26px 0;">No orders yet. This table will populate once checkout is connected.</td></tr>
+          <tr><td colspan="4" class="empty-row">No orders yet. This table will populate once checkout is connected.</td></tr>
         </table>
+        </div>
       </div>
       <div class="panel">
         <h2>Top skin concerns from the ritual finder</h2>
@@ -117,29 +164,55 @@
         <div class="bar-row"><span class="bar-label">Dryness</span><div class="bar-track"><div class="bar-fill" style="width:0%;"></div></div><span class="bar-value">0</span></div>
         <div class="bar-row"><span class="bar-label">Uneven tone</span><div class="bar-track"><div class="bar-fill" style="width:0%;"></div></div><span class="bar-value">0</span></div>
         <div class="bar-row"><span class="bar-label">Fine lines</span><div class="bar-track"><div class="bar-fill" style="width:0%;"></div></div><span class="bar-value">0</span></div>
-        <p style="font-size:11.5px; color:var(--ink-soft); margin-top:14px;">Populates once the homepage ritual finder is connected to a database.</p>
+        <p class="panel-note">Populates once the homepage ritual finder is connected to a database.</p>
       </div>
     </div>
 
     <div class="panels">
       <div class="panel">
         <h2>Upcoming appointments</h2>
+        <div class="table-wrap">
         <table>
           <tr><th>Date</th><th>Service</th><th>Customer</th><th>Status</th></tr>
-          <tr><td colspan="4" style="color:var(--ink-soft); text-align:center; padding:26px 0;">No appointments yet. Populates once the booking form on the Contact page is connected.</td></tr>
+          <tr><td colspan="4" class="empty-row">No appointments yet. Populates once the booking form on the Contact page is connected.</td></tr>
         </table>
+        </div>
       </div>
       <div class="panel">
         <h2>New leads</h2>
+        <div class="table-wrap">
         <table>
           <tr><th>Name</th><th>Source</th><th>Status</th></tr>
-          <tr><td colspan="3" style="color:var(--ink-soft); text-align:center; padding:26px 0;">No leads yet.</td></tr>
+          <tr><td colspan="3" class="empty-row">No leads yet.</td></tr>
         </table>
+        </div>
       </div>
     </div>
 
   </main>
 </div>
+
+<div class="side-backdrop" id="adminSideBackdrop"></div>
+
+<script>
+  (function(){
+    var btn = document.getElementById('adminMenuBtn');
+    var side = document.getElementById('adminSide');
+    var backdrop = document.getElementById('adminSideBackdrop');
+    if(!btn || !side || !backdrop){ return; }
+    function setOpen(open){
+      side.classList.toggle('open', open);
+      backdrop.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    btn.addEventListener('click', function(){ setOpen(!side.classList.contains('open')); });
+    backdrop.addEventListener('click', function(){ setOpen(false); });
+    side.querySelectorAll('nav a').forEach(function(a){
+      a.addEventListener('click', function(){ setOpen(false); });
+    });
+    window.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ setOpen(false); } });
+  })();
+</script>
 
 </body>
 </html>
